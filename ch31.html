@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XXXI · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html" class="active"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XXXI</h1>
+    
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Jacob's Journey to Bethel and Hebron. Isaac blesses Levi and Judah (xxxi. 1-25; cf. Gen. xxxv.).<span class="cf">cf. Gen. xxxv.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And on the new moon of the month Jacob spake to all the people of his house, saying: "Purify yourselves and change your garments, and let us arise and go up to Bethel, where I vowed a vow to Him on the day when I fled from the face of Esau my brother, because He hath been with me and brought me into this land in peace, and put ye away the strange gods that are among you."</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And they gave up the strange gods and that which was in their ears and which was †on their necks,† <a class="fnref" href="#n157-3" id="rn157-3">3</a> and the idols which Rachel stole from Laban her brother she gave wholly to Jacob. And he burnt and brake them to pieces and destroyed them, and hid them under an oak which is in the land of Shechem.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And he went up on the new moon of the seventh month to Bethel. And he built an altar at the place where he had slept, and he set up a pillar there, and he sent word to his father Isaac to come to him to his sacrifice, and to his mother Rebecca.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And Isaac said: "Let my son Jacob come, and let me see him before I die." <a class="fnref" href="#n158-1" id="rn158-1">1</a></p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And Jacob went to his father Isaac and to his mother Rebecca, to the house of his father Abraham, <a class="fnref" href="#n158-2" id="rn158-2">2</a> and he took two of his sons with him, Levi and Judah, and he came to his father Isaac and to his mother Rebecca. <a class="fnref" href="#n158-3" id="rn158-3">3</a></p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And Rebecca came forth from the tower to the front of it to kiss Jacob and embrace him; for her spirit had revived when she heard: "Behold Jacob thy son hath come"; and she kissed him.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And she saw his two sons, and she recognised them, and said unto him: "Are these thy sons, my son?" and she embraced them and kissed them, and blessed them, saying: "In you shall the seed of Abraham become illustrious, and ye will prove a blessing on the earth."</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And Jacob went in to Isaac his father, to the chamber where he lay, and his two sons were with him, and he took the hand of his father, and stooping down he kissed him, and Isaac clung to the neck of Jacob his son, and wept upon his neck.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And the darkness left the eyes of Isaac, and he saw the two sons of Jacob, Levi and Judah, and he said: "Are these thy sons, my son? for they are like thee."</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And he said unto him that they were truly his sons: "And thou hast truly seen that they are truly my sons."</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And they came near to him, and he turned and kissed them and embraced them both together.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And the spirit of prophecy came down into his mouth, and he took Levi by his right hand and Judah by his left.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And he turned to Levi first, <a class="fnref" href="#n158-4" id="rn158-4">4</a> and began to bless him first, and said unto him:, 'May the God of all, the very Lord of all the ages, bless thee and thy children throughout all the ages.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And may the Lord give to thee and to thy seed †greatness and great glory†, and cause thee and thy seed, from among all flesh, to approach Him to serve in His sanctuary as the angels of the presence and as the holy ones. <a class="fnref" href="#n159-1" id="rn159-1">1</a> (Even) as they, will the seed of thy sons be for glory and greatness and holiness, and may He make them great unto all the ages.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And they will be princes and judges, and chiefs <a class="fnref" href="#n159-2" id="rn159-2">2</a> of all the seed of the sons of Jacob; They will speak the word of the Lord in righteousness, And they will judge all His judgments in righteousness. And they will declare My ways to Jacob And My paths to Israel. The blessing of the Lord will be given in their mouths <a class="fnref" href="#n159-3" id="rn159-3">3</a> To bless all the seed of the beloved. <a class="fnref" href="#n159-4" id="rn159-4">4</a></p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>Thy mother hath called thy name Levi, And justly hath she called thy name; Thou wilt be joined <a class="fnref" href="#n159-5" id="rn159-5">5</a> to the Lord And be the companion of all the sons of Jacob; Let His table be thine, <a class="fnref" href="#n159-6" id="rn159-6">6</a> And do thou and thy sons eat thereof; And may thy table be full unto all generations, And thy food fail not unto all the ages.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And let all who hate thee fall down before thee, And let all thy adversaries be rooted out and perish; And blessed be he that blesseth thee, And cursed be every nation that curseth thee.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And to Judah he said: May the Lord give thee strength and power To tread down all that hate thee; A prince shalt thou be, thou and one of thy sons, <a class="fnref" href="#n160-1" id="rn160-1">1</a> over the sons of Jacob; May thy name and the name of thy sons <a class="fnref" href="#n160-2" id="rn160-2">2</a> go forth and traverse every land and region. Then will the Gentiles fear before thy face, And all the nations will quake [And all the peoples will quake]. <a class="fnref" href="#n160-3" id="rn160-3">3</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>In thee shall be the help of Jacob, And in thee be found the salvation of Israel.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And when thou sittest on the throne of the honour of thy righteousness, There will be great peace for all the seed of the sons of the beloved, <a class="fnref" href="#n160-4" id="rn160-4">4</a> And blessed will he be that blesseth thee; And all that hate thee and afflict thee and curse thee Shall be rooted out and destroyed from the earth and accursed."</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And turning he kissed him again and embraced him, and rejoiced greatly; for he had seen the sons of Jacob his son in very truth.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And he went forth from between his feet and fell down and worshipped him. And he blessed them. And (Jacob) rested there with Isaac his father that night, and they ate and drank with joy.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And he made the two sons of Jacob sleep, the one on his right hand and the other on his left and it was counted to him for righteousness.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And Jacob told his father everything during the night, how the Lord had shown him great mercy, and how He had prospered (him in) all his ways, and protected him from all evil.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And Isaac blessed the God of his father Abraham, who had not withdrawn His mercy and His righteousness from the sons of His servant Isaac.</p><h2 class="sect">Rebecca journeys with Jacob to Bethel (xxxi. 26-32).</h2><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And in the morning Jacob told his father Isaac the vow which he had vowed to the Lord, and the vision which he had seen, and that he had built an altar, <a class="fnref" href="#n161-1" id="rn161-1">1</a> and that everything was ready for the sacrifice to be made before the Lord as he had vowed, and that he had come to set him on an ass.</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>And Isaac said unto Jacob his son: "I am not able to go with thee; for I am old, and not able to bear the way: go, my son, in peace; for I am one hundred and sixty-five years this day; I am no longer able to journey, set thy mother (on an ass) and let her go with thee.</p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And I know, my son, that thou hast come on my account, and may this day be blessed on which thou hast seen me alive, and I also have seen thee, my son.</p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>Mayest thou prosper and fulfil the vow which thou hast vowed, and put not off thy vow; for thou wilt be called to account as touching the vow; <a class="fnref" href="#n161-2" id="rn161-2">2</a> now therefore make haste to perform it, and may He be pleased who hath made all things, to whom thou hast vowed the vow."</p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>And he said to Rebecca: "Go with Jacob thy son"; and Rebecca went with Jacob her son, and Deborah with her, and they came to Bethel.</p><p class="v" id="v31"><a class="vn" href="#v31" data-anchor="v31">31</a>And Jacob remembered the prayer with which his father had blessed him and his two sons, Levi and Judah, and he rejoiced and blessed the God of his fathers, Abraham and Isaac.</p><p class="v" id="v32"><a class="vn" href="#v32" data-anchor="v32">32</a>And he said: "Now I know that I have an eternal hope, and my sons also, before the God of all;" and thus is it ordained concerning the two; and they record it as an eternal testimony unto them on the heavenly tables how Isaac blessed them.</p></div><div class="margin"><aside class="note source" id="n157-3"><a class="back" href="#rn157-3">↩</a>Corrupt.</aside>
+<aside class="note source" id="n158-1"><a class="back" href="#rn158-1">↩</a>Isaac refused to go to Bethel; cf. Test. Levi ix. 2.</aside>
+<aside class="note source" id="n158-2"><a class="back" href="#rn158-2">↩</a>i. e. to Hebron.</aside>
+<aside class="note source" id="n158-3"><a class="back" href="#rn158-3">↩</a>This last meeting of Jacob with Isaac is not referred to in the Rabbinical Haggada.</aside>
+<aside class="note source" id="n158-4"><a class="back" href="#rn158-4">↩</a>Cf. Test. Levi ix. 1 f. The primacy of Levi is here marked.</aside>
+<aside class="note source" id="n159-1"><a class="back" href="#rn159-1">↩</a>Levi is to serve in the sanctuary as the two highest orders of angels serve in the highest heaven.</aside>
+<aside class="note source" id="n159-2"><a class="back" href="#rn159-2">↩</a>Levi's descendants are not only to be priests but also rulers of the nation. This double function was exercised by the Maccabean priest-princes: cf. Test. Levi viii. ii ff.</aside>
+<aside class="note source" id="n159-3"><a class="back" href="#rn159-3">↩</a>i. e. the priestly blessing; cf. Ecclus. l. 20.</aside>
+<aside class="note source" id="n159-4"><a class="back" href="#rn159-4">↩</a>i. e. of Abraham.</aside>
+<aside class="note source" id="n159-5"><a class="back" href="#rn159-5">↩</a>A play on the name "Levi" (= attaché); cf. Gen. xxix. 34 (R.V. marg.); also Num. xviii. 2, 4.</aside>
+<aside class="note source" id="n159-6"><a class="back" href="#rn159-6">↩</a>Cf. Test. Levi viii. 16 ("and the table of the Lord shall thy seed apportion").</aside>
+<aside class="note source" id="n160-1"><a class="back" href="#rn160-1">↩</a>i. e.? the Messiah who is to spring from Judah: but if so the expression of the hope is somewhat vague. More probably the reference is to the historical David.</aside>
+<aside class="note source" id="n160-2"><a class="back" href="#rn160-2">↩</a>i. e. the name of the Jewish people.</aside>
+<aside class="note source" id="n160-3"><a class="back" href="#rn160-3">↩</a>Bracketed as a dittograph.</aside>
+<aside class="note source" id="n160-4"><a class="back" href="#rn160-4">↩</a>i. e. of Abraham. Next: Rebecca journeys with Jacob to Bethel (xxxi. 26-32)</aside>
+<aside class="note source" id="n161-1"><a class="back" href="#rn161-1">↩</a>At Bethel; cf. Gen. xxviii. 18-22.</aside>
+<aside class="note source" id="n161-2"><a class="back" href="#rn161-2">↩</a>Note the emphasis on the obligation to keep a vow. Next: Levi's Dream at Bethel; he is appointed to the Priesthood. Jacob celebrates the Feast of Tabernacles and offers Tithes. The Institution of Tithes (xxxii. 1-15)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch30.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch32.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

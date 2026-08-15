@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter III · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html" class="active"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter III</h1>
+    <p class="am">Anno Mundi 130</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Paradise and the Fall (iii. 1-35; cf. Gen. ii. 4-iii .).<span class="cf">cf. Gen. ii. 4-iii .</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And on the six days of the second week we brought, according to the word of God, unto Adam all the beasts, and all the cattle, and all the birds, and everything that moveth on the earth, and everything that moveth in the water, according to their kinds, and according to their types: the beasts on the first day; the cattle on the second day; the birds on the third day; and all that which moveth on the earth on the fourth day; and that which moveth in the water on the fifth day.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And Adam named them all by their respective names, and as he called them, so was their name. <a class="fnref" href="#n46-5" id="rn46-5">5</a></p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And on these five days Adam saw all these, male and female, according to every kind that was on the earth, but he was alone and found no helpmeet for him. <a class="fnref" href="#n47-1" id="rn47-1">1</a></p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And the Lord said unto us: "It is not good that the man should be alone: let us make a helpmeet for him." <a class="fnref" href="#n47-2" id="rn47-2">2</a></p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And the Lord our God caused a deep sleep to fall upon him, and he slept, and He took for the woman one rib from amongst his ribs, and this rib was the origin of the woman from amongst his ribs, and He built up the flesh in its stead, and built the woman.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And He awaked Adam out of his sleep and on awaking he rose on the sixth day, and He brought her to him, and he knew her, and said unto her: "This is now bone of my bones and flesh of my flesh; she will be called [my] wife; because she was taken from her husband." <a class="fnref" href="#n47-3" id="rn47-3">3</a></p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>Therefore shall man and wife be one, and therefore shall a man leave his father and his mother, and cleave unto his wife, and they shall be one flesh. <a class="fnref" href="#n47-4" id="rn47-4">4</a></p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>In the first week was Adam created, and the rib--his wife: in the second week He showed her unto him: and for this reason the commandment was given to keep in their defilement, for a male seven days, and for a female twice seven days. <a class="fnref" href="#n47-5" id="rn47-5">5</a></p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And after Adam had completed forty days in the land where he had been created, we brought him into the Garden of Eden to till and keep it, but his wife they brought in on the eightieth day, and after this she entered into the Garden of Eden.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And for this reason the commandment is written on the heavenly tables <a class="fnref" href="#n47-6" id="rn47-6">6</a> in regard to her that giveth birth: "if she beareth a male, she shall remain in her uncleanness seven days according to the first week of days, and thirty and three days shall she remain in the blood of her purifying, and she shall not touch any hallowed thing, nor enter into the sanctuary, until she accomplisheth these days which (are enjoined) in the case of a male child.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>But in the case of a female child she shall remain in her uncleanness two weeks of days, according to the first two weeks, and sixty-six days in the blood of her purification, and they will be in all eighty days."</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And when she had completed these eighty days we brought her into the Garden of Eden, for it is holier than all the earth besides, and every tree that is planted in it is holy.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>Therefore, there was ordained regarding her who beareth a male or a female child the statute of those days that she should touch no hallowed thing, nor enter into the sanctuary until these days for the male or female child are accomplished.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>This is the law and testimony which was written down for Israel, in order that they should observe (it) all the days.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And in the first week of the first jubilee, Adam and his wife were in the Garden of Eden for seven <a class="fnref" href="#n48-1" id="rn48-1">1</a> years tilling and keeping it, and we gave him work and we instructed him to do everything that is suitable for tillage. <a class="fnref" href="#n48-2" id="rn48-2">2</a></p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And he tilled (the garden), and was naked and knew it not, and was not ashamed, <a class="fnref" href="#n48-3" id="rn48-3">3</a> and he protected the garden from the birds and beasts and cattle, and gathered its fruit, and ate, and put aside the residue for himself and for his wife [and put aside that which was being kept]. <a class="fnref" href="#n49-1" id="rn49-1">1</a></p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a><a class="fnref" href="#n49-2" id="rn49-2">2</a> And after the completion of the seven years, which he had completed there, seven years exactly, and in the second month, on the seventeenth day (of the month), the serpent came and approached the woman, and the serpent said to the woman, "Hath God commanded you, saying, Ye shall not eat of every tree of the garden?"</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And she said to it, "Of all the fruit of the trees of the garden God hath said unto us, Eat; but of the fruit of the tree which is in the midst of the garden God hath said unto us, Ye shall not eat thereof, neither shall ye touch it, lest ye die."</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And the serpent said unto the woman, "Ye shall not surely die: for God doth know that on the day ye shall eat thereof, your eyes will be opened, and ye will be as gods, and ye will know good and evil."</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And the woman saw the tree that it was agreeable and pleasant to the eye, and that its fruit was good for food, and she took thereof and ate.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And when she had first covered her shame with fig-leaves, she gave thereof to Adam and he ate, and his eyes were opened, and he saw that he was naked.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22–23</a>And he took fig-leaves and sewed (them) together, and made an apron for himself, and covered his shame. 32. And God cursed the serpent, and was wroth with it for ever. . . . <a class="fnref" href="#n49-3" id="rn49-3">3</a></p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And He was wroth with the woman, because she hearkened to the voice of the serpent, and did eat; and He said unto her: <a class="fnref" href="#n49-4" id="rn49-4">4</a> I shall greatly multiply thy sorrow and thy pains in sorrow thou shalt bring forth children, and thy return <a class="fnref" href="#n49-5" id="rn49-5">5</a> shall be unto thy husband, and he will rule over thee."</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And to Adam also He said, "Because thou hast hearkened unto the voice of thy wife, and hast eaten of the tree of which I commanded thee that thou shouldst not eat thereof, cursed be the ground for thy sake: thorns and thistles shall it bring forth to thee, and thou shalt eat thy bread in the sweat of thy face, till thou returnest to the earth from whence thou wast taken; for earth thou art, and unto earth shalt thou return."</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And He made for them coats of skin, and clothed them, and sent them forth from the Garden of Eden. <a class="fnref" href="#n50-1" id="rn50-1">1</a></p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>And on that day on which Adam went forth from the garden, he offered as a sweet savour an offering, frankincense, galbanum, and stacte, and spices <a class="fnref" href="#n50-2" id="rn50-2">2</a> in the morning with the rising of the sun from the day when he covered his shame.</p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And on that day was closed the mouth of all beasts, and of cattle, and of birds, and of whatever walketh, and of whatever moveth, so that they could no longer speak: <a class="fnref" href="#n50-3" id="rn50-3">3</a> for they had all spoken one with another with one lip and with one tongue.</p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>And He sent out of the Garden of Eden all flesh that was in the Garden of Eden, and all flesh was scattered according to its kinds, and according to its types unto the places which had been created for them.</p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>And to Adam alone did He give (the wherewithal) to cover his shame, of all the beasts and cattle.</p><p class="v" id="v31"><a class="vn" href="#v31" data-anchor="v31">31</a>On this account, it is prescribed on the heavenly tables as touching all those who know the judgment of the law, that they should cover their shame, and should not uncover themselves as the Gentiles uncover themselves. <a class="fnref" href="#n50-4" id="rn50-4">4</a></p><p class="v" id="v32"><a class="vn" href="#v32" data-anchor="v32">32</a>And on the new moon of the fourth month, Adam and his wife went forth from the Garden of Eden, and they dwelt in the land of ’Eldâ, <a class="fnref" href="#n51-1" id="rn51-1">1</a> in the land of their creation.</p><p class="v" id="v33"><a class="vn" href="#v33" data-anchor="v33">33</a>And Adam called the name of his wife Eve.</p><p class="v" id="v34"><a class="vn" href="#v34" data-anchor="v34">34</a>And they had no son till the first jubilee, and after this he knew her.</p><p class="v" id="v35"><a class="vn" href="#v35" data-anchor="v35">35</a>Now he tilled the land as he had been instructed in the Garden of Eden. <a class="fnref" href="#n51-2" id="rn51-2">2</a></p></div><div class="margin"><aside class="note source" id="n46-5"><a class="back" href="#rn46-5">↩</a>Cf. Gen. ii. 19.</aside>
+<aside class="note source" id="n47-1"><a class="back" href="#rn47-1">↩</a>Cf. Gen. ii. 20.</aside>
+<aside class="note source" id="n47-2"><a class="back" href="#rn47-2">↩</a>Cf. Gen. ii. 18; LXX and Vulg. have pl. ("let us make" ), but MT Sam. Syr., "I will make."</aside>
+<aside class="note source" id="n47-3"><a class="back" href="#rn47-3">↩</a>Cf. Gen. ii. 21-23. According to the Talmud, Adam was originally (as first created, Gen. i. 27) hermaphroditic.</aside>
+<aside class="note source" id="n47-4"><a class="back" href="#rn47-4">↩</a>Cf. Gen. ii. 24.</aside>
+<aside class="note source" id="n47-5"><a class="back" href="#rn47-5">↩</a>For these laws cf. Lev. xii. 2-5, according to which in the one case the mother was not to enter the sanctuary till the lapse of forty days, in the other eighty days. The reason for this is given in the following section (9), according to the author of Jubilees. This peculiar idea recurs elsewhere (Philo, Book of Adam and Eve), but not in Rabbinic literature, except for some slight traces. See Charles, ad loc.</aside>
+<aside class="note source" id="n47-6"><a class="back" href="#rn47-6">↩</a>Cf. 1 Enoch lxxxi. 1, 2, xciii. 2, ciii. 2; the expression also occurs in Test. XII. Patriarchs. In our Book the heavenly tables are conceived of as the divine statute book of which the Mosaic p. 48 Law is the earthly reproduction; but they also contain records of events and predictions. The underlying idea is predestinarian.</aside>
+<aside class="note source" id="n48-1"><a class="back" href="#rn48-1">↩</a>According to Ber. rabba xviii., Sanh. 38b, Adam was only six hours in the Garden; cf. Pir(cid:31)e de R. Eliezer xviii. (Adam entered the garden at the seventh hour and was driven forth at twilight, i. e. the twelfth hour on Friday the eve of the Sabbath).</aside>
+<aside class="note source" id="n48-2"><a class="back" href="#rn48-2">↩</a>Agriculture is a divine institution. Here the instruction is given by angels; contrast Isa. xxviii. 26-29. See also 4 Ezra vi. 42. Test. XII. Patr. Issachar iii.</aside>
+<aside class="note source" id="n48-3"><a class="back" href="#rn48-3">↩</a>Cf. Gen. ii. 25.</aside>
+<aside class="note source" id="n49-1"><a class="back" href="#rn49-1">↩</a>The bracketed words are a dittograph.</aside>
+<aside class="note source" id="n49-2"><a class="back" href="#rn49-2">↩</a>For 17-22 cf. Gen. iii. 1-7.</aside>
+<aside class="note source" id="n49-3"><a class="back" href="#rn49-3">↩</a>Charles suspects a lacuna here. It may have contained a statement to the effect that the serpent's four feet, which it is supposed to have originally possessed, were cut off. Cf. Targ. Ps.-Jon. on Gen. iii. 14, and Josephus, Ant. i. 1, 4.</aside>
+<aside class="note source" id="n49-4"><a class="back" href="#rn49-4">↩</a>Cf. Gen. iii. M.</aside>
+<aside class="note source" id="n49-5"><a class="back" href="#rn49-5">↩</a>So LXX and Syr. ((cid:31) (cid:31)ποστραφ(cid:31) σου), MT, "thy desire."</aside>
+<aside class="note source" id="n50-1"><a class="back" href="#rn50-1">↩</a>Cf. Gen. ii. 17-19, 21, 24.</aside>
+<aside class="note source" id="n50-2"><a class="back" href="#rn50-2">↩</a>i. e. the incense-offering of Exod. xxx. 34.</aside>
+<aside class="note source" id="n50-3"><a class="back" href="#rn50-3">↩</a>For this belief cf. Josephus, Ant. i. 1, 4. The idea underlying the text here is that up to this time both men and animals spoke Hebrew, which was the universal language till the building of the Tower of Babel.</aside>
+<aside class="note source" id="n50-4"><a class="back" href="#rn50-4">↩</a>A protest against the Greek custom of exposing the person in public athletic sports; cf. 1 Macc. i. 13 f.; 2 Macc. iv. 9-14; Josephus, Ant. xii. 5, 1.</aside>
+<aside class="note source" id="n51-1"><a class="back" href="#rn51-1">↩</a>Charles suggests that ’Eldâ may be a corruption of the Hebrew word meaning "nativity" (land of "nativity").</aside>
+<aside class="note source" id="n51-2"><a class="back" href="#rn51-2">↩</a>Cf. iii. 15. Next: Cain and Abel (iv. 1-12)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch02.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch04.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

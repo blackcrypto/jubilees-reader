@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XL · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html" class="active"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XL</h1>
+    
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Pharaoh's Dreams and their Interpretation. Joseph's Elevation and Marriage (xl. 1-13; cf. Gen. xli.).<span class="cf">cf. Gen. xli.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in those days Pharaoh dreamed two dreams in one night concerning a famine which was to be in all the land, and he awoke from his sleep and called all the interpreters of dreams that were in Egypt, and magicians, and told them his two dreams, and they were not able to declare (them).</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And then the chief butler remembered Joseph and spake of him to the king, and he brought him forth from the prison, and he told his two dreams before him.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And he said before Pharaoh that his two dreams were one, and he said unto him: "Seven years will come (in which there will be) plenty over all the land of Egypt, and after that seven years of famine, such a famine as hath not been in all the land.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And now let Pharaoh appoint overseers <a class="fnref" href="#n187-1" id="rn187-1">1</a> in all the land of Egypt, and let them store up food in every city throughout the days of the years of plenty, and there will be food for the seven years of famine, and the land will not perish through the famine, for it will be very severe."</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And the Lord gave Joseph favour and mercy in the eyes of Pharaoh, and Pharaoh said unto his servants: "We shall not find such a wise and discreet man as this man, for the spirit of the Lord is with him."</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And he appointed him the second in all his kingdom and gave him authority over all Egypt, and caused him to ride in the second chariot of Pharaoh.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And he clothed him with byssus garments, and he put a gold chain upon his neck, and (a herald) proclaimed before him "’Êl ’Êl wa’ Abîrĕr," <a class="fnref" href="#n187-2" id="rn187-2">2</a> and he placed a ring on his hand and made him ruler over all his house, and magnified him, and said unto him: "Only on the throne shall I be greater than thou."</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And Joseph ruled over all the land of Egypt, and all the princes of Pharaoh, and all his servants, and all who did the king's business loved him, for he walked in uprightness, for he was without pride and arrogance, and he had no respect of persons, and did not accept gifts, but he judged in uprightness all the people of the land.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And the land of Egypt was at peace before Pharaoh because of Joseph, for the Lord was with him, and gave him favour and mercy for all his generations before all those who knew him and those who heard concerning him, and Pharaoh's kingdom was well ordered, and there was no Satan <a class="fnref" href="#n188-1" id="rn188-1">1</a> and no evil person (therein).</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And the king called Joseph's name Sĕphân(cid:31)îphâns, <a class="fnref" href="#n188-2" id="rn188-2">2</a> and gave Joseph to wife the daughter of Potiphar, the daughter of the priest of Heliopolis, the chief cook. <a class="fnref" href="#n188-3" id="rn188-3">3</a></p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And on the day that Joseph stood before Pharaoh he was thirty years old [when he stood before Pharaoh].</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And in that year Isaac died. And it came to pass as Joseph had said in the interpretation of his two dreams, according as he had said it, there were seven years of plenty over all the land of Egypt, and the land of Egypt produced abundantly, one measure (producing) eighteen hundred measures.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And Joseph gathered food into every city until they were full of corn until they could no longer count and measure it for its multitude.</p></div><div class="margin"><aside class="note source" id="n187-1"><a class="back" href="#rn187-1">↩</a>Cf. Gen. xli. 34.</aside>
+<aside class="note source" id="n187-2"><a class="back" href="#rn187-2">↩</a>’Êl ’Êl wa’ Abîrĕr = Heb. ’el ’el wa’ăbîr ’el, "God, God, the mighty one of God." This is a peculiar amplification of the Hebrew ’abrēk (R.V. "bow the knee ") of Gen. xli. 43. "Mighty one of God" may be a technical term for a great magician; cf. Acts viii. 10. Next: Judah's Incest with Tamar; his Repentance and Forgiveness (xli. 1-28)</aside>
+<aside class="note source" id="n188-1"><a class="back" href="#rn188-1">↩</a>A sign of great felicity; cf. xxiii. 29.</aside>
+<aside class="note source" id="n188-2"><a class="back" href="#rn188-2">↩</a>i. e. Zaphenath-paneah (Gen. xli. 45).</aside>
+<aside class="note source" id="n188-3"><a class="back" href="#rn188-3">↩</a>The author identifies Potiphar of Gen. xxxvii. 36 with Potiphera of Gen. xli. 45. In later Jewish legend Asenath (Joseph's wife) is represented as a Jewess, a daughter of Dinah, who was brought up in the family of Potiphera (cf. Pir(cid:31)e de R. Eliezer xxxviii.). The difficulty of Joseph's heathen marriage is thus removed.</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch39.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch41.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

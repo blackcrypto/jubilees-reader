@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter VII · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html" class="active"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter VII</h1>
+    <p class="am">Anno Mundi 1373–1375</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Noah offers Sacrifice; the Cursing of Canaan (cf. Gen. ix. 20-28): Noah's Sons and Grandsons (cf. Gen. x.) and their Cities. Noah's Admonitions (vii. 1-39).<span class="cf">cf. Gen. ix. 20-28</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the seventh week in the first year thereof, in this jubilee, Noah planted vines on the mountain on which the ark had rested, named Lûbâr, <a class="fnref" href="#n66-2" id="rn66-2">2</a> one of the Ararat Mountains, and they produced fruit in the fourth year, <a class="fnref" href="#n66-3" id="rn66-3">3</a> and he guarded their fruit, and gathered it in this year in the seventh month.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And he made wine therefrom and put it into a vessel, and kept it until the fifth year, until the first day, on the new moon of the first month.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And he celebrated with joy the day of this feast, and he made a burnt sacrifice unto the Lord, one young ox and one ram, and seven sheep, each a year old, and a kid of the goats, that he might make atonement thereby for himself and his sons. <a class="fnref" href="#n66-4" id="rn66-4">4</a></p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And he prepared the kid first, and placed some of its blood on the flesh that was on the altar which he had made, and all the fat he laid on the altar where he made the burnt sacrifice, and the ox and the ram and the sheep, and he laid all their flesh upon the altar.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And he placed all their offerings mingled with oil upon it, and afterwards he sprinkled wine on the fire which he had previously made on the altar, and he placed incense on the altar and caused a sweet savour to ascend acceptable before the Lord his God.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And he rejoiced and drank of this wine, he and his children with joy.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And it was evening, and he went into his tent, and being drunken he lay down and slept, and was uncovered in his tent as he slept. <a class="fnref" href="#n67-1" id="rn67-1">1</a></p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And Ham saw Noah his father naked, and went forth and told his two brethren without.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And Shem took his garment and arose, he and Japheth, and they placed the garment on their shoulders and went backward and covered the shame of their father, and their faces were backward. <a class="fnref" href="#n67-2" id="rn67-2">2</a></p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And Noah awoke from his sleep and knew all that his younger son had done unto him, and he cursed his son and said: "Cursed be Canaan; an enslaved servant shall he be unto his brethren." <a class="fnref" href="#n67-3" id="rn67-3">3</a></p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And he blessed Shem, and said: "Blessed be the Lord God of Shem, and Canaan shall be his servant.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>God shall enlarge Japheth, and God shall dwell in the dwelling of Shem, and Canaan shall be his servant." <a class="fnref" href="#n67-4" id="rn67-4">4</a></p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And Ham knew that his father had cursed his younger son, and he was displeased that he had cursed his son, and he parted from his father, he and his sons with him, Cush and Mizraim and Put and Canaan. <a class="fnref" href="#n67-5" id="rn67-5">5</a></p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And he built for himself a city and called its name after the name of his wife Nê’êlâtamâ’ûk.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And Japheth saw it, and became envious of his brother, and he too built for himself a city, and he called its name after the name of his wife ’Adâtanêsês.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And Shem dwelt with his father Noah, and he built a city close to his father on the mountain, and he too called its name after the name of his wife Sêdêqêtêlĕbâb. <a class="fnref" href="#n68-1" id="rn68-1">1</a></p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And behold these three cities are near Mount Lûbâr; Sêdêqêtêlĕbâb fronting the mountain on its east; and Na’êlâtamâ’ûk on the south; ’Adatanêsês towards the west.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And these are the sons of Shem: Elam, and Asshur, and Arpachshad--this (son) was born two years after the flood--and Lud, and Aram. <a class="fnref" href="#n68-2" id="rn68-2">2</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>The sons of Japheth: Gomer and Magog and Madai and Javan, Tubal and Meshech and Tiras: these are the sons of Noah. <a class="fnref" href="#n68-3" id="rn68-3">3</a></p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a><a class="fnref" href="#n68-4" id="rn68-4">4</a> And in the twenty-eighth jubilee Noah began to enjoin upon his sons' sons the ordinances and commandments, and all the judgments that he knew, and he exhorted his sons to observe righteousness, and to cover the shame <a class="fnref" href="#n68-5" id="rn68-5">5</a> of their flesh, and to bless their Creator, and honour father and mother, and love their neighbour, and guard their souls from fornication and uncleanness and all iniquity.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>For owing to these three things <a class="fnref" href="#n68-6" id="rn68-6">6</a> came the flood upon the earth, namely, owing to the fornication wherein the Watchers against the law of their ordinances went a whoring after the daughters of men, and took themselves wives of all which they chose: <a class="fnref" href="#n68-7" id="rn68-7">7</a> and they made the beginning of uncleanness.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And they begat sons the Nâphîdîm, <a class="fnref" href="#n68-8" id="rn68-8">8</a> and †they were all unlike†, <a class="fnref" href="#n68-9" id="rn68-9">9</a> and they devoured one another: and the Giants slew the Nâphîl, and the Nâphîl slew the Eljô, and the Eljô mankind, and one man another.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And every one sold himself <a class="fnref" href="#n68-10" id="rn68-10">10</a> to work iniquity and to shed much blood, <a class="fnref" href="#n69-1" id="rn69-1">1</a> and the earth was filled with iniquity. <a class="fnref" href="#n69-2" id="rn69-2">2</a></p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And after this they sinned against the beasts and birds, and all that moveth and walketh on the earth: <a class="fnref" href="#n69-3" id="rn69-3">3</a> and much blood was shed on the earth, and every imagination and desire of men imagined vanity and evil continually. <a class="fnref" href="#n69-4" id="rn69-4">4</a></p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And the Lord destroyed everything from off the face of the earth; <a class="fnref" href="#n69-5" id="rn69-5">5</a> because of the wickedness of their deeds, and because of the blood which they had shed in the midst of the earth He destroyed everything.</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>"And we were left, I <a class="fnref" href="#n69-6" id="rn69-6">6</a> and you, my sons, and everything that entered with us into the ark, and behold I see your works before me that ye do not walk in righteousness; for in the path of destruction ye have begun to walk, and ye are parting one from another, and are envious one of another, and (so it cometh) that ye are not in harmony, my sons, each with his brother.</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>For I see, and behold the demons have begun (their) seductions against you and against your children, and now I fear on your behalf, that after my death ye will shed the blood of men upon the earth, and that ye, too, will be destroyed from the face of the earth. <a class="fnref" href="#n69-7" id="rn69-7">7</a></p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>For whoso sheddeth man's blood, and whoso eateth the blood of any flesh, will all be destroyed from the earth. <a class="fnref" href="#n69-8" id="rn69-8">8</a></p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>And there will not be left any man that eateth blood. Or that sheddeth the blood of man on the earth, Nor will there be left to him any seed or descendants living under heaven; For into Sheol will they go, And into the place of condemnation will they descend. And into the darkness of the deep will they all be removed by a violent death. <a class="fnref" href="#n70-1" id="rn70-1">1</a></p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>There shall be no blood seen upon you of all the blood there shall be all the days in which ye have killed any beasts or cattle or whatever flieth upon the earth, and work ye a good work to your souls by covering that which hath been shed <a class="fnref" href="#n70-2" id="rn70-2">2</a> on the face of the earth.</p><p class="v" id="v31"><a class="vn" href="#v31" data-anchor="v31">31</a>And ye shall not be like him who eateth with blood, but guard yourselves that none may eat blood before you: <a class="fnref" href="#n70-3" id="rn70-3">3</a> cover the blood, for thus have I been commanded to testify to you and your children, together with all flesh.</p><p class="v" id="v32"><a class="vn" href="#v32" data-anchor="v32">32</a>And suffer not the soul to be eaten with the flesh, that your blood, which is your life, may not be required at the hand of any flesh that sheddeth (it) on the earth. <a class="fnref" href="#n70-4" id="rn70-4">4</a></p><p class="v" id="v33"><a class="vn" href="#v33" data-anchor="v33">33</a>For the earth will not be clean from the blood which hath been shed upon it; <a class="fnref" href="#n70-5" id="rn70-5">5</a> for (only) through the blood of him that shed it <a class="fnref" href="#n70-6" id="rn70-6">6</a> will the earth be purified throughout all its generations.</p><p class="v" id="v34"><a class="vn" href="#v34" data-anchor="v34">34</a>And now, my children, hearken: work judgment and righteousness that ye may be planted in righteousness <a class="fnref" href="#n70-7" id="rn70-7">7</a> over the face of the whole earth, and your glory lifted up before my God, who saved me from the waters of the flood. <a class="fnref" href="#n70-8" id="rn70-8">8</a></p><p class="v" id="v35"><a class="vn" href="#v35" data-anchor="v35">35</a>And behold, ye will go and build for yourselves cities, and plant in them all the plants that are upon the earth, and moreover all fruit-bearing trees.</p><p class="v" id="v36"><a class="vn" href="#v36" data-anchor="v36">36</a>For three years the fruit of everything that is eaten will not be gathered: and in the fourth year its fruit will be accounted holy [and they will offer the first-fruits], <a class="fnref" href="#n70-9" id="rn70-9">9</a> acceptable before the Most High God, who created heaven and earth and all things. Let them offer in abundance the first of the wine and oil (as) first-fruits on the altar of the Lord, who receiveth it, and what is left let the servants of the house of the Lord <a class="fnref" href="#n71-1" id="rn71-1">1</a> eat before the altar which receiveth (it).</p><p class="v" id="v37"><a class="vn" href="#v37" data-anchor="v37">37</a>And in the fifth year <a class="fnref" href="#n71-2" id="rn71-2">2</a> . . . . . . . make ye the release so that ye release it <a class="fnref" href="#n71-3" id="rn71-3">3</a> in righteousness and uprightness, and ye shall be righteous, and all that you plant will prosper.</p><p class="v" id="v38"><a class="vn" href="#v38" data-anchor="v38">38</a>For thus did Enoch, the father of your father command Methuselah, his son, and Methuselah his son Lamech, and Lamech commanded me all the things which his fathers commanded him.</p><p class="v" id="v39"><a class="vn" href="#v39" data-anchor="v39">39</a>And I also will give you commandment, my sons, as Enoch commanded his son in the first jubilees: whilst still living, the seventh <a class="fnref" href="#n71-4" id="rn71-4">4</a> in his generation, he commanded and testified to his son and to his sons' sons until the day of his death."</p></div><div class="margin"><aside class="note source" id="n66-2"><a class="back" href="#rn66-2">↩</a>Cf. v. 28.</aside>
+<aside class="note source" id="n66-3"><a class="back" href="#rn66-3">↩</a>Cf. Lev. xix. 23-25 (fruit of trees not to be touched during the first three years after planting).</aside>
+<aside class="note source" id="n66-4"><a class="back" href="#rn66-4">↩</a>Cf. Num. xxix. 2, 5.</aside>
+<aside class="note source" id="n67-1"><a class="back" href="#rn67-1">↩</a>For 6-7 cf. Gen. ix. 21.</aside>
+<aside class="note source" id="n67-2"><a class="back" href="#rn67-2">↩</a>For 8-9 cf. Gen. ix. 22-23.</aside>
+<aside class="note source" id="n67-3"><a class="back" href="#rn67-3">↩</a>Cf. Gen. ix. 24-25.</aside>
+<aside class="note source" id="n67-4"><a class="back" href="#rn67-4">↩</a>For 11-12 cf. Gen. ix. 26-27.</aside>
+<aside class="note source" id="n67-5"><a class="back" href="#rn67-5">↩</a>Cf. Gen. x. 6.</aside>
+<aside class="note source" id="n68-1"><a class="back" href="#rn68-1">↩</a>= "righteousness of the heart."</aside>
+<aside class="note source" id="n68-2"><a class="back" href="#rn68-2">↩</a>Cf. Gen. x. 22.</aside>
+<aside class="note source" id="n68-3"><a class="back" href="#rn68-3">↩</a>Cf. Gen. x. 2.</aside>
+<aside class="note source" id="n68-4"><a class="back" href="#rn68-4">↩</a>From here to the end of the chapter there is incorporated a fragment of the lost Book of Noah.</aside>
+<aside class="note source" id="n68-5"><a class="back" href="#rn68-5">↩</a>Cf. iii. 31.</aside>
+<aside class="note source" id="n68-6"><a class="back" href="#rn68-6">↩</a>viz. fornication, uncleanness and all iniquity. According to Maimonides (Kings, 89) Adam received six commandments against (1) idolatry; (2) blasphemy; (3) murder; (4) incest; (5) stealing;</aside>
+<aside class="note source" id="n68-7"><a class="back" href="#rn68-7">↩</a>Cf. Gen. vi. 2; 1 Enoch vii.</aside>
+<aside class="note source" id="n68-8"><a class="back" href="#rn68-8">↩</a>i. e. the Nephilim.</aside>
+<aside class="note source" id="n68-9"><a class="back" href="#rn68-9">↩</a>Text probably corrupt.</aside>
+<aside class="note source" id="n68-10"><a class="back" href="#rn68-10">↩</a>Cf. 1 Kings xxi. 20 (phrase).</aside>
+<aside class="note source" id="n69-1"><a class="back" href="#rn69-1">↩</a>Cf. 1 Enoch ix. i.</aside>
+<aside class="note source" id="n69-2"><a class="back" href="#rn69-2">↩</a>Cf. Gen. vi. ii; 1 Enoch ix. 9.</aside>
+<aside class="note source" id="n69-3"><a class="back" href="#rn69-3">↩</a>Cf. 1 Enoch vii. 5.</aside>
+<aside class="note source" id="n69-4"><a class="back" href="#rn69-4">↩</a>Cf. Gen. vi. 5.</aside>
+<aside class="note source" id="n69-5"><a class="back" href="#rn69-5">↩</a>Cf. Gen. vi. 7, vii. 4.</aside>
+<aside class="note source" id="n69-6"><a class="back" href="#rn69-6">↩</a>Noah is the speaker here and to the end of the chapter.</aside>
+<aside class="note source" id="n69-7"><a class="back" href="#rn69-7">↩</a>Cf. x. 1 (x. 1-15 is another excerpt from the Noah apocalypse).</aside>
+<aside class="note source" id="n69-8"><a class="back" href="#rn69-8">↩</a>Cf. Gen. ix. 4, 6; Lev. vii. 27.</aside>
+<aside class="note source" id="n70-1"><a class="back" href="#rn70-1">↩</a>Cf. xxii. 22; 1 Enoch ciii. 7, 8.</aside>
+<aside class="note source" id="n70-2"><a class="back" href="#rn70-2">↩</a>Cf. Lev. xvii. 113; Ezek. xxiv. 7 (here the precept is carried back to Noah).</aside>
+<aside class="note source" id="n70-3"><a class="back" href="#rn70-3">↩</a>One of the seven Noachic laws (binding on all men) was the prohibition of eating flesh with the blood. Cf. note on 21 above.</aside>
+<aside class="note source" id="n70-4"><a class="back" href="#rn70-4">↩</a>Cf. Gen. ix. 4; Lev. xvii. 10, 11, 14.</aside>
+<aside class="note source" id="n70-5"><a class="back" href="#rn70-5">↩</a>Cf. vi. 2.</aside>
+<aside class="note source" id="n70-6"><a class="back" href="#rn70-6">↩</a>Cf. Num. xxxv. 33.</aside>
+<aside class="note source" id="n70-7"><a class="back" href="#rn70-7">↩</a>A frequent metaphor in the O.T. Israel is "the plant of righteousness" (1 Enoch x. 16, etc.).</aside>
+<aside class="note source" id="n70-8"><a class="back" href="#rn70-8">↩</a>Cf. 2 Pet. ii. 5.</aside>
+<aside class="note source" id="n70-9"><a class="back" href="#rn70-9">↩</a>These words, if genuine, direct that in the fourth year only the first-fruits (not all the fruit) are to be offered to God. Cf. Lev. xix. 23-24.</aside>
+<aside class="note source" id="n71-1"><a class="back" href="#rn71-1">↩</a>i. e. the priests. Later Judaism directed that the rest of the fruit should be eaten by the owners within the walls of Jerusalem. The view of the text is supported by the Samaritans, the (cid:31)araite Jews and Ibn Ezra.</aside>
+<aside class="note source" id="n71-2"><a class="back" href="#rn71-2">↩</a>Charles suspects a lacuna in the text here.</aside>
+<aside class="note source" id="n71-3"><a class="back" href="#rn71-3">↩</a>Or render "(In the seventh year) ye will let it (the land) rest and lie fallow" (Charles).</aside>
+<aside class="note source" id="n71-4"><a class="back" href="#rn71-4">↩</a>Cf. 1 Enoch lx. 8, xciii. 3; Jude 14. Next: Genealogy of the Descendants of Shem: Noah and his Sons divide the Earth (viii. 1-30)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch06.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch08.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

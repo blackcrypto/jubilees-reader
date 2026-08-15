@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XXIX · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html" class="active"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XXIX</h1>
+    <p class="am">Anno Mundi 2127–2135</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Jacob's Flight with his Family: his Covenant with Laban (xxix. 1-12; cf. Gen, xxxi.).<span class="cf">cf. Gen, xxxi.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And it came to pass when Rachel had borne Joseph, that Laban went to shear his sheep; for they were distant from him a three days' journey.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And Jacob saw that Laban was going to shear his sheep, and Jacob called Leah and Rachel, and spake kindly unto them that they should come with him to the land of Canaan.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>For he told them how he had seen everything in a dream, even all that He had spoken unto him that he should return to his father's house; and they said: "To every place whither thou goest we will go with thee."</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And Jacob blessed the God of Isaac his father, and the God of Abraham his father's father, and he arose and mounted his wives and his children, and took all his possessions and crossed the river, and came to the land of Gilead, and Jacob hid <a class="fnref" href="#n151-1" id="rn151-1">1</a> his intention from Laban and told him not.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And in the seventh year of the fourth week Jacob turned (his face) toward Gilead in the first month, on the twenty-first thereof. And Laban pursued after him and overtook Jacob in the mountain of Gilead in the third month, on the thirteenth thereof.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And the Lord did not suffer him to injure Jacob; for He appeared to him in a dream by night. And Laban spake to Jacob,</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And on the fifteenth of those days Jacob made a feast for Laban, and for all who came with him, and Jacob sware to Laban that day, and Laban also to Jacob, that neither should cross the mountain of Gilead to the other with evil purpose.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And he made there a heap for a witness; wherefore the name of that place is called: "The Heap of Witness," after this heap. <a class="fnref" href="#n151-2" id="rn151-2">2</a></p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>But before they used to call the land of Gilead the land of the Rephaim; <a class="fnref" href="#n151-3" id="rn151-3">3</a> for it was the land of the Rephaim, and the Rephaim were born (there), giants whose height was ten, nine, eight down to seven cubits.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a><a class="fnref" href="#n151-4" id="rn151-4">4</a> And their habitation was from the land of the children of Ammon to Mount Hermon, and the seats of their kingdom were Karnaim and Ashtaroth, <a class="fnref" href="#n152-1" id="rn152-1">1</a> and Edrei, and Mîsûr, <a class="fnref" href="#n152-2" id="rn152-2">2</a> and Beon. <a class="fnref" href="#n152-3" id="rn152-3">3</a></p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And the Lord destroyed them because of the evil of their deeds; for they were very malignant, and the Amorites dwelt in their stead, wicked and sinful, and there is no people to-day which hath wrought to the full all their sins, and they have no longer length of life on the earth. <a class="fnref" href="#n152-4" id="rn152-4">4</a></p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And Jacob sent away Laban, and he departed into Mesopotamia, the land of the East, and Jacob returned to the land of Gilead.</p><h2 class="sect">Jacob, reconciled with Esau, dwells in Canaan and supports his Parents (xxix. 13- 20; Cf. Gen. xxxii., xxxiii.).</h2><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And he passed over the Jabbok <a class="fnref" href="#n152-5" id="rn152-5">5</a> in the ninth month, on the eleventh thereof. And on that day Esau, his brother, came to him, and he was reconciled to him, and departed from him unto the land of Seir, but Jacob dwelt in tents.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And in the first year of the fifth week in this jubilee he crossed the Jordan, and dwelt beyond the Jordan, and he pastured his sheep from the sea †of the heap† <a class="fnref" href="#n152-6" id="rn152-6">6</a> unto Bethshan, <a class="fnref" href="#n152-7" id="rn152-7">7</a> and unto Dothan and unto the †forest† <a class="fnref" href="#n152-8" id="rn152-8">8</a> of Akrabbim.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And he sent to his father Isaac of all his substance, clothing, and food, and meat, and drink, and milk, and butter, and cheese, and some dates of the valley,</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And to his mother Rebecca also four times a year, between the times of the months, between ploughing and reaping, and between autumn and the rain (season) and between winter and spring, to the tower of Abraham.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>For Isaac had returned from the Well of the Oath and gone up to the tower of his father Abraham, and he dwelt there apart from his son Esau.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>For in the days when Jacob went to Mesopotamia, Esau took to himself a wife Mahalath, the daughter of Ishmael, and he gathered together all the flocks of his father and his wives, and went up and dwelt on Mount Seir, and left Isaac his father at the Well of the Oath alone. <a class="fnref" href="#n153-1" id="rn153-1">1</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And Isaac went up from the Well of the Oath and dwelt in the tower of Abraham his father on the mountains of Hebron,</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And thither Jacob sent all that he did send to his father and his mother from time to time, all they needed, and they blessed Jacob with all their heart and with all their soul.</p></div><div class="margin"><aside class="note source" id="n151-1"><a class="back" href="#rn151-1">↩</a>So LXX (Gen. xxxi. 20) and Targ. Onkelos; but MT Sam., Vulg., ''stole" (the heart of Laban).</aside>
+<aside class="note source" id="n151-2"><a class="back" href="#rn151-2">↩</a>Cf. Gen. xxxi. 47 ("Galeed" = "Heap of Witness").</aside>
+<aside class="note source" id="n151-3"><a class="back" href="#rn151-3">↩</a>Cf. Gen. xiv. 5.</aside>
+<aside class="note source" id="n151-4"><a class="back" href="#rn151-4">↩</a>The places here mentioned were, perhaps, associated with Maccabean victories in the mind of our author (Charles).</aside>
+<aside class="note source" id="n152-1"><a class="back" href="#rn152-1">↩</a>In MT of Gen. xiv. 5, Asheroth-karnaim is one place; but Syr. and some MSS. of LXX support our text. Karnaim was captured by. Judas Maccabæus (1 Macc. 43 f.).</aside>
+<aside class="note source" id="n152-2"><a class="back" href="#rn152-2">↩</a>In Deut. iii. 10 "plain" = mîshôr.</aside>
+<aside class="note source" id="n152-3"><a class="back" href="#rn152-3">↩</a>= probably the Bæan of 1 Macc. v. 4 f., which was destroyed by Judas.</aside>
+<aside class="note source" id="n152-4"><a class="back" href="#rn152-4">↩</a>Judas "must have nearly annihilated" the Amorites (Charles). Next: Jacob, reconciled with Esau, dwells in Canaan and supports his Parents (xxix. 13-20)</aside>
+<aside class="note source" id="n152-5"><a class="back" href="#rn152-5">↩</a>Cf. Gen. xxxi. 22.</aside>
+<aside class="note source" id="n152-6"><a class="back" href="#rn152-6">↩</a>Text corrupt. Latin has "from the Salt Sea."</aside>
+<aside class="note source" id="n152-7"><a class="back" href="#rn152-7">↩</a>Cf. 1 Macc. v. 52, xii. 10.</aside>
+<aside class="note source" id="n152-8"><a class="back" href="#rn152-8">↩</a>? read "ascent" (cf. Num. xxxiv. 4; Josh. xv. 3). Judas fought in this district (of Idumea); cf. 1 Macc. v. 3.</aside>
+<aside class="note source" id="n153-1"><a class="back" href="#rn153-1">↩</a>Cf. Gen. xxviii. 9, xxxvi. 6, 8. In contrast with Jacob's conduct to his parents, Esau's is unfilial. Next: Dinah ravished. Slaughter of the Shechemites. Laws against Intermarriage between Israel and the Heathen. The Choice of Levi (xxx. 1-26)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch28.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch30.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

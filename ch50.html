@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter L · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html" class="active"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter L</h1>
+    <p class="am">Anno Mundi 2410–2450</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Laws regarding the Jubilees and the Sabbath (l. 1-13).</h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And after this law I made known to thee the days of the Sabbaths in the desert of Sin[ai], which is between Elim and Sinai. <a class="fnref edref" href="#n211-5" id="rn211-5">5</a></p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And I told thee of the Sabbaths of the land on Mount Sinai, and I told thee of the jubilee years <a class="fnref edref" href="#n211-6" id="rn211-6">6</a> in the sabbaths of years: but the year thereof have I not told thee till ye enter the land which ye are to possess.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And the land also will keep its sabbaths while they dwell upon it, <a class="fnref edref" href="#n211-7" id="rn211-7">7</a> and they will know the jubilee year.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>Wherefore I have ordained for thee the year- weeks <a class="fnref edref" href="#n211-8" id="rn211-8">8</a> and the years and the jubilees: there are forty-nine jubilees from the days of Adam until this day, and one week and two years and there are yet forty years to come (lit. "distant for learning the commandments of the Lord, until they pass over into the land of Canaan, crossing the Jordan to the west.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And the jubilees will pass by, until Israel is cleansed from all guilt of fornication, and uncleanness, and pollution, and sin, and error, and dwelleth with confidence in all the land, and there will be no more a Satan or any evil one, and the land will be clean from that time for evermore. <a class="fnref edref" href="#n212-1" id="rn212-1">1</a></p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And behold the commandment regarding the Sabbaths--I have written (them) down for thee and all the judgments of its laws.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>Six days wilt thou labour, but on the seventh day is the Sabbath of the Lord your God. <a class="fnref edref" href="#n212-2" id="rn212-2">2</a> In it ye shall do no manner of work, ye and your sons, and your men-servants and your maid-servants, and all your cattle and the sojourner also who is with you.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And the man that doeth any work on it shall die: <a class="fnref edref" href="#n212-3" id="rn212-3">3</a> whoever desecrateth that day, whoever lieth with (his) wife <a class="fnref edref" href="#n212-4" id="rn212-4">4</a> or whoever saith he will do something on it, that he will set out on a journey thereon <a class="fnref edref" href="#n212-5" id="rn212-5">5</a> in regard to any buying or selling: <a class="fnref edref" href="#n212-6" id="rn212-6">6</a> and whoever draweth water thereon <a class="fnref edref" href="#n212-7" id="rn212-7">7</a> which he had not prepared for himself on the sixth day, and whoever taketh up any burden to carry it out of his tent <a class="fnref edref" href="#n212-8" id="rn212-8">8</a> or out of his house shall die.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>Ye shall do no work whatever on the Sabbath day save that ye have prepared for yourselves on the sixth day, so as to eat, and drink, and rest, and keep Sabbath from all work on that day, and to bless the Lord your God, who has given you a day of festival, and a holy day: and a day of the holy kingdom for all Israel is this day among their days for ever.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>For great is the honour which the Lord hath given to Israel that they should eat and drink and be satisfied on this festival day, and rest thereon from all labour <a class="fnref edref" href="#n213-1" id="rn213-1">1</a> which belongeth to the labour of the children of men, save burning frankincense and bringing oblations and sacrifices before the Lord for days and for Sabbaths.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>This work alone shall be done on the Sabbath-days <a class="fnref edref" href="#n213-2" id="rn213-2">2</a> in the sanctuary of the Lord your God; that they may atone for Israel with sacrifice continually from day to day for a memorial well- pleasing before the Lord, and that He may receive them always from day to day according as thou hast been commanded.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And every man who doeth any work thereon, or goeth a journey, or tilleth (his) farm, <a class="fnref edref" href="#n213-3" id="rn213-3">3</a> whether in his house or any other place, <a class="fnref edref" href="#n213-4" id="rn213-4">4</a> and whoever lighteth a fire, <a class="fnref edref" href="#n213-5" id="rn213-5">5</a> or rideth on any beast, <a class="fnref edref" href="#n213-6" id="rn213-6">6</a> or travelleth by ship on the sea, and whoever striketh or killeth anything, or slaughtereth <a class="fnref edref" href="#n213-7" id="rn213-7">7</a> a beast or a bird, or whoever catcheth an animal or a bird or a fish, or whoever fasteth or maketh war on the Sabbaths: <a class="fnref edref" href="#n213-8" id="rn213-8">8</a></p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>The man who doeth any of these things on the Sabbath shall die, so that the children of Israel shall observe the Sabbaths according to the commandments regarding the Sabbaths of the land, as it is written in the tables, which He gave into my hands that I should write out for thee the laws of the seasons, and the seasons according to the division of their days. Herewith is completed the account of the division of the days.</p></div><div class="margin"><aside class="note editorial" id="n211-5"><a class="back" href="#rn211-5">↩</a>Exod. xvi. 1 places the wilderness of Sin between Elim and Sinai, and Exod. xvi. 22–30 sets the first sabbath legislation there — which is why Charles brackets the “-ai”: the manuscripts read Sin, and Sin is correct.</aside>
+<aside class="note editorial" id="n211-6"><a class="back" href="#rn211-6">↩</a>Lev. xxv. 2–13, the sabbath of the land and the fiftieth-year jubilee. The distinction drawn here — that the sabbatical and jubilee cycles were revealed at Sinai but their reckoning withheld until entry — lets the author claim his chronology is Mosaic without it being in the Pentateuch.</aside>
+<aside class="note editorial" id="n211-7"><a class="back" href="#rn211-7">↩</a>Lev. xxvi. 34–35 and 2 Chron. xxxvi. 21: the land takes its unkept sabbaths during the exile. The threat is left implicit here.</aside>
+<aside class="note editorial" id="n211-8"><a class="back" href="#rn211-8">↩</a>The book’s chronological spine, stated as arithmetic: forty-nine jubilees (2,401 years) plus one week plus two years = 2410 A.M., the marginal date beside this verse, and forty more to the crossing at 2450 — the fiftieth jubilee. The scheme is the reason for the book’s title.</aside>
+<aside class="note editorial" id="n212-1"><a class="back" href="#rn212-1">↩</a>The same expectation as xxiii. 29, where Satan is removed and the children live out their days in peace. Note what is absent: no messiah acts here, and no resurrection. The kingdom arrives by the gradual cleansing of Israel and the land.</aside>
+<aside class="note editorial" id="n212-2"><a class="back" href="#rn212-2">↩</a>Exod. xx. 9–10; Deut. v. 13–14 — quoted close enough to the Decalogue that the shift into second-person plural mid-verse is probably the source text showing through.</aside>
+<aside class="note editorial" id="n212-3"><a class="back" href="#rn212-3">↩</a>Exod. xxxi. 14–15 and xxxv. 2 attach death to sabbath labour. What follows is our author’s own enumeration of what counts, and it goes well past the Pentateuch.</aside>
+<aside class="note editorial" id="n212-4"><a class="back" href="#rn212-4">↩</a>Marital intercourse on the sabbath, made a capital offence. This is the sharpest divergence from later rabbinic halakhah in the book: the Rabbis treated sabbath intercourse as meritorious rather than forbidden. The Damascus Document’s sabbath code is severe in the same direction, which is one reason Jubilees is read as belonging to a priestly rather than Pharisaic milieu.</aside>
+<aside class="note editorial" id="n212-5"><a class="back" href="#rn212-5">↩</a>Exod. xvi. 29, “let no man go out of his place.” The rabbinic limit of two thousand cubits — the “sabbath day’s journey” of Acts i. 12 — is a later mitigation of exactly this prohibition.</aside>
+<aside class="note editorial" id="n212-6"><a class="back" href="#rn212-6">↩</a>Neh. x. 31 and xiii. 15–22 record the fight over sabbath trade in the Persian period; Amos viii. 5 shows the complaint is older.</aside>
+<aside class="note editorial" id="n212-7"><a class="back" href="#rn212-7">↩</a>Compare ii. 29–30, where drawing water and carrying between houses are already prohibited. Our author is consistent across fifty chapters; the Mishnah later relaxed both.</aside>
+<aside class="note editorial" id="n212-8"><a class="back" href="#rn212-8">↩</a>Jer. xvii. 21–22, the burden carried through the gates. Rabbinic law worked this into the thirty-nine categories of forbidden labour (m. Shabb. 7:2); here it is simply capital.</aside>
+<aside class="note editorial" id="n213-1"><a class="back" href="#rn213-1">↩</a>Eating and drinking on the sabbath as an obligation rather than a concession — the counterweight to the death-penalty list, and the reason fasting appears among the prohibitions at 50:12. Cf. ii. 21.</aside>
+<aside class="note editorial" id="n213-2"><a class="back" href="#rn213-2">↩</a>Num. xxviii. 9–10 commands additional offerings on the sabbath, so the priests necessarily work. Matt. xii. 5 makes the same observation to a different end.</aside>
+<aside class="note editorial" id="n213-3"><a class="back" href="#rn213-3">↩</a>Exod. xxxiv. 21: “in earing time and in harvest thou shalt rest.”</aside>
+<aside class="note editorial" id="n213-4"><a class="back" href="#rn213-4">↩</a>The clause closes the obvious loophole — that the ban applies to field labour rather than to labour as such.</aside>
+<aside class="note editorial" id="n213-5"><a class="back" href="#rn213-5">↩</a>Exod. xxxv. 3, the one specific labour the Pentateuch names.</aside>
+<aside class="note editorial" id="n213-6"><a class="back" href="#rn213-6">↩</a>Riding an animal has no Pentateuchal basis; it is our author’s extension, of a piece with the severity of the Damascus Document’s sabbath rules. Moderate confidence on the sectarian link — the parallel is thematic rather than verbal.</aside>
+<aside class="note editorial" id="n213-7"><a class="back" href="#rn213-7">↩</a>Slaughter is priestly work, permitted at the altar (50:11) and capital anywhere else. The two clauses have to be read together.</aside>
+<aside class="note editorial" id="n213-8"><a class="back" href="#rn213-8">↩</a>The most historically loaded line in the book. 1 Macc. ii. 29–41 records Jews who let themselves be killed rather than fight on the sabbath, and Mattathias’s subsequent ruling that they would thereafter defend themselves. Jubilees forbids sabbath warfare flatly, with no exception for self-defence — siding against the Maccabean decision. High confidence on the parallel; the inference about the author’s relation to the Hasmoneans is contested, but it sits badly with Charles’s picture of him as a partisan of the dynasty.</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch49.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="index.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

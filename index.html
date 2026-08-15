@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Book of Jubilees · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>The Book of Jubilees</h1>
+    <p class="am">R. H. Charles · SPCK, 1917 · reader edition</p>
+  </header>
+  
+<div class="prose">
+<p>The <i>Book of Jubilees</i> retells Genesis and the opening of Exodus as a revelation
+dictated to Moses on Sinai by the angel of the presence, and lays the whole of it on a grid
+of jubilee periods — forty-nine years each, fifty of them from the creation to the entry
+into Canaan. This edition follows R. H. Charles’s translation as published by the Society
+for Promoting Christian Knowledge in 1917. The edition’s own 957 notes are set in the
+margin beside the passages they annotate; the years running down the contents are Charles’s
+<i>anno mundi</i> reckoning, the book’s own clock.</p>
+</div>
+<div class="grid50"><a href="ch01.html"><b>I</b><span>·</span></a><a href="ch02.html"><b>II</b><span>·</span></a><a href="ch03.html"><b>III</b><span>130</span></a><a href="ch04.html"><b>IV</b><span>130–930</span></a><a href="ch05.html"><b>V</b><span>652–1659</span></a><a href="ch06.html"><b>VI</b><span>·</span></a><a href="ch07.html"><b>VII</b><span>1373–1375</span></a><a href="ch08.html"><b>VIII</b><span>1373–1569</span></a><a href="ch09.html"><b>IX</b><span>·</span></a><a href="ch10.html"><b>X</b><span>1659–1688</span></a><a href="ch11.html"><b>XI</b><span>1744–1904</span></a><a href="ch12.html"><b>XII</b><span>1891–1953</span></a><a href="ch13.html"><b>XIII</b><span>1956–1964</span></a><a href="ch14.html"><b>XIV</b><span>·</span></a><a href="ch15.html"><b>XV</b><span>·</span></a><a href="ch16.html"><b>XVI</b><span>1982</span></a><a href="ch17.html"><b>XVII</b><span>1982</span></a><a href="ch18.html"><b>XVIII</b><span>·</span></a><a href="ch19.html"><b>XIX</b><span>2020–2052</span></a><a href="ch20.html"><b>XX</b><span>2052</span></a><a href="ch21.html"><b>XXI</b><span>·</span></a><a href="ch22.html"><b>XXII</b><span>·</span></a><a href="ch23.html"><b>XXIII</b><span>2073–2080</span></a><a href="ch24.html"><b>XXIV</b><span>2073–2109</span></a><a href="ch25.html"><b>XXV</b><span>2109</span></a><a href="ch26.html"><b>XXVI</b><span>·</span></a><a href="ch27.html"><b>XXVII</b><span>2115–2122</span></a><a href="ch28.html"><b>XXVIII</b><span>2122–2134</span></a><a href="ch29.html"><b>XXIX</b><span>2127–2135</span></a><a href="ch30.html"><b>XXX</b><span>·</span></a><a href="ch31.html"><b>XXXI</b><span>·</span></a><a href="ch32.html"><b>XXXII</b><span>·</span></a><a href="ch33.html"><b>XXXIII</b><span>2148</span></a><a href="ch34.html"><b>XXXIV</b><span>2148</span></a><a href="ch35.html"><b>XXXV</b><span>·</span></a><a href="ch36.html"><b>XXXVI</b><span>2162</span></a><a href="ch37.html"><b>XXXVII</b><span>2162</span></a><a href="ch38.html"><b>XXXVIII</b><span>·</span></a><a href="ch39.html"><b>XXXIX</b><span>·</span></a><a href="ch40.html"><b>XL</b><span>·</span></a><a href="ch41.html"><b>XLI</b><span>2168–2171</span></a><a href="ch42.html"><b>XLII</b><span>2171–2172</span></a><a href="ch43.html"><b>XLIII</b><span>·</span></a><a href="ch44.html"><b>XLIV</b><span>2172</span></a><a href="ch45.html"><b>XLV</b><span>2172–2242</span></a><a href="ch46.html"><b>XLVI</b><span>2188–2330</span></a><a href="ch47.html"><b>XLVII</b><span>2303–2410</span></a><a href="ch48.html"><b>XLVIII</b><span>2372–2410</span></a><a href="ch49.html"><b>XLIX</b><span>2410–2450</span></a><a href="ch50.html"><b>L</b><span>2410–2450</span></a></div>
+<div class="prose colophon">
+<h2>What is in this edition</h2>
+<p><b>The text.</b> R. H. Charles, <i>The Book of Jubilees</i> (London: SPCK, 1917), from the
+Sacred Texts transcription. Public domain. Charles’s wording, spelling, diacritics and
+editorial brackets are reproduced as printed; nothing has been modernised.</p>
+<p><b>The margin.</b> Every note in the source is anchored to its point in the text —
+957 markers, none orphaned. Notes in <b>gold</b> are editorial corrections made here, not
+Charles’s.</p>
+<p><b>Corrections made to the source.</b></p>
+<ul><li>The section heading at Jub. xvii. 15–18 is printed “(xvi. 15–18)” in the source. Those four verses have been restored to chapter 17, where their content belongs.</li><li>Jub. xxv. 10 is printed “19.” in the source — a transposed numeral. Renumbered.</li><li>Six verses lost their numerals in the printing (3:23, 4:6, 13:3, 13:13, 18:2, 22:26). The text is intact; those verses are set with their predecessor and labelled as a range.</li><li>Charles’s footnotes for printed pages 211–212 — twenty-seven notes across Jub. 49–50, the Passover and Sabbath halakhah — are absent from the source file. Their markers are shown greyed and inert.</li>
+<li>Jub. 9:2 reads “Sherri” in the source, an OCR corruption of “Shem”; corrected and marked.</li></ul>
+<p><b>Where Charles is now out of date.</b> His introduction dates the book to 109–105 B.C.
+and assigns it to a Pharisee who supported the Maccabean high priesthood. Both positions have
+since collapsed. The Qumran finds — thirteen fragmentary Hebrew manuscripts, more copies than
+of most canonical books — settled the question of the original language that Charles could
+only argue circumstantially, and pushed the likely date of composition back to roughly
+160–150 B.C., in a priestly milieu whose 364-day solar calendar (chapter 6) is the calendar
+the Qumran community kept. Read the introduction for its philology, not its history.</p>
+<p><b>Controls.</b> ☰ contents · ◐ dark · † margin notes · ◎ focus · ▣ e-ink. Click a verse
+number to copy a link to it. Arrow keys page between chapters. E-ink mode (or opening any page
+with <i>?eink</i> added to the address) sets pure black on white, distinguishes the three note
+layers by border and label instead of colour, and removes every animation, transition and
+scroll-repainting element.</p>
+</div>
+</main>
+<footer class="pager">
+  <span></span>
+  <a href="index.html">Contents</a>
+  <a href="ch01.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

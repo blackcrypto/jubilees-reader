@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter V · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html" class="active"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter V</h1>
+    <p class="am">Anno Mundi 652–1659</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">The Fall of the Angels and their Punishment; the Deluge foretold (v. 1-20; cf. Gen. vi. 1-12).<span class="cf">cf. Gen. vi. 1-12</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And it came to pass when the children of men began to multiply on the face of the earth and daughters were born unto them, that the angels of God <a class="fnref" href="#n56-4" id="rn56-4">4</a> saw them on a certain year of this jubilee, that they were beautiful to look upon; and they took themselves wives of all whom they chose, and they bare unto them sons and they were giants. <a class="fnref" href="#n57-1" id="rn57-1">1</a></p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And lawlessness increased on the earth and all flesh corrupted its way, <a class="fnref" href="#n57-2" id="rn57-2">2</a> alike men and cattle and beasts and birds and everything that walketh on the earth-all of them corrupted their ways and their orders, and they began to devour <a class="fnref" href="#n57-3" id="rn57-3">3</a> each other, and lawlessness increased on the earth and every imagination of the thoughts of all men (was) thus evil continually. <a class="fnref" href="#n57-4" id="rn57-4">4</a></p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And God looked upon the earth, and behold it was corrupt, and all flesh had corrupted its orders, and all that were upon the earth <a class="fnref" href="#n57-5" id="rn57-5">5</a> had wrought all manner of evil before His eyes.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And He said: "I shall destroy man and all flesh upon the face of the earth which I have created."</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>But Noah found grace before the eyes of the Lord. <a class="fnref" href="#n57-6" id="rn57-6">6</a></p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And against the angels whom He had sent upon the earth, He was exceedingly wroth, and He gave commandment to root them out of all their dominion, and He bade us to bind them in the depths of the earth, and behold they are bound in the midst of them, and are (kept) separate.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And against their sons went forth a command from before His face that they should be smitten with the sword, and be removed from under heaven.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And He said "Thy spirit will not always abide <a class="fnref" href="#n57-7" id="rn57-7">7</a> on man; for they also are flesh and their days shall be one hundred and twenty years."</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And He sent His sword into their midst that each should slay his neighbour, and they began to slay each other till they all fell by the sword and were destroyed from the earth.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And their fathers were witnesses (of their destruction), and after this they were bound in the depths of the earth for ever, until the day of the great condemnation <a class="fnref" href="#n57-8" id="rn57-8">8</a> when judgment is executed on all those who have corrupted their ways and their works before the Lord.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And He †destroyed† all from their places, and there †was† not left one of them whom He judged not according to all their wickedness.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And He †made† for all His works a new and righteous nature, <a class="fnref" href="#n58-1" id="rn58-1">1</a> so that they should not sin in their whole nature for ever, but should be all righteous each in his kind alway.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And the judgment of all is ordained and written on the heavenly tables in righteousness--even (the judgment of) all who depart from the path which is ordained for them to walk in; and if they walk not therein judgment is written down for every creature and for every kind.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And there is nothing in heaven or on earth, or in light or in darkness, or in Sheol or in the depth, or in the place of darkness (which is not judged); and all their judgments are ordained and written and engraved.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>In regard to all He will judge, the great according to his greatness, and the small according to his smallness, and each according to his way.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And He is not one who will regard the person (of any), nor is He one who will receive gifts, if He saith that He will execute judgment on each: if one gave everything that is on the earth, He will not regard the gifts or the person (of any), nor accept anything at his hands, for He is a righteous judge. <a class="fnref" href="#n58-2" id="rn58-2">2</a></p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And of the children of Israel it hath been written and ordained: If they turn to Him in righteousness, He will forgive all their transgressions and pardon all their sins.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>It is written and ordained that He will show mercy to all who turn from all their guilt once each year.] <a class="fnref" href="#n58-3" id="rn58-3">3</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And as for all those who corrupted their ways and their thoughts before the flood, no man's person was accepted save that of Noah alone; for his person was accepted in behalf of his sons, whom (God) saved from the waters of the flood on his account; for his heart was righteous in all his ways, according as it was commanded regarding him, and he had not departed from aught that was ordained for him.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And the Lord said that He would destroy everything which was upon the earth, both men and cattle, and beasts, and fowls of the air, and that which moveth on the earth. <a class="fnref" href="#n59-1" id="rn59-1">1</a></p><h2 class="sect">The Building of the Ark; the Flood (v. 21-32; cf. Gen. vi. 13-viii. 19).<span class="cf">cf. Gen. vi. 13-viii. 19</span></h2><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And He commanded Noah to make him an ark, that he might save himself from the waters of the flood. <a class="fnref" href="#n59-2" id="rn59-2">2</a></p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And Noah made the ark in all respects as He commanded him, in the twenty-seventh jubilee of years, in the fifth week in the fifth year (on the new moon of the first month).</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And he entered in the sixth (year) thereof, in the second month, on the new moon of the second month, till the sixteenth; and he entered, and all that we brought to him, into the ark, and the Lord closed <a class="fnref" href="#n59-3" id="rn59-3">3</a> it from without on the seventeenth <a class="fnref" href="#n59-4" id="rn59-4">4</a> evening.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And the Lord opened seven flood-gates <a class="fnref" href="#n59-5" id="rn59-5">5</a> of heaven, And the mouths of the fountains of the great deep, seven mouths in number.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And the flood-gates began to pour down water from the heaven forty days and forty nights, And the fountains of the deep also sent up waters, until the whole world was full of water.</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And the waters increased upon the earth Fifteen cubits did the waters rise above all the high mountains, And the ark was lift up above the earth, And it moved upon the face of the waters. <a class="fnref" href="#n60-1" id="rn60-1">1</a></p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>And the water prevailed on the face of the earth five months-one hundred and fifty days. <a class="fnref" href="#n60-2" id="rn60-2">2</a></p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And the ark went and rested on the top of Lûbâr, one of the mountains of Ararat. <a class="fnref" href="#n60-3" id="rn60-3">3</a></p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>And (on the new moon) in the fourth month the fountains of the great deep were closed and the flood-gates of heaven were restrained; and on the new moon of the seventh month all the mouths of the abysses of the earth were opened, and the water began to descend into the deep below. <a class="fnref" href="#n60-4" id="rn60-4">4</a></p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>And on the new moon of the tenth month the tops of the mountains were seen, and on the new moon of the first month the earth became visible. <a class="fnref" href="#n60-5" id="rn60-5">5</a></p><p class="v" id="v31"><a class="vn" href="#v31" data-anchor="v31">31</a>And the waters disappeared from above the earth in the fifth week in the seventh year thereof, and on the seventeenth <a class="fnref" href="#n60-6" id="rn60-6">6</a> day in the second month the earth was dry.</p><p class="v" id="v32"><a class="vn" href="#v32" data-anchor="v32">32</a>And on the twenty-seventh thereof he opened the ark, and sent forth from it beasts, and cattle, and birds, and every moving thing. <a class="fnref" href="#n60-7" id="rn60-7">7</a></p></div><div class="margin"><aside class="note source" id="n56-4"><a class="back" href="#rn56-4">↩</a>This is the LXX rendering of Gen, vi. 2 (R.V. "sons of God"). and represents the older Jewish exegesis, which was later given up.</aside>
+<aside class="note source" id="n57-1"><a class="back" href="#rn57-1">↩</a>Giants, i. e. "Nephilim."</aside>
+<aside class="note source" id="n57-2"><a class="back" href="#rn57-2">↩</a>Cf. Gen. vi. 12.</aside>
+<aside class="note source" id="n57-3"><a class="back" href="#rn57-3">↩</a>Cf. 1 Enoch vii. 5.</aside>
+<aside class="note source" id="n57-4"><a class="back" href="#rn57-4">↩</a>Cf. Gen. vi. .5.</aside>
+<aside class="note source" id="n57-5"><a class="back" href="#rn57-5">↩</a>Cf. Gen. vi. 12.</aside>
+<aside class="note source" id="n57-6"><a class="back" href="#rn57-6">↩</a>Cf. Gen. vi. 7, 8.</aside>
+<aside class="note source" id="n57-7"><a class="back" href="#rn57-7">↩</a>Cf. Gen. vi. 3, R.V. marg.</aside>
+<aside class="note source" id="n57-8"><a class="back" href="#rn57-8">↩</a>Cf. 1 Enoch x. 12.</aside>
+<aside class="note source" id="n58-1"><a class="back" href="#rn58-1">↩</a>10-12, as Charles has shown, describe the final judgment. The tenses must be altered from past to future. Render: "until the day of the great condemnation, when judgment shall be executed. . . . And He shall destroy . . . and there shall not be left one of them whom He shall not have judged. . . . And He shall make," etc.</aside>
+<aside class="note source" id="n58-2"><a class="back" href="#rn58-2">↩</a>Cf. xl. 8; Deut. x. 17; 2 Chron. xix. 7.</aside>
+<aside class="note source" id="n58-3"><a class="back" href="#rn58-3">↩</a>The bracketed clauses have been either transposed here or interpolated from xxxiv. 18-19. The reference is to the Day of Atonement which takes place on the 10th of the 7th month. For "once each year," cf. Heb. ix. 7.</aside>
+<aside class="note source" id="n59-1"><a class="back" href="#rn59-1">↩</a>Cf. Gen. vi. 7. Next: The Building of the Ark; the Flood (v. 21-32)</aside>
+<aside class="note source" id="n59-2"><a class="back" href="#rn59-2">↩</a>Cf. Gen. vi. 14.</aside>
+<aside class="note source" id="n59-3"><a class="back" href="#rn59-3">↩</a>Cf. Gen. vii. 16.</aside>
+<aside class="note source" id="n59-4"><a class="back" href="#rn59-4">↩</a>Cf. Gen. vii. 11.</aside>
+<aside class="note source" id="n59-5"><a class="back" href="#rn59-5">↩</a>Cf. 1 Enoch lxxxix. 2. Note the recurrence of the number seven in these connexions.</aside>
+<aside class="note source" id="n60-1"><a class="back" href="#rn60-1">↩</a>For 24-26 cf. Gen. vii. 11, 12, 18, 20.</aside>
+<aside class="note source" id="n60-2"><a class="back" href="#rn60-2">↩</a>Cf. Gen. vii. 24, viii. 3.</aside>
+<aside class="note source" id="n60-3"><a class="back" href="#rn60-3">↩</a>Cf. Gen. viii. 4. Lubar is mentioned again in vii. 1, 17.</aside>
+<aside class="note source" id="n60-4"><a class="back" href="#rn60-4">↩</a>Cf. Gen. viii. 2; 1 Enoch lxxxix. 7.</aside>
+<aside class="note source" id="n60-5"><a class="back" href="#rn60-5">↩</a>Cf. Gen. viii. 5, 13.</aside>
+<aside class="note source" id="n60-6"><a class="back" href="#rn60-6">↩</a>According to Gen. viii. 14 it was the 27th day of the month.</aside>
+<aside class="note source" id="n60-7"><a class="back" href="#rn60-7">↩</a>Cf. Gen. viii. 19. Next: Noah's Sacrifice; God's Covenant with him. Instructions to Moses about eating of Blood, the Feast of Weeks, etc., and Division of the Year (vi. 1-38).</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch04.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch06.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

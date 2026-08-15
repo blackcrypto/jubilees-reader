@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XX · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html" class="active"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XX</h1>
+    <p class="am">Anno Mundi 2052</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Abraham's Last Words to his Children and Grandchildren (xx. i-ii).</h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the forty-second jubilee, in the first year of the †seventh† <a class="fnref" href="#n115-4" id="rn115-4">4</a> week, Abraham called Ishmael, and his twelve sons, <a class="fnref" href="#n115-5" id="rn115-5">5</a> and Isaac and his two sons, and the six sons of Keturah, and their sons.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And he commanded them that they should observe the way of the Lord; that they should work righteousness, and love each his neighbour, and act on this manner amongst all men; that they should each so walk with regard to them as to do judgment and righteousness on the earth.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>That they should circumcise their sons, <a class="fnref" href="#n116-1" id="rn116-1">1</a> according to the covenant which He had made with them, and not deviate to the right hand or the left of all the paths which the Lord had commanded us; and that we should keep ourselves from all fornication and uncleanness, [and renounce from amongst us all fornication and uncleanness]. <a class="fnref" href="#n116-2" id="rn116-2">2</a></p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And if any woman or maid commit fornication amongst you, burn her with fire, <a class="fnref" href="#n116-3" id="rn116-3">3</a> and let them not commit fornication with her after their eyes and their heart; and let them not take to themselves wives from the daughters of Canaan; for the seed of Canaan will be rooted out of the land.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And he told them of the judgment of the giants, and the judgment of the Sodomites, how they had been judged on account of their wickedness, and had died on account of their fornication, and uncleanness, and mutual corruption through fornication. <a class="fnref" href="#n116-4" id="rn116-4">4</a></p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>"And guard yourselves from all fornication and uncleanness, And from all pollution of sin, Lest ye make our name a curse, And your whole life a hissing, <a class="fnref" href="#n116-5" id="rn116-5">5</a> And all your sons be destroyed by the sword, And ye become accursed like Sodom, And all your remnant as the sons of Gomorrah.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>I implore you, my sons, love the God of heaven, And cleave ye to all His commandments. And walk not after their idols, and after their uncleannesses,</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a><a class="fnref" href="#n117-1" id="rn117-1">1</a> And make not for yourselves molten or graven gods; <a class="fnref" href="#n117-2" id="rn117-2">2</a> For they are vanity, And there is no spirit in them; For they are work of (men's) hands, And all who trust in them, trust in nothing. Serve them not, nor worship them, <a class="fnref" href="#n117-3" id="rn117-3">3</a></p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>But serve ye the Most High God, and worship Him continually: And hope for His countenance always, And work uprightness and righteousness before Him, That He may have pleasure in you and grant you His mercy, And send rain <a class="fnref" href="#n117-4" id="rn117-4">4</a> upon you morning and evening, And bless all your works which ye have wrought upon the earth, And bless thy bread and thy water, <a class="fnref" href="#n117-5" id="rn117-5">5</a> And bless the fruit of thy womb and the fruit of thy land, And the herds of thy cattle, and the flocks of thy sheep. <a class="fnref" href="#n117-6" id="rn117-6">6</a></p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And ye will be for a blessing <a class="fnref" href="#n117-7" id="rn117-7">7</a> on the earth, And all nations of the earth will desire you, And bless your sons in my name, That they may be blessed as I am."</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And he gave to Ishmael and to his sons, and to the sons of Keturah, gifts, and sent them away from Isaac his son, and he gave everything to Isaac his son. <a class="fnref" href="#n117-8" id="rn117-8">8</a></p><h2 class="sect">The Dwelling-places of the Ishmaelites and of the Sons of Keturah (xx. 12-13).</h2><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And Ishmael and his sons, and the sons of Keturah and their sons, went together and dwelt from Paran to the entering in of Babylon in all the land which is towards the East facing the desert.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And these mingled with each other, and their name was called Arabs, and Ishmaelites. Next: Abraham's Last Words to Isaac (xxi. 1-25)</p></div><div class="margin"><aside class="note source" id="n115-4"><a class="back" href="#rn115-4">↩</a>Probably corrupt for "sixth" (Charles).</aside>
+<aside class="note source" id="n115-5"><a class="back" href="#rn115-5">↩</a>Cf. Gen. xxv. 13-15.</aside>
+<aside class="note source" id="n116-1"><a class="back" href="#rn116-1">↩</a>Circumcision, according to our author, is binding upon Ishmael's and Keturah's descendants (cf. Gen. xvii. 9f.). 'Notice the omission of Esau's descendants. According to Pir(cid:31)e de R. Eliezer xxix., Esau, though he had been circumcised, "despised circumcision" (his birthright).</aside>
+<aside class="note source" id="n116-2"><a class="back" href="#rn116-2">↩</a>Bracketed as a dittograph.</aside>
+<aside class="note source" id="n116-3"><a class="back" href="#rn116-3">↩</a>According to the Law only the adulterous priest's daughter was to be burned with fire; others were to be stoned (cf. Lev. xxi. 9, xx. 10).</aside>
+<aside class="note source" id="n116-4"><a class="back" href="#rn116-4">↩</a>Cf. vii. 21 (note).</aside>
+<aside class="note source" id="n116-5"><a class="back" href="#rn116-5">↩</a>Cf. Isa. lxv. 15; Jer. xxix. 18.</aside>
+<aside class="note source" id="n117-1"><a class="back" href="#rn117-1">↩</a>For 8 cf. xii. 5, xxii. 18.</aside>
+<aside class="note source" id="n117-2"><a class="back" href="#rn117-2">↩</a>Cf. Deut. xxvii. 15.</aside>
+<aside class="note source" id="n117-3"><a class="back" href="#rn117-3">↩</a>Cf. Exod. xx. 5.</aside>
+<aside class="note source" id="n117-4"><a class="back" href="#rn117-4">↩</a>Cf. xii. 4, 18.</aside>
+<aside class="note source" id="n117-5"><a class="back" href="#rn117-5">↩</a>Cf. Exod. xxiii. 25.</aside>
+<aside class="note source" id="n117-6"><a class="back" href="#rn117-6">↩</a>Cf. Deut. vii. 13.</aside>
+<aside class="note source" id="n117-7"><a class="back" href="#rn117-7">↩</a>Cf. Gen. xii. 2.</aside>
+<aside class="note source" id="n117-8"><a class="back" href="#rn117-8">↩</a>Cf. Gen. xxv. 5-6. Next: The Dwelling-places of the Ishmaelites and of the Sons of Keturah (xx. 12-13)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch19.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch21.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

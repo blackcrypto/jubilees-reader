@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XXI · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html" class="active"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XXI</h1>
+    
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Abraham's Last Words to Isaac (xxi. 1-25).</h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the sixth year of the †seventh† <a class="fnref" href="#n118-1" id="rn118-1">1</a> week of this jubilee Abraham called Isaac his son, <a class="fnref" href="#n118-2" id="rn118-2">2</a> and commanded him, saying: "I am become old, and. know not the day of my death, <a class="fnref" href="#n118-3" id="rn118-3">3</a> and am full of my days. <a class="fnref" href="#n118-4" id="rn118-4">4</a></p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And behold, I am one hundred and seventy-five years old, <a class="fnref" href="#n118-5" id="rn118-5">5</a> and throughout all the days of my life I have remembered the Lord, and sought with all my heart to do His will, and to walk uprightly in all His ways.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>My soul hath hated idols, (and I have despised those that served them, and I have given my heart and spirit) <a class="fnref" href="#n118-6" id="rn118-6">6</a> that I might observe to do the will of Him who created me.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>For He is the living God, and He is holy and faithful, and He is righteous beyond all, and there is with Him no accepting of (men's) persons and no accepting of gifts; <a class="fnref" href="#n118-7" id="rn118-7">7</a> for God is righteous, and executeth judgment on all those who transgress His commandments and despise His covenant.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And do thou, my son, observe His commandments and His ordinances and His judgments, and walk not after the abominations and after the graven images and after the molten images.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And eat no blood at all of animals or cattle, or of any bird which flieth in the heaven. <a class="fnref" href="#n119-1" id="rn119-1">1</a></p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a><a class="fnref" href="#n119-2" id="rn119-2">2</a> And if thou dost slay a victim as an acceptable peace-offering, slay ye it, and pour out its blood upon the altar, and all the fat of the offering offer on the altar with fine flour (and the meat-offering) mingled with oil, <a class="fnref" href="#n119-3" id="rn119-3">3</a> with its drink-offering--offer them all together on the altar of burnt-offering; it is a sweet savour before the Lord. <a class="fnref" href="#n119-4" id="rn119-4">4</a></p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And thou wilt offer the fat of the sacrifice of thank-offerings on the fire which is upon the altar, and the fat which is on the belly, and all the fat on the inwards and the two kidneys, and all the fat that is upon them, and upon the loins and liver thou shalt remove together with the kidneys. <a class="fnref" href="#n119-5" id="rn119-5">5</a></p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And offer all these for a sweet savour acceptable before the Lord, with its meat-offering and with its drink-offering, for a sweet savour, the bread <a class="fnref" href="#n119-6" id="rn119-6">6</a> of the offering unto the Lord,</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And eat its meat on that day and on the second day, and let not the sun on the second day go down upon it till it is eaten, and let nothing be left over for the third day; for it is not acceptable [for it is not approved] <a class="fnref" href="#n119-7" id="rn119-7">7</a> and let it no longer be eaten, and all who eat thereof will bring sin upon themselves; for thus I have found it written in the books of my forefathers, and in the words of Enoch, and in the words of Noah. <a class="fnref" href="#n119-8" id="rn119-8">8</a></p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And on all thy oblations thou shalt strew salt, and let not the salt of the covenant be lacking in all thy oblations before the Lord. <a class="fnref" href="#n120-1" id="rn120-1">1</a></p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And as regards the wood of the sacrifices, beware lest thou bring (other) wood for the altar in addition to these: <a class="fnref" href="#n120-2" id="rn120-2">2</a> cypress, dêfrân, <a class="fnref" href="#n120-3" id="rn120-3">3</a> sagâd, pine, fir, cedar, savin, palm, olive, myrrh, laurel, and citron, juniper, and balsam.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And of these kinds of wood lay upon the altar under the sacrifice, such as have been tested as to their appearance, and do not lay (thereon) any split or dark wood, (but) hard and clean, without fault, a sound and new growth; and do not lay (thereon) old wood, [for its fragrance is gone] for there is no longer fragrance in it as before. <a class="fnref" href="#n120-4" id="rn120-4">4</a></p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>Besides these kinds of wood there is none other that thou shalt place (on the altar), for the fragrance is dispersed, and the smell of its fragrance goeth not up to heaven.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>Observe this commandment and do it, my son, that thou mayst be upright in all thy deeds.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And at all times be clean in thy body, and wash thyself with water before thou approachest to offer on the altar, and wash thy hands and thy feet before thou drawest near to the altar; and when thou art done sacrificing, wash again thy hands and thy feet. <a class="fnref" href="#n120-5" id="rn120-5">5</a></p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And let no blood appear upon you nor upon your clothes; be on thy guard, my son, against blood, be on thy guard exceedingly; cover it with dust. <a class="fnref" href="#n120-6" id="rn120-6">6</a></p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And do not eat any blood, for it is the soul; eat no blood whatever. <a class="fnref" href="#n120-7" id="rn120-7">7</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And take no gifts for the blood of man, lest it be shed with impunity, without judgment; for it is the blood that is shed that causeth the earth to sin, and the earth cannot be cleansed from the blood of man save by the blood of him who shed it. <a class="fnref" href="#n121-1" id="rn121-1">1</a></p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And take no present or gift for the blood of man: blood for blood, that thou mayest be accepted before the Lord, the Most High God; for He is the defence of the good: and that thou mayest be preserved from all evil, and that He may save thee from every kind of death..</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>I see, my son, That all the works of the children of men are sin and wickedness, And all their deeds are uncleanness and an abomination and a pollution, And there is no righteousness with them.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>Beware, lest thou shouldest walk in their ways And tread in their paths, And sin a sin unto death <a class="fnref" href="#n121-2" id="rn121-2">2</a> before the Most High God. Else He will [hide His face from thee, And] <a class="fnref" href="#n121-3" id="rn121-3">3</a> give thee back into the hands <a class="fnref" href="#n121-4" id="rn121-4">4</a> of thy transgression, And root thee out of the land, and thy seed likewise from under heaven, And thy name and thy seed will perish from the whole earth.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>Turn away from all their deeds and all their uncleanness, And observe the ordinance of the Most High God, And do His will and be upright in all things.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And He will bless thee in all thy deeds, And will raise up from thee the plant of righteousness <a class="fnref" href="#n121-5" id="rn121-5">5</a> through all the earth, throughout all generations of the earth, And my name and thy name will not be forgotten under heaven for ever.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>Go, my son, in peace. May the Most High God, my God and thy God, strengthen thee to do His will, And may He bless all thy seed and the residue of thy seed for the generations for ever, with all righteous blessings, That thou mayest be a blessing on all the earth." <a class="fnref" href="#n122-1" id="rn122-1">1</a> 26. And he went out from him rejoicing.</p></div><div class="margin"><aside class="note source" id="n118-1"><a class="back" href="#rn118-1">↩</a>Read "sixth" (Charles).</aside>
+<aside class="note source" id="n118-2"><a class="back" href="#rn118-2">↩</a>The rest of this chapter purports to give Abraham's directions to Isaac regarding certain kinds of sacrifice. It has a remarkable parallel in Test. XII Patriarchs, Levi ix., where Isaac instructs Levi in the law of the priesthood, of sacrifices, etc. The latter is much shorter than our chapter, but hardly more original. The two books may have used a common source.</aside>
+<aside class="note source" id="n118-3"><a class="back" href="#rn118-3">↩</a>In Gen. xxvii. 2 these words are uttered by Isaac.</aside>
+<aside class="note source" id="n118-4"><a class="back" href="#rn118-4">↩</a>Cf. Gen. xxv. 8, where LXX, Sam., Vulg. read "full of days," but MT omits "days."</aside>
+<aside class="note source" id="n118-5"><a class="back" href="#rn118-5">↩</a>Cf. Gen. xxv. 7.</aside>
+<aside class="note source" id="n118-6"><a class="back" href="#rn118-6">↩</a>The bracketed words are supplied from the Latin.</aside>
+<aside class="note source" id="n118-7"><a class="back" href="#rn118-7">↩</a>Cf. Deut. x. 17.</aside>
+<aside class="note source" id="n119-1"><a class="back" href="#rn119-1">↩</a>Cf. vii. 28 (note).</aside>
+<aside class="note source" id="n119-2"><a class="back" href="#rn119-2">↩</a>For 7-9 cf. the summary in Test. XII Patr. Levi ix. 7.</aside>
+<aside class="note source" id="n119-3"><a class="back" href="#rn119-3">↩</a>Cf. Lev. ii. 4.</aside>
+<aside class="note source" id="n119-4"><a class="back" href="#rn119-4">↩</a>For 7 cf. Lev. iii. 7-10.</aside>
+<aside class="note source" id="n119-5"><a class="back" href="#rn119-5">↩</a>Cf. Lev. iii. 9-10.</aside>
+<aside class="note source" id="n119-6"><a class="back" href="#rn119-6">↩</a>"Or food"; cf. Lev. iii. 11.</aside>
+<aside class="note source" id="n119-7"><a class="back" href="#rn119-7">↩</a>Bracketed words a dittograph.</aside>
+<aside class="note source" id="n119-8"><a class="back" href="#rn119-8">↩</a>No trace of such halakic rules exists in the Books of Enoch or the fragments of the Noah apocalypse that are extant. The statement in the text seems to be original to the author of Jubilees.</aside>
+<aside class="note source" id="n120-1"><a class="back" href="#rn120-1">↩</a>Cf. Lev. ii. 13; Test. Levi ix. 14.</aside>
+<aside class="note source" id="n120-2"><a class="back" href="#rn120-2">↩</a>In Test. Levi ix. 12 "twelve" evergreen trees are mentioned; here fourteen, and this number is probably correct.</aside>
+<aside class="note source" id="n120-3"><a class="back" href="#rn120-3">↩</a>Probably a kind of fir.</aside>
+<aside class="note source" id="n120-4"><a class="back" href="#rn120-4">↩</a>This may be the old halaka; the Mishna has no trace of it. The Mishna (Tamid ii. 3) allows all kinds of wood except that of the olive and vine; cf., also, Sifra on Lev. i. 8.</aside>
+<aside class="note source" id="n120-5"><a class="back" href="#rn120-5">↩</a>Cf. Exod. xxx. 19-21; cf. Test. Levi ix. ii.</aside>
+<aside class="note source" id="n120-6"><a class="back" href="#rn120-6">↩</a>Cf. Lev. xvii. 13.</aside>
+<aside class="note source" id="n120-7"><a class="back" href="#rn120-7">↩</a>Cf. Lev. xvii. 14; Deut. xii. 23.</aside>
+<aside class="note source" id="n121-1"><a class="back" href="#rn121-1">↩</a>Cf. vii. 33; Num. xxxv. 33.</aside>
+<aside class="note source" id="n121-2"><a class="back" href="#rn121-2">↩</a>Cf. xxxiii. 18.</aside>
+<aside class="note source" id="n121-3"><a class="back" href="#rn121-3">↩</a>Bracketed by Charles as an interpolation.</aside>
+<aside class="note source" id="n121-4"><a class="back" href="#rn121-4">↩</a>i. e. into the power of.</aside>
+<aside class="note source" id="n121-5"><a class="back" href="#rn121-5">↩</a>Cf. xvi. 26.</aside>
+<aside class="note source" id="n122-1"><a class="back" href="#rn122-1">↩</a>Cf. xx. 10.</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch20.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch22.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

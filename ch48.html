@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XLVIII · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html" class="active"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XLVIII</h1>
+    <p class="am">Anno Mundi 2372–2410</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">From the Flight of Moses to the Exodus (xlviii. 1-19; cf. Exod. ii. 15 ff., iv. 19-24, vii- xiv.).<span class="cf">cf. Exod. ii. 15 ff., iv. 19-24, vii- xiv.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the sixth year of the third week of the forty-ninth jubilee thou didst depart and dwell in the land of Midian <a class="fnref" href="#n205-1" id="rn205-1">1</a> five weeks and one year. And thou didst return into Egypt <a class="fnref" href="#n205-2" id="rn205-2">2</a> in the second week in the second year in the fiftieth jubilee.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And thou thyself knowest what He spake unto thee on Mount Sinai, and what prince Mastêmâ <a class="fnref" href="#n205-3" id="rn205-3">3</a> desired to do with thee when thou wast returning into Egypt on the way when thou didst meet him at the lodging-place.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>Did he not with all his power seek to slay thee and deliver the Egyptians out of thy hand when he saw that thou wast sent to execute judgment and vengeance on the Egyptians? <a class="fnref" href="#n205-4" id="rn205-4">4</a></p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And I delivered thee out of his hand, and thou didst perform the signs and wonders which thou wast sent to perform in Egypt against Pharaoh, and against all his house, and against his servants and his people.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And the Lord executed a great vengeance on them for Israel's sake, and smote them through (the plagues of) blood and frogs, lice and dog-flies, and malignant boils breaking forth in blains; and their cattle by death; and by hail-stones, thereby He destroyed everything that grew for them; and by locusts which devoured the residue which had been left by the hail, and by darkness; and (by the death) of the first-born of men and animals, and on all their idols the Lord took vengeance and burned them with fire. <a class="fnref" href="#n205-5" id="rn205-5">5</a></p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And everything was sent through thy hand, that thou shouldst declare (these things) before they were done, and thou didst speak with the king of Egypt before all his servants and before his people.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And everything took place according to thy words; ten great and terrible judgments came on the land of Egypt that thou mightest execute vengeance on it for Israel.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And the Lord did everything for Israel's sake, and according to His covenant, which He had ordained with Abraham that He would take vengeance on them as they had brought them by force into bondage. <a class="fnref" href="#n206-1" id="rn206-1">1</a></p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And the prince of the Mastêmâ stood up against thee, and sought to cast thee into the hands of Pharaoh, and he helped the Egyptian sorcerers, and they stood up and wrought before thee.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>The evils indeed we permitted them to work, but the remedies we did not allow to be wrought by their hands.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And the Lord smote them with malignant ulcers, and they were not able to stand <a class="fnref" href="#n206-2" id="rn206-2">2</a> for we destroyed them so that they could not perform a single sign.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And notwithstanding all (these) signs and wonders the prince of the Mastêmâ was not put to shame because he took courage and cried to the Egyptians to pursue after thee with all the powers of the Egyptians, with their chariots, and with their horses, and with all the hosts of the peoples of Egypt. <a class="fnref" href="#n206-3" id="rn206-3">3</a></p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And I stood between the Egyptians and Israel, and we delivered Israel out of his hand, and out of the hand of his people, and the Lord brought them through the midst of the sea as if it were dry land.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And all the peoples whom he brought to pursue after Israel, the Lord our God cast them into the midst of the sea, into the depths of the abyss beneath the children of Israel, even as the people of Egypt had cast their children into the river. <a class="fnref" href="#n206-4" id="rn206-4">4</a> He took vengeance on 1,000,000 of them, and one thousand strong and energetic men were destroyed on account of one suckling of the children of thy people which they had thrown into the river. <a class="fnref" href="#n207-1" id="rn207-1">1</a></p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And on the fourteenth day and on the fifteenth and on the sixteenth and on the seventeenth and on the eighteenth the prince of the Mastêmâ was bound and imprisoned behind the children of Israel that he might not accuse them.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And on the nineteenth we let them loose that they might help the Egyptians and pursue the children of Israel.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And he <a class="fnref" href="#n207-2" id="rn207-2">2</a> hardened their hearts and made them stubborn, and the device was devised by the Lord our God that He might smite the Egyptians and cast them into the sea.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And on the fourteenth we bound him that he might not accuse the children of Israel on the day when they asked the Egyptians for vessels and garments, vessels of silver, and vessels of gold, and vessels of bronze, in order to despoil the Egyptians <a class="fnref" href="#n207-3" id="rn207-3">3</a> in return for the bondage in which they had forced them to serve.</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And we did not lead forth the children of Israel from Egypt empty handed.</p></div><div class="margin"><aside class="note source" id="n205-1"><a class="back" href="#rn205-1">↩</a>Cf. Exod. ii. 15.</aside>
+<aside class="note source" id="n205-2"><a class="back" href="#rn205-2">↩</a>Cf. Exod. iv. 19.</aside>
+<aside class="note source" id="n205-3"><a class="back" href="#rn205-3">↩</a>Notice here the substitution of Satanic agency where the original text of Scripture ascribes the action directly to Jahveh (cf. Exod. iv. 24); another instance in our Book is xvii. 16. The same tendency can be illustrated from 1 Chron. xxi. 1 compared with 2 Sam. xxiv. 1.</aside>
+<aside class="note source" id="n205-4"><a class="back" href="#rn205-4">↩</a>This explanation of the incident described in Exod. iv. 24 ff. seems to be peculiar to our author, the real explanation being that Moses had failed to circumcise his son (so Targ. Ps.-Jon. in loc.).</aside>
+<aside class="note source" id="n205-5"><a class="back" href="#rn205-5">↩</a>An enumeration of the ten plagues.</aside>
+<aside class="note source" id="n206-1"><a class="back" href="#rn206-1">↩</a>Cf. Gen. xv. 13, 14.</aside>
+<aside class="note source" id="n206-2"><a class="back" href="#rn206-2">↩</a>Cf. Exod. ix. 11.</aside>
+<aside class="note source" id="n206-3"><a class="back" href="#rn206-3">↩</a>Cf. Ex. xiv. 8, 9.</aside>
+<aside class="note source" id="n206-4"><a class="back" href="#rn206-4">↩</a>Another example of the lex talionis (cf. iv 31), though a distinction may be drawn between 'eye for eye' (a principle of human justice) and 'measure for measure' (a theory of divine retribution); cf. Abrahams, Studies in Pharisaism and the Gospels, p. 154 (series i).</aside>
+<aside class="note source" id="n207-1"><a class="back" href="#rn207-1">↩</a>Cf. Wisdom xviii. 5.</aside>
+<aside class="note source" id="n207-2"><a class="back" href="#rn207-2">↩</a>i. e. the prince of the Mastêmâ (substituted for Jahveh in Exod. xiv. 8).</aside>
+<aside class="note source" id="n207-3"><a class="back" href="#rn207-3">↩</a>Cf. Exod. xii. 35 f. Next: Regulations regarding the Passover (xlix. 1-23)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch47.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch49.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

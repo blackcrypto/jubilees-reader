@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XXV · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html" class="active"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XXV</h1>
+    <p class="am">Anno Mundi 2109</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Rebecca admonishes Jacob not to marry a Canaanitish Woman. Rebecca's Blessing (xxv. 1-23; cf. Gen. xxviii. 1-4).<span class="cf">cf. Gen. xxviii. 1-4</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the second year of this week in this jubilee, Rebecca called Jacob her son, and spake unto him, saying: "My son, do not take thee a wife of the daughters of Canaan, as Esau, thy brother, who took him two wives of the daughters of Canaan, <a class="fnref" href="#n137-2" id="rn137-2">2</a> and they have embittered my soul <a class="fnref" href="#n137-3" id="rn137-3">3</a> with all their unclean deeds: for all their deeds are fornication and lust, and there is no righteousness with them, for (their deeds) are evil.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And I, my son, love thee exceedingly, and my heart and my affection bless thee every hour of the day and watch of the night.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And now, my son, hearken to my voice, and do the will of thy mother, and do not take thee a wife of the daughters of this land, but only of the house of my father, and of my father's kindred. Thou wilt take thee a wife of the house of my father, and the Most High God will bless thee, and thy children will be a righteous generation and a holy seed."</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And then spake Jacob to Rebecca, his mother, and said unto her: "Behold, mother, I am nine weeks <a class="fnref" href="#n137-4" id="rn137-4">4</a> of years old, and I neither know nor have I touched any woman, nor have I betrothed myself to any, nor even think of taking me a wife of the daughters of Canaan.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>For I remember, mother, the words of Abraham, our father, for he commanded me not to take a wife of the daughters of Canaan, but to take me a wife from the seed of my father's house and from my kindred.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>I have heard before that daughters have been born to Laban, thy brother, and I have set my heart on them to take a wife from amongst them.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And for this reason I have guarded myself in my spirit against sinning or being corrupted in all my ways throughout all the days of my life; for with regard to lust and fornication, Abraham, my father, gave me many commands. <a class="fnref" href="#n138-1" id="rn138-1">1</a></p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And, despite all that he hath commanded me, these two and twenty years my brother hath striven with me, and spoken frequently to me and said: 'My brother, take to wife a sister of my two wives'; but I refuse to do as he hath done.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>I swear before thee, mother, that all the days of my life I will not take me a wife from the daughters of the seed of Canaan, and I will not act wickedly as my brother hath done.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>Fear not, mother; be assured that I shall do thy will and walk in uprightness, and not corrupt my ways for ever."</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And thereupon she lifted up her face to heaven and extended the fingers of her hands, and opened her mouth and blessed the Most High God, who had created the heaven and the earth, and she gave Him thanks and praise.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And she said: "Blessed be the Lord God, and may His holy name be blessed for ever and ever, who hath given me Jacob as a pure son and a holy seed; for He is Thine, and Thine shall his seed be continually and throughout all the generations for evermore.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>Bless him, O Lord, and place in my mouth the blessing of righteousness, that I may bless him."</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And at that hour, when the spirit of righteousness <a class="fnref" href="#n138-2" id="rn138-2">2</a> descended into her mouth, she placed both her hands on the head of Jacob, and said:</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>"Blessed art thou, Lord of righteousness and God of the ages; And may He bless thee beyond all the generations of men. May He give thee, my son, the path of righteousness, And reveal righteousness to thy seed.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And may He make thy sons many during thy life, And may they arise according to the number of the months of the year. And may their sons become many and great beyond the stars of heaven, And their numbers be more than the sand of the sea.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And may He give them this goodly land--as He said He would give it to Abraham and to his seed after him alway <a class="fnref" href="#n139-1" id="rn139-1">1</a> -- And may they hold it as a possession for ever.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And may I see (born) unto thee, my son, blessed children during my life, And a blessed and holy seed may all thy seed be.</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And as thou hast refreshed thy mother's spirit during †my† <a class="fnref" href="#n139-2" id="rn139-2">2</a> life, The womb of her that bare thee blesseth thee, [My affection] and my breasts bless thee And my mouth and my tongue praise thee greatly.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>Increase and spread over the earth, And may thy seed be perfect in the joy of heaven and earth for ever; And may thy seed rejoice, And on the great day of peace may it have peace.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And may thy name and thy seed endure to all the ages, And may the Most High God be their God, And may the God of righteousness dwell with them, And by them may His sanctuary be built unto all the ages. <a class="fnref" href="#n140-1" id="rn140-1">1</a></p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>Blessed be he that blesseth thee, And all flesh that curseth thee falsely may it be cursed." <a class="fnref" href="#n140-2" id="rn140-2">2</a></p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And she kissed him, and said to him "May the Lord of the world love thee As the heart of thy mother and her affection rejoice in thee and bless thee." And she ceased from blessing.</p></div><div class="margin"><aside class="note source" id="n137-2"><a class="back" href="#rn137-2">↩</a>Cf. Gen. xxvi. 34.</aside>
+<aside class="note source" id="n137-3"><a class="back" href="#rn137-3">↩</a>Cf. Gen. xxvii. 46, xxvi. 35.</aside>
+<aside class="note source" id="n137-4"><a class="back" href="#rn137-4">↩</a>i.e. 63.</aside>
+<aside class="note source" id="n138-1"><a class="back" href="#rn138-1">↩</a>Cf. xx. 4, xxxix. 6.</aside>
+<aside class="note source" id="n138-2"><a class="back" href="#rn138-2">↩</a>Cf. John xiv. 17, XV. 26, xvi. 13 (τ(cid:31) πλε(cid:31)μα τ(cid:31)ς (cid:31)ληθείας) variant reading here is "Holy Spirit."</aside>
+<aside class="note source" id="n139-1"><a class="back" href="#rn139-1">↩</a>Cf. Luke i. 55.</aside>
+<aside class="note source" id="n139-2"><a class="back" href="#rn139-2">↩</a>Read "thy" (Charles).</aside>
+<aside class="note source" id="n140-1"><a class="back" href="#rn140-1">↩</a>Cf. i. 29.</aside>
+<aside class="note source" id="n140-2"><a class="back" href="#rn140-2">↩</a>Cf. Gen. xxvii. 29. Next: Jacob obtains the Blessing of the Firstborn (xxvi. 1-35)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch24.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch26.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter VIII · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html" class="active"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter VIII</h1>
+    <p class="am">Anno Mundi 1373–1569</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Genealogy of the Descendants of Shem: Noah and his Sons divide the Earth (viii. 1- 30; cf. Gen. x.).<span class="cf">cf. Gen. x.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>In the twenty-ninth jubilee, in the first week, in the beginning thereof Arpachshad took to himself a wife and her name was Râsû’ĕjâ, [the daughter of Sûsân,] the daughter of Elam, and she bare him a son in the third year in this week, and he called his name Kâinâm. <a class="fnref" href="#n71-5" id="rn71-5">5</a></p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And the son grew, and his father taught him writing, and he went to seek for himself a place where he might seize for himself a city.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And he found a writing which former (generations) had carved on the rock, and he read what was thereon, and he transcribed it and sinned owing to it; for it contained the teaching of the Watchers in accordance with which they used to observe the omens of the sun and moon and stars in all the signs of heaven. <a class="fnref" href="#n72-1" id="rn72-1">1</a></p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And he wrote it down and said nothing regarding it; for he was afraid to speak to Noah about it lest he should be angry with him on account of it.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And in the thirtieth jubilee, in the second week, in the first year thereof, he took to himself a wife, and her name was Mêlkâ, the daughter of Madai, the son of Japheth, and in the fourth year he begat a son, and called his name Shelah; <a class="fnref" href="#n72-2" id="rn72-2">2</a> for he said: "Truly I have been sent." <a class="fnref" href="#n72-3" id="rn72-3">3</a></p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>[And in the fourth year he was born], and Shelah grew up and took to himself a wife, and her name was Mû’ak, the daughter of Kêsêd, his father's brother, in the one and thirtieth jubilee, in the fifth week, in the first year thereof.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And she bare him a son in the fifth year thereof, and he called his name Eber: and he took unto himself a wife, and her name was ’Azûrâd <a class="fnref" href="#n72-4" id="rn72-4">4</a> the daughter of Nêbrôd, in the thirty-second jubilee, in the seventh week, in the third year thereof.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And in the sixth year thereof, she bare him a son, and he called his name Peleg; for in the days when he was born the children of Noah began to divide the earth amongst themselves: for this reason he called his name Peleg. <a class="fnref" href="#n72-5" id="rn72-5">5</a></p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And they divided (it) secretly <a class="fnref" href="#n72-6" id="rn72-6">6</a> amongst themselves, and told it to Noah.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And it came to pass in the beginning of the thirty-third jubilee that they divided the earth into three parts, for Shem and Ham and Japheth, according to the inheritance of each, in the first year in the first week, when one of us, <a class="fnref" href="#n73-1" id="rn73-1">1</a> who had been sent, was with them.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And he called his sons, and they drew nigh to him, they and their children, and he divided the earth into the lots, which his three sons were to take in possession, and they reached forth their hands, and took the writing out of the bosom of Noah, their father.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And there came forth on the writing as Shem's lot <a class="fnref" href="#n73-2" id="rn73-2">2</a> the middle of the earth <a class="fnref" href="#n73-3" id="rn73-3">3</a> which he should take as an inheritance for himself and for his sons for the generations of eternity, from the middle of the mountain range of Râfâ, <a class="fnref" href="#n73-4" id="rn73-4">4</a> from the mouth of the water from the river Tînâ. <a class="fnref" href="#n73-5" id="rn73-5">5</a> and his portion goeth towards the west through the midst of this river, and it extendeth till it reacheth the water of the abysses, out of which this river goeth forth and poureth its waters into the sea Mê’at, <a class="fnref" href="#n73-6" id="rn73-6">6</a> and this river floweth into the great sea. And all that is towards the north is Japheth's, and all that is towards the south belongeth to Shem.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And it extendeth till it reacheth Kârâsô: <a class="fnref" href="#n73-7" id="rn73-7">7</a> this is in the bosom of the tongue <a class="fnref" href="#n73-8" id="rn73-8">8</a> which looketh towards the south.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And his portion extendeth along the great sea, and it extendeth in a straight line till it reacheth the west of the tongue which looketh towards the south; <a class="fnref" href="#n74-1" id="rn74-1">1</a> for this sea is named the tongue of the Egyptian Sea. <a class="fnref" href="#n74-2" id="rn74-2">2</a></p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And it turneth from here towards the south towards the mouth of the great sea <a class="fnref" href="#n74-3" id="rn74-3">3</a> on the shore of (its) waters, and it extendeth to the west to ‘Afrâ <a class="fnref" href="#n74-4" id="rn74-4">4</a> and it extendeth till it reacheth the waters of the river Gihon, and to the south of the waters of Gihon, <a class="fnref" href="#n74-5" id="rn74-5">5</a> to the banks of this river.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And it extendeth towards the east, till it reacheth the Garden of Eden, to the south thereof, [to the south] and from the east of the whole land of Eden and of the whole cast, it turneth to the †east,† <a class="fnref" href="#n74-6" id="rn74-6">6</a> and proceedeth till it reacheth the east of the mountain named Râfâ, and it descendeth to the bank of the mouth of the river Tînâ.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>This portion came forth by lot for Shem and his sons, that they should possess it for ever unto his generations for evermore.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And Noah rejoiced that this portion came forth for Shem and for his sons, and he remembered all that he had spoken with his mouth in prophecy; for he had said: Blessed be the Lord God of Shem, And may the Lord dwell in the dwelling of Shem." <a class="fnref" href="#n74-7" id="rn74-7">7</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And he knew that the Garden of Eden is the holy of holies, and the dwelling of the Lord, and Mount Sinai the centre of the desert, and Mount Zion--the centre of the navel of the earth: these three <a class="fnref" href="#n74-8" id="rn74-8">8</a> were created as holy places facing each other.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And he blessed the God of gods, who had put the word of the Lord into his mouth, and the Lord for evermore.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And he knew that a blessed portion and a blessing had come to Shem and his sons unto the generations for ever--the whole land of Eden and the whole land of the Red Sea, and the whole land of the east, and India, and on the Red Sea and the mountains thereof, and all the land of Bashan, and all the land of Lebanon and the islands of Kaftûr, <a class="fnref" href="#n75-1" id="rn75-1">1</a> and all the mountains of Sanîr <a class="fnref" href="#n75-2" id="rn75-2">2</a> and ’Amânâ, <a class="fnref" href="#n75-3" id="rn75-3">3</a> and the mountains of Asshur in the north, and all the land of Elam, Asshur, and Bâbêl, and Sûsân and Mâ‘ĕdâi <a class="fnref" href="#n75-4" id="rn75-4">4</a> and all the mountains of Ararat, and all the region beyond the sea, which is beyond the mountains of Asshur towards the north, a blessed and spacious land, and all that is in it is very good.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a><a class="fnref" href="#n75-5" id="rn75-5">5</a> And for Ham came forth the second portion, beyond the Gihon towards the south to the right <a class="fnref" href="#n75-6" id="rn75-6">6</a> of the Garden, and it extendeth towards the south and it extendeth to all the mountains of fire, <a class="fnref" href="#n75-7" id="rn75-7">7</a> and it extendeth towards the west to the sea of ’Atêl <a class="fnref" href="#n75-8" id="rn75-8">8</a> and it extendeth towards the west till it reacheth the sea of Mâ’ûk <a class="fnref" href="#n75-9" id="rn75-9">9</a> -- that (sea) into which †everything which is not destroyed descendeth†. <a class="fnref" href="#n75-10" id="rn75-10">10</a></p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And it goeth forth towards the north to the limits of Gâdîr, <a class="fnref" href="#n75-11" id="rn75-11">11</a> and it goeth forth to the coast of the waters of the sea to the waters of the great sea till it draweth near to the river Gihon, and goeth along the river Gihon till it reacheth the right of the Garden of Eden.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And this is the land which came forth for Ham as the portion which he was to occupy for ever for himself and his sons unto their generations for ever.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a><a class="fnref" href="#n76-1" id="rn76-1">1</a> And for Japheth came forth the third portion beyond <a class="fnref" href="#n76-2" id="rn76-2">2</a> the river Tînâ <a class="fnref" href="#n76-3" id="rn76-3">3</a> to the north of the outflow of its waters, and it extendeth north-easterly to the whole region of Gog <a class="fnref" href="#n76-4" id="rn76-4">4</a> and to all the country east thereof.</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And it extendeth northerly to the north, and it extendeth to the mountains of Qêlt <a class="fnref" href="#n76-5" id="rn76-5">5</a> towards the north, and towards the sea of Mâ’ûk, and it goeth forth to the east of Gâdîr as far as the region of the waters of the sea.</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>And it extendeth until it approacheth the west of Fârâ <a class="fnref" href="#n76-6" id="rn76-6">6</a> and it returneth towards ’Afêrâg, <a class="fnref" href="#n76-7" id="rn76-7">7</a> and it extendeth easterly to the waters of the sea of Mê’at. <a class="fnref" href="#n76-8" id="rn76-8">8</a></p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And it extendeth to the region of the river Tînâ in a northeasterly direction until it approacheth the boundary of its waters towards the mountain Râfâ, <a class="fnref" href="#n76-9" id="rn76-9">9</a> and it turneth round towards the north.</p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>This is the land which came forth for Japheth and his sons as the portion of his inheritance which he should possess for himself and his sons, for their generations for ever; five great islands, <a class="fnref" href="#n76-10" id="rn76-10">10</a> and a great land in the north.</p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>But it is cold, and the land of Ham is hot, and the land of Shem is neither hot nor cold, but it is of blended cold and heat.</p></div><div class="margin"><aside class="note source" id="n71-5"><a class="back" href="#rn71-5">↩</a>This name occurs in the LXX of Gen. xi. 13, but not in the MT or other Versions. It also occurs in the genealogy in Luke iii. 36.</aside>
+<aside class="note source" id="n72-1"><a class="back" href="#rn72-1">↩</a>Cf. Josephus, Ant. i. 2, 3, who assigns this wisdom not to the Watchers, but to the children of Seth.</aside>
+<aside class="note source" id="n72-2"><a class="back" href="#rn72-2">↩</a>Cf. Gen. X. 24.</aside>
+<aside class="note source" id="n72-3"><a class="back" href="#rn72-3">↩</a>A paronomasia is implied in the original Hebrew here.</aside>
+<aside class="note source" id="n72-4"><a class="back" href="#rn72-4">↩</a>Read ’Azûrâ.</aside>
+<aside class="note source" id="n72-5"><a class="back" href="#rn72-5">↩</a>There is a play (in the original Hebrew) on the meaning of the name Peleg here.</aside>
+<aside class="note source" id="n72-6"><a class="back" href="#rn72-6">↩</a>The secret division of the earth is followed by an authoritative one by Noah, and made binding on his descendants. Canaan is included in Shem's lot. Hence, the Israelite conquest later is p. 73 justified. 'Noah's division of the earth is alluded to in Pir(cid:31)e de R. Eliezer xxiii. (end).</aside>
+<aside class="note source" id="n73-1"><a class="back" href="#rn73-1">↩</a>i. e. one of the angels.</aside>
+<aside class="note source" id="n73-2"><a class="back" href="#rn73-2">↩</a>For the countries included in Shem's lot, See 21, ix. 2-6, 13b. According to Epiphanius it extended from Persia and Bactria to India, to Rhinocurura (between Egypt and Palestine).</aside>
+<aside class="note source" id="n73-3"><a class="back" href="#rn73-3">↩</a>According to Ezek. xxxviii. 12 (1 Enoch xxvi. i) Palestine was the "navel" of the earth.</aside>
+<aside class="note source" id="n73-4"><a class="back" href="#rn73-4">↩</a>Probably the Rhipaean mountains (identified sometimes with the Ural mountains).</aside>
+<aside class="note source" id="n73-5"><a class="back" href="#rn73-5">↩</a>i. e. the river Tanais or Don.</aside>
+<aside class="note source" id="n73-6"><a class="back" href="#rn73-6">↩</a>i. e. the Maeotis or Sea of Azov.</aside>
+<aside class="note source" id="n73-7"><a class="back" href="#rn73-7">↩</a>i. e. (?) the Rhinocurura (= "the torrent of Egypt") on the confines of Egypt and Palestine (Charles); cf. Isa. xxvii. 12.</aside>
+<aside class="note source" id="n73-8"><a class="back" href="#rn73-8">↩</a>i. e. either promontory of land, or bay.</aside>
+<aside class="note source" id="n74-1"><a class="back" href="#rn74-1">↩</a>i. e. (?) the promontory on which Mt. Sindi is situated.</aside>
+<aside class="note source" id="n74-2"><a class="back" href="#rn74-2">↩</a>I i. e. the Gulf of Akaba; cf. Isa. xi. 15.</aside>
+<aside class="note source" id="n74-3"><a class="back" href="#rn74-3">↩</a>? the northern waters of the Red Sea.</aside>
+<aside class="note source" id="n74-4"><a class="back" href="#rn74-4">↩</a>i. e. Africa in the restricted sense of the Roman province which included Egypt and the other northern parts of Africa bordering the Mediterranean.</aside>
+<aside class="note source" id="n74-5"><a class="back" href="#rn74-5">↩</a>i. e. the Nile.</aside>
+<aside class="note source" id="n74-6"><a class="back" href="#rn74-6">↩</a>? read "west."</aside>
+<aside class="note source" id="n74-7"><a class="back" href="#rn74-7">↩</a>Cf. vii. 11.</aside>
+<aside class="note source" id="n74-8"><a class="back" href="#rn74-8">↩</a>These three holy places fall within Shem's lot.</aside>
+<aside class="note source" id="n75-1"><a class="back" href="#rn75-1">↩</a>? Crete. The ancient Versions identify Caphtor with Cappadocia.</aside>
+<aside class="note source" id="n75-2"><a class="back" href="#rn75-2">↩</a>i. e. Senir (Deut. iii. 9; Ezek. xxvii. 5) = Hermon.</aside>
+<aside class="note source" id="n75-3"><a class="back" href="#rn75-3">↩</a>? Mt. Amanus in N. Syria.</aside>
+<aside class="note source" id="n75-4"><a class="back" href="#rn75-4">↩</a>i. e. Media; cf. x. 35.</aside>
+<aside class="note source" id="n75-5"><a class="back" href="#rn75-5">↩</a>22-24 give details of Ham's portion, which includes all Africa and certain parts of Asia.</aside>
+<aside class="note source" id="n75-6"><a class="back" href="#rn75-6">↩</a>i. e. to the south.</aside>
+<aside class="note source" id="n75-7"><a class="back" href="#rn75-7">↩</a>Cf. 1 Enoch xviii. 6-9, xxiv. 1-3.</aside>
+<aside class="note source" id="n75-8"><a class="back" href="#rn75-8">↩</a>i. e. the Atlantic.</aside>
+<aside class="note source" id="n75-9"><a class="back" href="#rn75-9">↩</a>? The great ocean stream in the extreme west.</aside>
+<aside class="note source" id="n75-10"><a class="back" href="#rn75-10">↩</a>The text may be corrupt. Render, perhaps, "if anything descends into it, it perishes" (Charles).</aside>
+<aside class="note source" id="n75-11"><a class="back" href="#rn75-11">↩</a>i. e. Cadiz.</aside>
+<aside class="note source" id="n76-1"><a class="back" href="#rn76-1">↩</a>25-29a Japheth's portion (N. Asia, Europe, five great islands); cf. ix. 7-13.</aside>
+<aside class="note source" id="n76-2"><a class="back" href="#rn76-2">↩</a>Japheth's portion is elaborately described in Josephus, Ant. i. 6, 1.</aside>
+<aside class="note source" id="n76-3"><a class="back" href="#rn76-3">↩</a>i. e. the river Don.</aside>
+<aside class="note source" id="n76-4"><a class="back" href="#rn76-4">↩</a>In N. Asia. Josephus identifies Gog with the Scythians.</aside>
+<aside class="note source" id="n76-5"><a class="back" href="#rn76-5">↩</a>Qêlt = probably the Celts.</aside>
+<aside class="note source" id="n76-6"><a class="back" href="#rn76-6">↩</a>? Africa.</aside>
+<aside class="note source" id="n76-7"><a class="back" href="#rn76-7">↩</a>? Phrygia.</aside>
+<aside class="note source" id="n76-8"><a class="back" href="#rn76-8">↩</a>i. e. the Sea of Azov (see viii. 12 above).</aside>
+<aside class="note source" id="n76-9"><a class="back" href="#rn76-9">↩</a>? the Ural mountains (Cf. viii. 12 above).</aside>
+<aside class="note source" id="n76-10"><a class="back" href="#rn76-10">↩</a>Including, probably, Cyprus, Sicily, Sardinia, Corsica. Next: Subdivision of the Three Portions amongst the Grandchildren: Oath taken by Noah's Sons (ix. 1-15)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch07.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch09.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

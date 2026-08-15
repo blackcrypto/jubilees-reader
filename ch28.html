@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XXVIII · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html" class="active"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XXVIII</h1>
+    <p class="am">Anno Mundi 2122–2134</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Jacob's Marriage to Leah and Rachel; his Children and Riches (xxviii. i-30; cf. Gen. xxix., xxx., xxxi. 1-2).<span class="cf">cf. Gen. xxix., xxx., xxxi. 1-2</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And he went on his journey, and came to the land of the east, to Laban, the brother of Rebecca, and he was with him, and served him for Rachel his daughter one week. <a class="fnref" href="#n147-1" id="rn147-1">1</a></p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a><a class="fnref" href="#n147-2" id="rn147-2">2</a> And in the first year of the third week he said unto him: "Give me my wife, for whom I have served thee seven years;" and Laban said unto Jacob. "I will give thee thy wife."</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And Laban made a feast, and took Leah his elder daughter, and gave (her) to Jacob as a wife, and gave her Zilpah his handmaid for an handmaid; and Jacob did not know, for he thought that she was Rachel.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And he went in unto her, and behold, she was Leah; and Jacob was angry with Laban, and said unto him: "Why hast thou dealt thus with me? Did not I serve thee for Rachel and not for Leah? Why hast thou wronged me? Take thy daughter, and I will go; for thou hast done evil to me."</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>For Jacob loved Rachel more than Leah; for Leah's eyes were weak, but her form was very handsome; but Rachel had beautiful eyes and a beautiful and very handsome form. <a class="fnref" href="#n147-3" id="rn147-3">3</a></p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And Laban said to Jacob: "It is not so done in our country, to give the younger before the elder." <a class="fnref" href="#n147-4" id="rn147-4">4</a> And it is not right to do this; for thus it is ordained and written in the heavenly tables, <a class="fnref" href="#n147-5" id="rn147-5">5</a> that no one should give his younger daughter before the elder--but the elder one giveth first and after her the younger--and the man who doeth so, they set down guilt against him in heaven, and none is righteous that doeth this thing, for this deed is evil before the Lord.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And command thou the children of Israel that they do not this thing; let them neither take nor give the younger before they have given the elder, for it is very wicked.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a><a class="fnref" href="#n148-1" id="rn148-1">1</a> And Laban said to Jacob: "Let the seven days of the feast of this one pass by, and I shall give thee Rachel, <a class="fnref" href="#n148-2" id="rn148-2">2</a> that thou mayest serve me another seven years, that thou mayest pasture my sheep as thou didst in the former week."</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And on the day when the seven days of the feast of Leah had passed, Laban gave Rachel to Jacob, that he might serve him another seven years, and he gave to Rachel Bilhah, the sister of Zilpah <a class="fnref" href="#n148-3" id="rn148-3">3</a> as a handmaid.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And he served yet other seven years for Rachel, for Leah had been given to him for nothing.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And the Lord opened the womb of Leah, and she conceived and bare Jacob a son, and he <a class="fnref" href="#n148-4" id="rn148-4">4</a> called his name Reuben, <a class="fnref" href="#n148-5" id="rn148-5">5</a> on the fourteenth day of the ninth month, in the first year of the third week.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>But the womb of Rachel was closed, for the Lord saw that Leah was hated and Rachel loved.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And again Jacob went in unto Leah, and she conceived, and bare Jacob a second son, and he called his name Simeon, on the twenty-first of the tenth month, and in the third year of this week.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And again Jacob went in unto Leah, and she conceived, and bare him a third son, and he called his name Levi, in the new moon of the first month in the sixth year of this week.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And again Jacob went in unto her, and she conceived, and bare him a fourth son, and he called his name Judah, on the fifteenth of the third month, in the †first† year of the †fourth† week.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And on account of all this Rachel envied Leah, for she did not bear, and she said to Jacob: "Give me children "; and Jacob said: "Have I withheld from thee the fruits of thy womb? Have I forsaken thee?"</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And when Rachel saw that Leah had borne four sons to Jacob, Reuben and Simeon and Levi and Judah, she said unto him: "Go in unto Bilhah my handmaid, and she will conceive, and bear a son unto me."</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>(And she gave (him) Bilhah her handmaid to wife.) And he went in unto her, and she conceived, and bare him a son, and he called his name Dan, on the ninth of the sixth month, in the †sixth† year of the †third† week.</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And Jacob went in again unto Bilhah a second time, and she conceived, and bare Jacob another son, and Rachel called his name Naphtali, on the fifth of the seventh month, in the second year of the fourth week.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And when Leah saw that she had become sterile and did not bear, she envied (Rachel) and she also gave her handmaid Zilpah to Jacob to wife, and she conceived, and bare a son, and Leah called his name Gad, on the twelfth of the eighth month, in the third year of the fourth week.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And he went in again unto her, and she conceived, and bare him a second son, and Leah called his name Asher, on the second of the eleventh month, in the †fifth† year of the fourth week.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And Jacob went in unto Leah, and she conceived, and bare a son, and she called his name Issachar, on the fourth of the fifth month, in the †fourth† year of the fourth week, and she gave him to a nurse.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And Jacob went in again unto her, and she conceived, and bare two (children), a son and a daughter, and she called the name of the son Zebulon, and the name of the daughter Dinah, in the seventh of the seventh month, in the sixth year of the fourth week.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And the Lord was gracious to Rachel, and opened her womb, and she conceived, and bare a son, and she called his name Joseph, on the new moon of the fourth month, in the †sixth† year in this fourth week.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And in the days when Joseph was born, Jacob said to Laban: "Give me my wives and sons, and let me go to my father Isaac, and let me make me an house; for I have completed the years in which I have served thee for thy two daughters, and I will go to the house of my father."</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And Laban said to Jacob: "†Tarry with me for thy wages† <a class="fnref" href="#n150-1" id="rn150-1">1</a> , and pasture my flock for me again, and take thy wages."</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>And they agreed with one another that he should give him as his wages those of the lambs and kids which were born black and spotted and white, <a class="fnref" href="#n150-2" id="rn150-2">2</a> (these) were to be his wages.</p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And all the sheep brought forth spotted and speckled and black, variously marked, <a class="fnref" href="#n150-3" id="rn150-3">3</a> and they brought forth again lambs like themselves, and all that were spotted were Jacob's and those which were not were Laban's.</p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>And Jacob's possessions multiplied exceedingly, and he possessed oxen and sheep <a class="fnref" href="#n150-4" id="rn150-4">4</a> and asses and camels, and menservants and maidservants.</p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>And Laban and his sons envied Jacob, and Laban took back his sheep from him, and he observed him with evil intent.</p></div><div class="margin"><aside class="note source" id="n147-1"><a class="back" href="#rn147-1">↩</a>i. e. seven years. For 1 cf. Gen. xxix. 1, 20.</aside>
+<aside class="note source" id="n147-2"><a class="back" href="#rn147-2">↩</a>For 2-4 cf. Gen. xxix. 21-25.</aside>
+<aside class="note source" id="n147-3"><a class="back" href="#rn147-3">↩</a>Cf. Gen. xxix. 17-18a.</aside>
+<aside class="note source" id="n147-4"><a class="back" href="#rn147-4">↩</a>Cf. Gen. xxix. 26.</aside>
+<aside class="note source" id="n147-5"><a class="back" href="#rn147-5">↩</a>The comment of the angels. This rule seems to be unknown to tradition.</aside>
+<aside class="note source" id="n148-1"><a class="back" href="#rn148-1">↩</a>For 8-10 cf. Gen. xxix. 27-29.</aside>
+<aside class="note source" id="n148-2"><a class="back" href="#rn148-2">↩</a>The marriage of two living sisters to the same man is expressly forbidden in the Mosaic Law; cf. Lev. xviii. 18.</aside>
+<aside class="note source" id="n148-3"><a class="back" href="#rn148-3">↩</a>According to Test. Naphtali i. also, Bilhah and Zilpah were sisters. in later Jewish tradition they are represented as daughters of Laban; cf. e. g. Pir(cid:31)e de R. Eliezer, xxxvi.</aside>
+<aside class="note source" id="n148-4"><a class="back" href="#rn148-4">↩</a>Gen. xxix. 32 has "she called.".</aside>
+<aside class="note source" id="n148-5"><a class="back" href="#rn148-5">↩</a>The twelve sons of Jacob appear in our text in the same order as in Gen. xxix. 32-34, xxx. 1- 24, xxxv. 17-18, viz. (1) Reuben; (2) Simeon; (3) Levi; (4) Judah; (5) Dan; (6) Naphtali; (7) Gad; (8) Asher; (9) Issachar; (110) Zebulon; (11) Joseph; (12) Benjamin. A different order is given in Gen. xlix. and in the Test. XII Patriarchs. The order of birth, as given in Jubilees, is complicated by textual difficulties; see Charles ad loc. Next: Jacob's Flight with his Family: his Covenant with Laban (xxix. 1-12)</aside>
+<aside class="note source" id="n150-1"><a class="back" href="#rn150-1">↩</a>Gen. XXX. 28 has "appoint me thy wages."</aside>
+<aside class="note source" id="n150-2"><a class="back" href="#rn150-2">↩</a>A wrong rendering of the Hebrew (Gen. xxx. 32), which means "speckled" (nā(cid:31)ōd).</aside>
+<aside class="note source" id="n150-3"><a class="back" href="#rn150-3">↩</a>Speckled and black, variously marked LXX ποικίλα κα(cid:31) σποδοιεδ(cid:31) (cid:31)αντά does not represent σποδοειδ(cid:31).</aside>
+<aside class="note source" id="n150-4"><a class="back" href="#rn150-4">↩</a>And sheep so LXX (Gen. xxx. 43); but MT and other versions omit.</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch27.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch29.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XXXV · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html" class="active"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XXXV</h1>
+    
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Rebecca's Last Admonitions and Death (xxxv. 1-27).</h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the first year of the first week of the forty-fifth jubilee Rebecca called Jacob, her son, and commanded him regarding his father and regarding his brother, that he should honour them all the days of his life.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And Jacob said: "I will do everything as thou hast commanded me; for this thing will be honour and greatness to me, and righteousness before the Lord, that I should honour them.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And thou too, mother, knowest from the time I was born until this day, all my deeds and all that is in my heart, that I always think good concerning all.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And how should I not do this thing which thou hast commanded me, that I should honour my father and my brother!</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>Tell me, mother, what perversity hast thou seen in me and I shall turn away from it, and mercy will be upon me."</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And she said unto him: "My son, I have not seen in thee all my days any perverse but (only) upright deeds. And yet I shall tell thee the truth, my son: I shall die this, year, and I shall not survive this year in my life; for I have seen in a dream the day of my death, that I should not live beyond a hundred and fifty-five years: and behold I have completed all the days of my life which I am to live."</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And Jacob laughed at the words of his mother, because his mother had said unto him that she should die; and she was sitting opposite to him in possession of her strength, and she was not infirm in her strength; for she went in and out and saw, and her teeth were strong, and no ailment had touched her all the days of her life.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And Jacob said unto her: "Blessed am I, mother, if my days approach the days of thy life, and my strength remain with me thus as thy strength: and thou wilt not die, for thou art jesting idly with me regarding thy death."</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And she went in to Isaac and said unto him: "One petition I make unto thee: make Esau swear that he will not injure Jacob, nor pursue him with enmity; for thou knowest Esau's thoughts that they are perverse from his youth, and there is no goodness in him; for he desireth after thy death to kill him.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And thou knowest all that he hath done since the day Jacob his brother went to Haran until this day; how he hath forsaken us with his whole heart, and hath done evil to us; thy flocks he hath taken to himself, and carried off all thy possessions from before thy face.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And when we implored and besought him for what was our own, he did as a man who was taking pity on us.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And he is bitter against thee because thou didst bless Jacob thy perfect and upright son; for there is no evil but only goodness in him, and since he came from Haran unto this day he hath not robbed us of aught, for he bringeth us everything in its season always, and rejoiceth with all his heart when we take at his hands, and he blesseth us, and hath not parted from us since he came from Haran until this day, and he remaineth with us continually at home honouring us."</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And Isaac said unto her: "I, too, know and see the deeds of Jacob who is with us, how that with all his heart he honoureth us; but I loved Esau formerly more than Jacob, because he was the first-born; but now I love Jacob more than Esau, for he hath done manifold evil deeds, and there is no righteousness in him, for all his ways are unrighteousness and violence, [and there is no righteousness around him]. <a class="fnref" href="#n174-1" id="rn174-1">1</a></p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And now my heart is troubled because of all his deeds, and neither he nor his seed is to be saved, for they are those who will be destroyed from the earth, and who will be rooted out from under heaven, for he hath forsaken the God of Abraham and gone after his wives and after their uncleanness and after their error, he and his children.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And thou dost bid me make him swear that he will not slay Jacob, his brother; even if he swear he will not abide by his oath, and he will not do good but evil only.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>But if he desireth to slay Jacob, his brother, into Jacob's hands will he be given, and he will not escape from his hands, [for he will descend into his hands.] <a class="fnref" href="#n174-2" id="rn174-2">2</a></p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And fear thou not on account of Jacob; for the guardian <a class="fnref" href="#n174-3" id="rn174-3">3</a> of Jacob is great and powerful and honoured, and praised more than the guardian of Esau."</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And Rebecca sent and called Esau, and he came to her, and she said unto him: "I have a petition, my son, to make unto thee, and do thou promise to do it, my son."</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And he said: "I will do everything that thou sayest unto me, and I will not refuse thy petition."</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And she said unto him: "I ask you that the day I die, thou wilt take me in and bury me near Sarah, thy father's mother, and that thou and Jacob will love each other, and that neither will desire evil against the other, but mutual love only, and (so) ye will prosper, my sons, and be honoured in the midst of the land, and no enemy will rejoice over you, and ye will be a blessing and a mercy in the eyes of all those that love you."</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And he said: "I will do all that thou hast told me, and I shall bury thee on the day thou diest near Sarah, my father's mother, as thou hast desired that her bones may be near thy bones.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And Jacob, my brother, also, I shall love above all flesh; for I have not a brother in all the earth but him only: and this is no great merit for me if I love him; for he is my brother, and we were sown together in thy body, and together came we forth from thy womb, and if I do not love my brother, whom shall I love?</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And I, myself, beg thee to exhort Jacob concerning me and concerning my sons, for I know that he will assuredly be king over me and my sons, for on the day my father blessed him he made him the higher and me the lower.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And I swear unto thee that I shall love him, and not desire evil against him all the days of my life but good only." And he sware unto her regarding all this matter.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And she called Jacob before the eyes of Esau, and gave him commandment according to the words which she had spoken to Esau.</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And he said: "I shall do thy pleasure; believe me that no evil will proceed from me or from my sons against Esau, and I shall be first in naught save in love only."</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>And they ate and drank, she and her sons that night, and she died, three jubilees and one week and one year old, on that night, and her two sons, Esau and Jacob, buried her in the double cave <a class="fnref" href="#n176-1" id="rn176-1">1</a> near Sarah, their father's mother.</p></div><div class="margin"><aside class="note source" id="n174-1"><a class="back" href="#rn174-1">↩</a>? a dittograph.</aside>
+<aside class="note source" id="n174-2"><a class="back" href="#rn174-2">↩</a>? bracketed words a gloss; cf. xxxvi. 9.</aside>
+<aside class="note source" id="n174-3"><a class="back" href="#rn174-3">↩</a>? the guardian-angel; cf. Matt. xviii. 10; Acts xii. 15; Heb. i. 14.</aside>
+<aside class="note source" id="n176-1"><a class="back" href="#rn176-1">↩</a>i. e. Machpelah. Next: Isaac's Last Words and Admonitions: his Death. The Death of Leah (xxxvi. 1-24)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch34.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch36.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

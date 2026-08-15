@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XXII · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html" class="active"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XXII</h1>
+    
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Isaac, Ishmael and Jacob join in Festival with Abraham for the Last Time. Abraham's Prayer (xxii. 1-9).</h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And it came to pass in the †first† <a class="fnref" href="#n122-2" id="rn122-2">2</a> week in the †forty-fourth† <a class="fnref" href="#n122-3" id="rn122-3">3</a> jubilee, in the †second† year, that is, the year in which Abraham died, that Isaac and Ishmael came from the Well of the Oath to celebrate the feast of weeks--that is, the feast of the first-fruits of the harvest--to Abraham, their father, and Abraham rejoiced because his two sons had come.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>For Isaac had many possessions in Beersheba, and Isaac was wont to go and see his possessions and to return to his father.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And in those days Ishmael came to see his father, and they both came together, and Isaac offered a sacrifice for a burnt-offering, and presented it on the altar of his father which he had made in Hebron.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And he offered a thank-offering and made a feast of joy before Ishmael, his brother: and Rebecca made new cakes from the new grain, and gave them to Jacob, her son, to take them to Abraham, his father, from the first-fruits of the land, that he might eat and bless the Creator of all things before he died.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And Isaac, too,!sent by the hand of Jacob to Abraham a best thank-offering, that he might eat and drink.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And he ate and drank, and blessed the Most High God, Who hath created heaven and earth, Who hath made all the fat things of the earth, And given them to the children of men That they might eat and drink and bless their Creator.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>"And now I give thanks unto Thee, my God, because Thou hast caused me to see this day: behold, I am one hundred three score and fifteen years, an old man and full of days, <a class="fnref" href="#n123-1" id="rn123-1">1</a> and all my days have been unto me peace.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>The sword of the adversary <a class="fnref" href="#n123-2" id="rn123-2">2</a> hath not overcome me in all that Thou hast given me and my children all the days of my life until this day.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>My God, may Thy mercy and Thy peace be upon Thy servant, and upon the seed of his sons, that they may be to Thee a chosen nation and an inheritance <a class="fnref" href="#n123-3" id="rn123-3">3</a> from amongst all the nations of the earth from henceforth unto all the days of the generations of the earth, unto all the ages."</p><h2 class="sect">Abraham's Last Words to and Blessings of Jacob (xxii. 10-30).</h2><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And he called Jacob and said My son Jacob, may the God of all <a class="fnref" href="#n123-4" id="rn123-4">4</a> bless thee and strengthen thee to do righteousness, and His will before Him, and may He choose thee and thy seed that ye may become a people for His inheritance according to His will alway. And do thou, my son, Jacob, draw near and kiss me."</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And he drew near and kissed him, and he said: "Blessed be my son Jacob And all the sons of God Most High, unto all the ages: May God give unto thee a seed of righteousness; And some of thy sons may He sanctify in the midst of the whole earth; May nations serve thee, And all the nations bow themselves before thy seed. <a class="fnref" href="#n124-1" id="rn124-1">1</a></p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>Be strong in the presence of men, And exercise authority over all the seed of Seth. <a class="fnref" href="#n124-2" id="rn124-2">2</a> Then thy ways and the ways of thy sons will be justified, So that they shall become a holy nation.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>May the Most High God give thee all the blessings Wherewith he hath blessed me And wherewith He blessed Noah and Adam; <a class="fnref" href="#n124-3" id="rn124-3">3</a> May they rest on the sacred head of thy seed from generation to generation for ever.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And may He cleanse thee from all unrighteousness and impurity, That thou mayest be forgiven all (thy) transgressions; (and) thy sins of ignorance. And may He strengthen thee, And bless thee. And mayest thou inherit the whole earth,</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And may He renew His covenant with thee, That thou mayest be to Him a nation for His inheritance <a class="fnref" href="#n124-4" id="rn124-4">4</a> for all the ages, And that He may be to thee and to thy seed a God in truth and righteousness throughout all the days of the earth.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And do thou, my son Jacob, remember my words, And observe the commandments of Abraham, thy father: Separate thyself from the nations, And eat not with them: <a class="fnref" href="#n124-5" id="rn124-5">5</a> And do not according to their works, And become not their associate; For their works are unclean, And all their ways are a pollution and an abomination and uncleanness.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>They offer their sacrifices to the dead <a class="fnref" href="#n125-1" id="rn125-1">1</a> And they worship evil spirits, <a class="fnref" href="#n125-2" id="rn125-2">2</a> And they eat over the graves, <a class="fnref" href="#n125-3" id="rn125-3">3</a> And all their works are vanity and nothingness.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>They have no heart to understand And their eyes do not see what their works are, And how they err in saying to a piece of wood: 'Thou art my God,' And to a stone: 'Thou art my Lord and thou art my deliverer.' <a class="fnref" href="#n125-4" id="rn125-4">4</a> [And they have no heart.] <a class="fnref" href="#n125-5" id="rn125-5">5</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And as for thee, my son Jacob, May the Most High God help thee And the God of heaven bless thee And remove thee from their uncleanness and from all their error.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>Be thou ware, my son Jacob, of taking a wife from any seed of the daughters of Canaan; For all his seed is to be rooted out of the earth. <a class="fnref" href="#n125-6" id="rn125-6">6</a></p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>For, owing to the transgression of Ham, <a class="fnref" href="#n125-7" id="rn125-7">7</a> Canaan erred, <a class="fnref" href="#n125-8" id="rn125-8">8</a> And all his seed will be destroyed from off the earth and all the residue thereof, And none springing from him will be saved on the day of judgment.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And as for all the worshippers of idols and the profane <a class="fnref" href="#n125-9" id="rn125-9">9</a> (b) There will be no hope for them in the land of the living; (e) And there will be no remembrance of them on the earth; (c) For they will descend into Sheol, (d) And into the place of condemnation will they go, <a class="fnref" href="#n126-1" id="rn126-1">1</a> As the children of Sodom were taken away from the earth So will all those who worship idols be taken away.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>Fear not, my son Jacob, And be not dismayed, O son of Abraham: May the Most High God preserve thee from destruction, And from all the paths of error may He deliver thee.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>This house have I built for myself that I might put my name upon it in the earth: [it is given to thee and to thy seed for ever], <a class="fnref" href="#n126-2" id="rn126-2">2</a> and it will be named the house of Abraham; it is given to thee and to thy seed for ever; for thou wilt build my house <a class="fnref" href="#n126-3" id="rn126-3">3</a> and establish my name before God for ever: thy seed and thy name will stand throughout all generations of the earth."</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25–26</a>And he ceased commanding <a class="fnref" href="#n126-4" id="rn126-4">4</a> him and blessing him. 26: And the two lay together on one bed, and Jacob slept in the bosom of Abraham, his father's father and he kissed him seven times, and his affection and his heart rejoiced over him.</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a><a class="fnref" href="#n126-5" id="rn126-5">5</a> And he blessed him with all his heart and said: "The Most High God, the God of all, and Creator of all, who brought me forth from Ur of the Chaldees, that He might give me this land to inherit <a class="fnref" href="#n126-6" id="rn126-6">6</a> it for ever, and that I might establish a holy seed-- blessed be the Most High for ever."</p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And he blessed Jacob and said: "My son, over whom with all my heart and my affection I rejoice, may Thy grace and Thy mercy be lift up <a class="fnref" href="#n127-1" id="rn127-1">1</a> upon him and upon his seed alway.</p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>And do not forsake him, nor set him at nought from henceforth unto the days of eternity, and may Thine eyes be opened upon him and upon his seed, <a class="fnref" href="#n127-2" id="rn127-2">2</a> that Thou mayest preserve him, and bless him, and mayest sanctify him as a nation for Thine inheritance;</p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>And bless him with all Thy blessings from henceforth unto all the days of eternity, and renew Thy covenant and Thy grace with him and with his seed according to all Thy good pleasure unto all the generations of the earth."</p></div><div class="margin"><aside class="note source" id="n122-2"><a class="back" href="#rn122-2">↩</a>Read "sixth" (Charles).</aside>
+<aside class="note source" id="n122-3"><a class="back" href="#rn122-3">↩</a>Read "forty-second" (Charles).</aside>
+<aside class="note source" id="n123-1"><a class="back" href="#rn123-1">↩</a>Cf. xxi. 1.</aside>
+<aside class="note source" id="n123-2"><a class="back" href="#rn123-2">↩</a>Cf. Jer. vi. 25.</aside>
+<aside class="note source" id="n123-3"><a class="back" href="#rn123-3">↩</a>Israel is God's inheritance; cf. Deut. iv. 20. Next: Abraham's Last Words to and Blessings of Jacob (xxii. 10-30)</aside>
+<aside class="note source" id="n123-4"><a class="back" href="#rn123-4">↩</a>i. e. of the universe; this idea often recurs in our author.</aside>
+<aside class="note source" id="n124-1"><a class="back" href="#rn124-1">↩</a>Verbally from Gen. xxvii. 29 (Isaac's blessing of Jacob).</aside>
+<aside class="note source" id="n124-2"><a class="back" href="#rn124-2">↩</a>i. e. all mankind (Charles).</aside>
+<aside class="note source" id="n124-3"><a class="back" href="#rn124-3">↩</a>Cf. xix. 27.</aside>
+<aside class="note source" id="n124-4"><a class="back" href="#rn124-4">↩</a>Cf. xxii, 9.</aside>
+<aside class="note source" id="n124-5"><a class="back" href="#rn124-5">↩</a>A strict observance of the dietary laws would make this practically impossible; cf. Dan. i. 8; Matt. ix. 11. The question was one of crucial importance in the early Maccabean period; cf. e. g. 1 Macc. i. 62.</aside>
+<aside class="note source" id="n125-1"><a class="back" href="#rn125-1">↩</a>Cf. Deut. xxvi. 14; Ecclus. xxx. 18, 19, etc.</aside>
+<aside class="note source" id="n125-2"><a class="back" href="#rn125-2">↩</a>Cf. 1 Cor. x. 20 (1 Enoch xix. i).</aside>
+<aside class="note source" id="n125-3"><a class="back" href="#rn125-3">↩</a>i.e. Partake of the sacrifices offered to the dead; cf. Deut. xxvi. 14 (according to one interpretation).</aside>
+<aside class="note source" id="n125-4"><a class="back" href="#rn125-4">↩</a>Cf. Jer. ii. 27.</aside>
+<aside class="note source" id="n125-5"><a class="back" href="#rn125-5">↩</a>Bracketed words a dittograph.</aside>
+<aside class="note source" id="n125-6"><a class="back" href="#rn125-6">↩</a>Cf. Gen. xxviii. i; Test. Levi ix. 10.</aside>
+<aside class="note source" id="n125-7"><a class="back" href="#rn125-7">↩</a>Cf. vii. 8.</aside>
+<aside class="note source" id="n125-8"><a class="back" href="#rn125-8">↩</a>Canaan wrongfully seized Palestine; cf. x. 29-34.</aside>
+<aside class="note source" id="n125-9"><a class="back" href="#rn125-9">↩</a>The four following lines have been transposed by Charles for the sake of parallelism.</aside>
+<aside class="note source" id="n126-1"><a class="back" href="#rn126-1">↩</a>Cf. vii. 29.</aside>
+<aside class="note source" id="n126-2"><a class="back" href="#rn126-2">↩</a>Bracketed words a dittograph.</aside>
+<aside class="note source" id="n126-3"><a class="back" href="#rn126-3">↩</a>"House" throughout this passage = "family."</aside>
+<aside class="note source" id="n126-4"><a class="back" href="#rn126-4">↩</a>i. e. giving the last commands; cf. Gen. xlix. 33 and often.</aside>
+<aside class="note source" id="n126-5"><a class="back" href="#rn126-5">↩</a>Charles suspects 27 may be an interpolation.</aside>
+<aside class="note source" id="n126-6"><a class="back" href="#rn126-6">↩</a>Cf. Gen. xv. 7; Neh. ix. 7.</aside>
+<aside class="note source" id="n127-1"><a class="back" href="#rn127-1">↩</a>Cf. Num. vi. 26.</aside>
+<aside class="note source" id="n127-2"><a class="back" href="#rn127-2">↩</a>Cf. 1 Kings viii. 29, 52; Dan. ix. 18. Next: The Death and Burial of Abraham (xxiii. 1-8)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch21.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch23.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

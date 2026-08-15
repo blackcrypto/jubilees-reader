@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter IX · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html" class="active"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter IX</h1>
+    
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Subdivision of the Three Portions amongst the Grandchildren: Oath taken by Noah's Sons (ix. 1-15; cf. Gen. x. partly).<span class="cf">cf. Gen. x. partly</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And Ham divided amongst his sons, and the first portion came forth for Cush <a class="fnref" href="#n76-11" id="rn76-11">11</a> towards the east, and to the west of him for Mizraim, <a class="fnref" href="#n76-12" id="rn76-12">12</a> and to the west . of him for Put, <a class="fnref" href="#n77-1" id="rn77-1">1</a> and to the west of him [and to the west thereof] on the sea <a class="fnref" href="#n77-2" id="rn77-2">2</a> for Canaan. <a class="fnref" href="#n77-3" id="rn77-3">3</a></p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And <span class="corr">Shem<a class="fnref corrmk" href="#c9-2-corr" id="rc9-2-corr">✱</a></span> also divided amongst his sons, and the first portion came forth for Elam and his sons, to the east of the river Tigris till it approacheth the east, the whole land of India, and on the Red Sea on its coast, and the waters of Dêdân, and all the mountains of Mebrî and ’Êlâ, and all the land of Sûsân and all that is on the side of Pharnâk <a class="fnref" href="#n77-4" id="rn77-4">4</a> to the Red Sea and the river Tînâ.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And for Asshur came forth the second portion, all the land of Asshur and Nineveh and Shinar and to the border of India, and it ascendeth and skirteth the river.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And for Arpachshad came forth the third portion, all the land of the region of the Chaldees to the east of the Euphrates, bordering on the Red Sea, and all the waters of the desert close to the tongue of the sea which looketh towards Egypt, all the land of Lebanon and Sanîr and ’Amânâ <a class="fnref" href="#n77-5" id="rn77-5">5</a> to the border of the Euphrates.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And for Aram <a class="fnref" href="#n77-6" id="rn77-6">6</a> there came forth the fourth portion, all the land of Mesopotamia between the Tigris and the Euphrates to the north of the Chaldees to the border of the mountains of Asshur and the land of ’Arârâ. <a class="fnref" href="#n77-7" id="rn77-7">7</a></p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And there came forth for Lud <a class="fnref" href="#n77-8" id="rn77-8">8</a> the fifth portion, the mountains of Asshur and all appertaining to them till it reacheth the Great Sea, and till it reacheth the east of Asshur his brother.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And Japheth also divided the land of his inheritance amongst his sons.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And the first portion came forth for Gomer to the east from the north side to the river Tînâ; and in the north there came forth for Magog all the inner portions of the north until it reacheth to the sea of Mê’at.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And for Madai came forth as his portion that he should possess from the west of his two brothers to the islands, <a class="fnref" href="#n78-1" id="rn78-1">1</a> and to the coasts of the islands.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And for Javan <a class="fnref" href="#n78-2" id="rn78-2">2</a> came forth the fourth portion every island <a class="fnref" href="#n78-3" id="rn78-3">3</a> and the islands which are towards the border of Lud.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And for Tubal <a class="fnref" href="#n78-4" id="rn78-4">4</a> there came forth the fifth portion in the midst of the tongue which approacheth towards the border of the portion of Lud to the second tongue, to the region beyond the second tongue unto the third tongue. <a class="fnref" href="#n78-5" id="rn78-5">5</a></p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And for Meshech came forth the sixth portion, all the region beyond the third tongue <a class="fnref" href="#n78-6" id="rn78-6">6</a> till it approacheth the east of Gâdîr. <a class="fnref" href="#n78-7" id="rn78-7">7</a></p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And for Tiras <a class="fnref" href="#n78-8" id="rn78-8">8</a> there came forth the seventh portion, four great islands <a class="fnref" href="#n78-9" id="rn78-9">9</a> in the midst of the sea, which reach to the portion of Ham [and the islands of Kamâtûrî came out by lot for the sons of Arpachshad as his inheritance]. <a class="fnref" href="#n78-10" id="rn78-10">10</a></p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And thus the sons of Noah divided unto their sons in the presence of Noah their father, and he bound them all by an oath, imprecating a curse on every one that sought to seize the portion which had not fallen (to him) by his lot.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And they all said, "So be it; so be it," for themselves and their sons for ever throughout their generations till the day of judgment, on which the Lord God shall judge them with a sword and with fire, for all the unclean wickedness of their errors, wherewith they have filled the earth with transgression and uncleanness and fornication and sin.</p></div><div class="margin"><aside class="note source" id="n76-11"><a class="back" href="#rn76-11">↩</a>Ethiopia</aside>
+<aside class="note source" id="n76-12"><a class="back" href="#rn76-12">↩</a>i. e. Egypt.</aside>
+<aside class="note source" id="n77-1"><a class="back" href="#rn77-1">↩</a>i. e. Libya (west of Egypt).</aside>
+<aside class="note source" id="n77-2"><a class="back" href="#rn77-2">↩</a>i. e. the Atlantic. For Canaan's portion (from Libya to the Atlantic) Cf. x. 28-29.</aside>
+<aside class="note source" id="n77-3"><a class="back" href="#rn77-3">↩</a>For 1 cf. Gen. x. 6.</aside>
+<aside class="note correction" id="c9-2-corr"><a class="back" href="#rc9-2-corr">↩</a>Source reads “Sherri”; an OCR corruption of Shem. The context is decisive — Ham’s division is 9:1, and 9:3–6 assign the remaining portions to Asshur, Arpachshad, Aram and Lud, Shem’s other sons (7:18).</aside>
+<aside class="note source" id="n77-4"><a class="back" href="#rn77-4">↩</a>? Pharnacia on the coast of Pontus (Charles).</aside>
+<aside class="note source" id="n77-5"><a class="back" href="#rn77-5">↩</a>Cf. viii. 21.</aside>
+<aside class="note source" id="n77-6"><a class="back" href="#rn77-6">↩</a>i. e. the Syrians.</aside>
+<aside class="note source" id="n77-7"><a class="back" href="#rn77-7">↩</a>Ararat; Cf. viii. 21.</aside>
+<aside class="note source" id="n77-8"><a class="back" href="#rn77-8">↩</a>According to Josephus the descendants of Lud were the Lydians.</aside>
+<aside class="note source" id="n78-1"><a class="back" href="#rn78-1">↩</a>Including (?) Britain and Ireland.</aside>
+<aside class="note source" id="n78-2"><a class="back" href="#rn78-2">↩</a>i.e. properly Ionia (so Isa. lxvi. 19; Ezek. xxvii. 13): but in Daniel (Viii. 21, X. 20, xi. 2) it = the Græco-Macedonian Empire. Here it seems to embrace all the islands off the coast of Asia Minor.</aside>
+<aside class="note source" id="n78-3"><a class="back" href="#rn78-3">↩</a>? coastland.</aside>
+<aside class="note source" id="n78-4"><a class="back" href="#rn78-4">↩</a>Tubal's portion apparently extends from Thrace to Italy.</aside>
+<aside class="note source" id="n78-5"><a class="back" href="#rn78-5">↩</a>The three tongues of land may be Thrace, Greece and Italy.</aside>
+<aside class="note source" id="n78-6"><a class="back" href="#rn78-6">↩</a>i. e. probably Italy.</aside>
+<aside class="note source" id="n78-7"><a class="back" href="#rn78-7">↩</a>i. e. Cadiz.</aside>
+<aside class="note source" id="n78-8"><a class="back" href="#rn78-8">↩</a>The descendants of Tiras may have been the Tyrseni, a branch of the Pelasgians.</aside>
+<aside class="note source" id="n78-9"><a class="back" href="#rn78-9">↩</a>Cf. viii. 29.</aside>
+<aside class="note source" id="n78-10"><a class="back" href="#rn78-10">↩</a>The bracketed words are probably an interpolation (Charles). Arpachsad was a son of Shem. Next: Noah's Sons led astray by Evil Spirits; Noah's Prayer; Mastêmâ; Death of Noah (x. 1-17)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch08.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch10.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

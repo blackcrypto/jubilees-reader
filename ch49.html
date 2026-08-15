@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XLIX · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html" class="active"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XLIX</h1>
+    <p class="am">Anno Mundi 2410–2450</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Regulations regarding the Passover (xlix. 1-23; cf. Exod. xii.).<span class="cf">cf. Exod. xii.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>Remember the commandment which the Lord commanded thee concerning the passover, that thou shouldst celebrate it in its season on the fourteenth of the first month, that thou shouldst kill it before it is evening, and that they should eat it by night on the evening <a class="fnref" href="#n207-4" id="rn207-4">4</a> of the fifteenth from the time of the setting of the sun.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>For on this night--the beginning of the festival and the beginning of the joy--ye were eating the passover in Egypt, when all the powers of Mastêmâ <a class="fnref" href="#n207-5" id="rn207-5">5</a> had been let loose to slay all the first-born in the land of Egypt, from the firstborn of Pharaoh to the first-born of the captive maidservant in the mill, and to the cattle.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And this is the sign which the Lord gave them: Into every house on the lintels of which they saw the blood of a lamb of the first year, into (that) house they should not enter to slay, but should pass by (it), that all those should be saved that were in the house because the sign of the blood was on its lintels.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And the powers of the Lord did everything according as the Lord commanded them, and they passed by all the children of Israel, and the plague came not upon them to destroy from amongst them any soul either of cattle, or man, or dog.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And the plague was very grievous in Egypt, and there was no house in Egypt where there was not one dead, and weeping and lamentation.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And all Israel was eating the flesh of the paschal lamb, and drinking the wine, <a class="fnref" href="#n208-1" id="rn208-1">1</a> and was lauding and blessing, and giving thanks to the Lord God of their fathers, and was ready to go forth from under the yoke of Egypt; and from the evil bondage.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And remember thou this day all the days of thy life, and observe it from year to year all the days of thy life, once a year, on its day, according to all the law thereof, and do not adjourn (it) from day to day, or from month to month.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>For it is an eternal ordinance, and engraven on the heavenly tables regarding all the children of Israel that they should observe it every year on its day once a year, throughout all their generations; <a class="fnref" href="#n208-2" id="rn208-2">2</a> and there is no limit of days, for this is ordained for ever.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And the man who is free from uncleanness, and doth not come to observe it on occasion of its day, so as to bring an acceptable offering before the Lord, and to eat and to drink before the Lord on the day of its festival, that man who is clean and close at hand will be cut off; because he offered not the oblation of the Lord in its appointed season, he will take the guilt upon himself. <a class="fnref" href="#n209-1" id="rn209-1">1</a></p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>Let the children of Israel come and observe the passover on the day of its fixed time, on the fourteenth day of the first month, between the evenings, from the third part of the day to the third part of the night, for two portions of the day are given to the light, and a third part to the evening. <a class="fnref" href="#n209-2" id="rn209-2">2</a></p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>That is that which the Lord commanded thee that thou shouldst observe it between the evenings.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And it is not permissible to slay it during any period of the light, but during the period bordering on the evening, <a class="fnref" href="#n209-3" id="rn209-3">3</a> and let them eat it at the time of the evening until the third part of the night, <a class="fnref" href="#n209-4" id="rn209-4">4</a> and whatever is leftover of all its flesh from the third part of the night and onwards, let them burn it with fire.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And they shall not cook it with water, nor shall they eat it raw, but roast on the fire: <a class="fnref" href="#n209-5" id="rn209-5">5</a> they shall eat it with diligence, <a class="fnref" href="#n209-6" id="rn209-6">6</a> its head with the inwards thereof <a class="fnref" href="#n209-7" id="rn209-7">7</a> and its feet they shall roast with fire, and not break any bone thereof; <a class="fnref" href="#n209-8" id="rn209-8">8</a> for †of the children of Israel no bone shall be crushed†. <a class="fnref" href="#n209-9" id="rn209-9">9</a></p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>For this reason the Lord commanded the children of Israel to observe the passover on the day of its fixed time, and they shall not break a bone thereof; for it is a festival day, and a day commanded, and there may be no passing over from day to day, and month to month, but on the day of its festival let it be observed.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And do thou command the children of Israel to observe the passover throughout their days, every year, once a year on the day of its fixed time, and it will come for a memorial well pleasing before the Lord, and no plague will come upon them to slay or to smite <a class="fnref" href="#n210-1" id="rn210-1">1</a> in that year in which they celebrate the passover in its season in every respect according to His command.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And they shall not eat it outside the sanctuary <a class="fnref" href="#n210-2" id="rn210-2">2</a> of the Lord, but before the sanctuary of the Lord, and all the people of the congregation of Israel shall celebrate it in its appointed season.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And every man who hath come upon its day shall eat it in the sanctuary of your God before the Lord from twenty years old <a class="fnref" href="#n210-3" id="rn210-3">3</a> and upward; for thus is it written and ordained that they should eat it in the sanctuary of the Lord.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And when the children of Israel come into the land which they are to possess, into the land of Canaan, and set up the tabernacle of the Lord in the midst of the land in one of their tribes until the sanctuary of the Lord hath been built in the land, let them come and celebrate the passover in the midst of the tabernacle of the Lord, and let them slay it before the Lord from year to year.</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And in the days when the house hath been built in the name of the Lord in the land of their inheritance, they shall go there and slay the passover in the evening, at sunset, at the third part of the day.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And they will offer its blood on the threshold of the altar, and shall place its fat on the fire which is upon the altar, and they shall eat its flesh roasted with fire in the court of the house <a class="fnref" href="#n210-4" id="rn210-4">4</a> which hath been sanctified in the name of the Lord.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And they may not celebrate the passover in their cities, <a class="fnref edref" href="#n211-1" id="rn211-1">1</a> nor in any place save before the tabernacle of the Lord, or before His house where His name hath dwelt; and they will not go astray from the Lord.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And do thou, Moses, command the children of Israel to observe the ordinances of the passover, as it was commanded unto thee; declare thou unto them every year †and the day of its days, and† <a class="fnref edref" href="#n211-2" id="rn211-2">2</a> the festival of unleavened bread, that they should eat unleavened bread seven days, (and) that they should observe its festival, and that they bring an oblation every day during those seven days of joy before the Lord on the altar of your God.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>For ye celebrated this festival with haste <a class="fnref edref" href="#n211-3" id="rn211-3">3</a> when ye went forth from Egypt till ye entered into the wilderness of Shur; <a class="fnref edref" href="#n211-4" id="rn211-4">4</a> for on the shore of the sea ye completed it.</p></div><div class="margin"><aside class="note source" id="n207-4"><a class="back" href="#rn207-4">↩</a>Cf. Exod. xii. 6.</aside>
+<aside class="note source" id="n207-5"><a class="back" href="#rn207-5">↩</a>In Exod. xii. 29 it is Jahveh Himself who smites all the first-born.</aside>
+<aside class="note source" id="n208-1"><a class="back" href="#rn208-1">↩</a>The use of wine at the Passover feast is attested here for the first time. For the later prescriptions about the four cups of wine drunk at the feast see Mishna, Pesa(cid:31)im x.</aside>
+<aside class="note source" id="n208-2"><a class="back" href="#rn208-2">↩</a>For 7-8 cf. vi. 20, 22.</aside>
+<aside class="note source" id="n209-1"><a class="back" href="#rn209-1">↩</a>Cf. Num. ix. 13.</aside>
+<aside class="note source" id="n209-2"><a class="back" href="#rn209-2">↩</a>The Jews divided the night into three parts, or watches (6-10 p.m., 10 P.M.-2 a.m., 2-6 a.m.). The corresponding parts of the day would be 6-10 a.m., 10 a.m.-2 p.m., and 2 p.m.-6 p.m. Our text says the last of these was "given" to the evening.</aside>
+<aside class="note source" id="n209-3"><a class="back" href="#rn209-3">↩</a>This is an interpretation of the Biblical phrase "between the two evenings" (Exod. xii. 6; cf. R.V. marg.). This was interpreted by the Sadducees and Samaritans to mean between sunset and complete darkness (and may possibly have that meaning here), but by the Pharisees it was understood to refer to the earlier afternoon (3-6).</aside>
+<aside class="note source" id="n209-4"><a class="back" href="#rn209-4">↩</a>i. e. any time between 6 p.m. and 6 a.m. The Rabbis limited the eating to midnight.</aside>
+<aside class="note source" id="n209-5"><a class="back" href="#rn209-5">↩</a>Cf. Exod. xii. 9.</aside>
+<aside class="note source" id="n209-6"><a class="back" href="#rn209-6">↩</a>Cf. LXX (σπουδαίωσ): Heb. (Exod. xii. ii), "in haste."</aside>
+<aside class="note source" id="n209-7"><a class="back" href="#rn209-7">↩</a>Cf. Exod. xii. 9.</aside>
+<aside class="note source" id="n209-8"><a class="back" href="#rn209-8">↩</a>Cf. Exod. xii. 46.</aside>
+<aside class="note source" id="n209-9"><a class="back" href="#rn209-9">↩</a>The Latin, which is to be preferred, reads: "There shall be no tribulation among the sons of Israel on this day."</aside>
+<aside class="note source" id="n210-1"><a class="back" href="#rn210-1">↩</a>Cf. Exod. xii. 13.</aside>
+<aside class="note source" id="n210-2"><a class="back" href="#rn210-2">↩</a>Cf. 20 below.</aside>
+<aside class="note source" id="n210-3"><a class="back" href="#rn210-3">↩</a>i. e. the age when maturity is first attained; cf. Exod. xxx. 14; Num. i. 32.</aside>
+<aside class="note source" id="n210-4"><a class="back" href="#rn210-4">↩</a>Cf. Deut. xvi. 7. In later times the Passover lamb was slaughtered in the Temple, but eaten at home, i. e. in a house in Jerusalem. The vast numbers of pilgrims present necessitated this extension (cf. Josephus, War, vi. 9,3. ii. 14, 3). Next: Laws regarding the Jubilees and the Sabbath (l. 1-13)</aside>
+<aside class="note editorial" id="n211-1"><a class="back" href="#rn211-1">↩</a>Jubilees will not allow the passover anywhere but at the sanctuary. Deut. xvi. 5–6 forbids slaughter “within any of thy gates” and requires the chosen place; our author hardens that into a flat ban on local observance (49:16–21), which reads as polemic against a practice someone was defending.</aside>
+<aside class="note editorial" id="n211-2"><a class="back" href="#rn211-2">↩</a>The daggers are Charles’s obeli, marking Ethiopic he judged corrupt and would not translate into sense. Nothing has dropped out of this edition; the text itself is broken here.</aside>
+<aside class="note editorial" id="n211-3"><a class="back" href="#rn211-3">↩</a>Exod. xii. 11 — eaten “in haste.” The LXX renders the Hebrew with σπουδαίως, the reading behind Charles’s note at 49:13.</aside>
+<aside class="note editorial" id="n211-4"><a class="back" href="#rn211-4">↩</a>Exod. xv. 22: the wilderness of Shur, entered immediately after the sea crossing. Our author closes the passover chapter by carrying the festival to the far shore.</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch48.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch50.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

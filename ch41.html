@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XLI · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html" class="active"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XLI</h1>
+    <p class="am">Anno Mundi 2168–2171</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Judah's Incest with Tamar; his Repentance and Forgiveness (xli. 1-28; Cf. Gen. xxxviii.).</h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the forty-fifth jubilee, in the second week, (and) in the second year, Judah took for his first-born Er, a wife from the daughters of Aram, <a class="fnref" href="#n188-4" id="rn188-4">4</a> named Tamar.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>But he hated, and did not lie with her, because his mother was of the daughters of Canaan, and he wished to take him a wife of the kinsfolk of his mother, but Judah, his father, would not permit him.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And this Er, the first-born of Judah, was wicked, and the Lord slew him.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And Judah said unto Onan, his brother: "Go in unto thy brother's wife and perform the duty of a husband's brother unto her, <a class="fnref" href="#n189-1" id="rn189-1">1</a> and raise up seed unto thy brother."</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And Onan knew that the seed would not be his, (but) his brother's only, and he went into the house of his brother's wife, and spilt the seed on the ground, and he was wicked in the eyes of the Lord, and He slew him.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And Judah said unto Tamar, his daughter-in- law: "Remain in thy father's house as a widow till Shelah my son be grown up, and I shall give thee to him to wife."</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And he grew up; but Bêdsû’êl, <a class="fnref" href="#n189-2" id="rn189-2">2</a> the wife of Judah, did not permit her son Shelah to marry. And Bêdsû’êl, the wife of Judah, died in the fifth year of this week.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And in the sixth year Judah went up to shear his sheep at Timnah. And they told Tamar: "Behold thy father-in-law goeth up to Timnah to shear his sheep."</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And she put off her widow's clothes, and put on a veil, and adorned herself, and sat in the gate adjoining the way to Timnah.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And as Judah was going along he found her, and thought her to be an harlot, and he said unto her: "Let me come in unto thee"; and she said unto him: "Come in," and he went in.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And she said unto him: "Give me my hire"; and he said unto her: "I have nothing in my hand save my ring that is on my finger, and my necklace, and my staff which is in my hand."</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And she said unto him: "Give them to me until thou dost send me my hire"; and he said unto her: "I will send unto thee a kid of the goats"; and he gave them to her, (and he went in unto her,) and she conceived by him.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And Judah went unto his sheep, and she went to her father's house.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And Judah sent a kid of the goats by the hand of his shepherd, an Adullamite, and he found her not; and he asked the people of the place, saying: "Where is the harlot who was here?" And they said unto him: "There is no harlot here with us."</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And he returned and informed him, and said unto him that he had not found her; "I asked the people of the place, and they said unto me: 'There is no harlot here.'" And he said: "Let her keep (them) lest we become a cause of derision."</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And when she had completed three months, it was manifest that she was with child, and they told Judah, saying: "Behold Tamar, thy daughter-in-law, is with child by whoredom."</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And Judah went to the house of her father, and said unto her father and her brothers: "Bring her forth, and let them burn her, <a class="fnref" href="#n190-1" id="rn190-1">1</a> for she hath wrought uncleanness in Israel."</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And it came to pass when they brought her forth to bum her that she sent to her father-in-law the ring and the necklace, and the staff, saying: "Discern whose are these, for by him am I with child."</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And Judah acknowledged, and said: "Tamar is more righteous than I am. And therefore let them burn her not."</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And for that reason she was not given to Shelah, and he did not again approach her.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And after that she bare two sons, Perez and Zerah, in the seventh year of this second week.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And thereupon the seven years of fruitfulness were accomplished, of which Joseph spake to Pharaoh. <a class="fnref" href="#n190-2" id="rn190-2">2</a></p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And Judah acknowledged that the deed which he had done was evil, for he had lain with his daughter-in-law, and he esteemed it hateful in his eyes, and he acknowledged that he had transgressed and gone astray; for he had uncovered the skirt of his son, and he began to lament and to supplicate before the Lord because of his transgression.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And we told him in a dream that it was forgiven him because he supplicated earnestly, and lamented, and did not again commit it.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And he received forgiveness because he turned from his sin and from his ignorance, for he transgressed greatly before our God; and every one that acteth thus, every one who lieth with his mother-in-law, let them burn him with fire that he may bum therein, <a class="fnref" href="#n191-1" id="rn191-1">1</a> for there is uncleanness and pollution upon them; with fire let them bum them.</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And do thou command the children of Israel that there be no uncleanness amongst them, for every one who lieth with his daughter-in-law <a class="fnref" href="#n191-2" id="rn191-2">2</a> or with his mother-in-law hath wrought uncleanness; with fire let them bum the man who hath lain with her, and likewise the woman, and He will turn away wrath and punishment from Israel.</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>And unto Judah we said that his two sons had not lain with her, and for this reason his seed was established for a second generation, and would not be rooted out.</p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>For in singleness of eye he had gone and sought for punishment, namely, according to the judgment of Abraham, <a class="fnref" href="#n191-3" id="rn191-3">3</a> which he had commanded his sons, Judah had sought to burn her with fire.</p></div><div class="margin"><aside class="note source" id="n188-4"><a class="back" href="#rn188-4">↩</a>Cf. Test. Judah x. ("from Mesopotamia").</aside>
+<aside class="note source" id="n189-1"><a class="back" href="#rn189-1">↩</a>Cf. Gen. xxxviii. 8; Deut. xxv. 5.</aside>
+<aside class="note source" id="n189-2"><a class="back" href="#rn189-2">↩</a>i. e. Bathshua; Cf. xxxiv. 20.</aside>
+<aside class="note source" id="n190-1"><a class="back" href="#rn190-1">↩</a>The punishment appointed for such an offence on the part of a priest's daughter (Lev. xxi. 9); cf. xxx. 7 above. According to the Targum (Ps.-Jon.), on Gen. xxxviii. 6, 24, Tamar was the daughter of a priest.</aside>
+<aside class="note source" id="n190-2"><a class="back" href="#rn190-2">↩</a>Cf. Gen. xli. 53.</aside>
+<aside class="note source" id="n191-1"><a class="back" href="#rn191-1">↩</a>Cf. Lev. xx. 14.</aside>
+<aside class="note source" id="n191-2"><a class="back" href="#rn191-2">↩</a>Cf. Lev. xviii. 15, XX. 12 (mode of death not specified; but Gen. xxxviii. 24 presupposes burning by fire).</aside>
+<aside class="note source" id="n191-3"><a class="back" href="#rn191-3">↩</a>Cf. xx. 4 (note). Next: The Two Journeys of the Sons of Jacob to Egypt (xlii. 1-25</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch40.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch42.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

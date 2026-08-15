@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter X · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html" class="active"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter X</h1>
+    <p class="am">Anno Mundi 1659–1688</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Noah's Sons led astray by Evil Spirits; Noah's Prayer; Mastêmâ; Death of Noah (x. 1-17; cf. Gen. ix. 28).<span class="cf">cf. Gen. ix. 28</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a><a class="fnref" href="#n79-1" id="rn79-1">1</a> And in the third week of this jubilee the unclean demons <a class="fnref" href="#n79-2" id="rn79-2">2</a> began to lead astray †the children of† <a class="fnref" href="#n79-3" id="rn79-3">3</a> the sons of Noah; and to make to err and destroy them.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And the sons of Noah came to Noah their father, and they told him concerning the demons which were, leading astray and blinding and slaying his sons' sons.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And he prayed before the Lord his God, and said: God of the spirits of all flesh, <a class="fnref" href="#n79-4" id="rn79-4">4</a> who hast shown mercy unto me, And hast saved me and my sons from the waters of the flood, And hast not caused me to perish as Thou didst the sons of perdition; <a class="fnref" href="#n79-5" id="rn79-5">5</a> For Thy grace hath been great towards me, And great hath been Thy mercy to my soul; Let Thy grace be lift up upon my sons, And let not wicked spirits rule over them Lest they should destroy them from the earth.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>But do Thou bless me and my sons, that we may increase and multiply and replenish the earth.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And Thou knowest how Thy Watchers, the fathers of these spirits, acted in my day: and as for these spirits which are living, imprison them and hold them fast in the place of condemnation, and let them not bring destruction on the sons of thy servant, my God; for these are malignant, and created in order to destroy.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And let them not rule over the spirits of the living; for Thou alone canst exercise dominion over them. And let them not have power over the sons of the righteous from henceforth and for evermore."</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And the Lord our God bade us to bind all. <a class="fnref" href="#n80-1" id="rn80-1">1</a></p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And the chief of the spirits, Mastêmâ, <a class="fnref" href="#n80-2" id="rn80-2">2</a> came and said: "Lord, Creator, let some of them remain before me, and let them hearken to my voice, and do all that I shall say unto them; for if some of them are not left to me, I shall not be able to execute the power of my will on the sons of men; for these are for corruption and leading astray before my judgment, for great is the wickedness of the sons of men."</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And He said: "Let the tenth part of them remain before him, and let nine parts descend into the place of condemnation." <a class="fnref" href="#n80-3" id="rn80-3">3</a></p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And one of us <a class="fnref" href="#n80-4" id="rn80-4">4</a> He commanded that we should teach Noah all their medicines; for He knew that they would not walk in uprightness, nor strive in righteousness.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And we did according to all His words: all the malignant evil ones we bound in the place of condemnation, and a tenth part of them we left that they might be subject before Satan <a class="fnref" href="#n80-5" id="rn80-5">5</a> on the earth.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And we explained to Noah all the medicines of their diseases, together with their seductions, how he might heal them with herbs of the earth.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And Noah wrote down all things in a book as we instructed him concerning every kind of medicine. Thus the evil spirits were precluded from (hurting) the sons of Noah.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And he gave all that he had written to Shem, his eldest son; for he loved him exceedingly above all his sons.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And Noah slept with his fathers, and was buried on Mount Lûbâr in the land of Ararat.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>Nine hundred and fifty years he completed in his life, nineteen jubilees and two weeks and five years.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And in his life on earth he excelled the children of men save Enoch because of the righteousness, wherein he was perfect. For Enoch's office was ordained for a testimony to the generations of the world, <a class="fnref" href="#n81-1" id="rn81-1">1</a> so that he should recount all the deeds of generation unto generation, till the day of judgment.</p><h2 class="sect">The Tower of Babel and the Confusion of Tongues (x. 18-27; cf. Gen. xi. 1-9).<span class="cf">cf. Gen. xi. 1-9</span></h2><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And in the three and thirtieth jubilee, in the first year in the second week, Peleg took to himself a wife, whose name was Lômnâ the daughter of Sînâ’ar, and she bare him a son in the fourth year of this week, and he called his name Reu; <a class="fnref" href="#n81-2" id="rn81-2">2</a> for he said: "Behold the children of men have become evil <a class="fnref" href="#n81-3" id="rn81-3">3</a> through the wicked purpose of building for themselves a city and a tower in the land of Shinar."</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>For they departed from the land of Ararat eastward to Shinar; for in his days they built the city and the tower, saying, "Go to, let us ascend thereby into heaven." <a class="fnref" href="#n81-4" id="rn81-4">4</a></p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And they began to build, and in the fourth week they made brick with fire, and the bricks served them for stone, and the clay <a class="fnref" href="#n81-5" id="rn81-5">5</a> with which they cemented them together was asphalt which cometh out of the sea, and out of the fountains of water in the land of Shinar.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And they built it: forty and three years were they building it; its breadth was 203 bricks, and the height (of a brick) was the third of one; its height amounted to 5433 cubits and 2 palms, and (the extent of one wall was) thirteen stades (and of the other thirty stades).</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And the Lord our God said unto us: "Behold, they are one people, and (this) they begin to do, and now nothing will be withholden from them. Go to, let us go down and confound their language, that they may not understand one another's speech, <a class="fnref" href="#n82-1" id="rn82-1">1</a> and they may be dispersed into cities and nations, and one purpose will no longer abide with them till the day of judgment."</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And the Lord descended, and we descended with Him to see the city and the tower which the children of men had built.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And He confounded their language, and they no longer understood one another's speech, and they ceased then to build the city and the tower.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>For this reason the whole land of Shinar is called Babel, because the Lord did there confound all the language of the children of men, and from thence they were dispersed <a class="fnref" href="#n82-2" id="rn82-2">2</a> into their cities, each according to his language and his nation. <a class="fnref" href="#n82-3" id="rn82-3">3</a></p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And the Lord sent a mighty wind <a class="fnref" href="#n82-4" id="rn82-4">4</a> against the tower and overthrew it upon the earth, and behold it was between Asshur and Babylon in the land of Shinar, and they called its name "Overthrow." <a class="fnref" href="#n82-5" id="rn82-5">5</a></p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>In the fourth week in the first year in the beginning thereof in the four and thirtieth jubilee, were they dispersed from the land of Shinar.</p><h2 class="sect">The Children of Noah enter their Districts Canaan seizes Palestine wrongfully; Madai receives Media</h2><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And Ham and his sons went into the land which he was to occupy, which he acquired as his portion in the land of the south. <a class="fnref" href="#n83-1" id="rn83-1">1</a></p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>And Canaan saw the land of Lebanon to the river of Egypt that it was very good, and he went not into the land of his inheritance to the west (that is to) the sea, <a class="fnref" href="#n83-2" id="rn83-2">2</a> and he dwelt in the land of Lebanon, eastward and westward from the border of Jordan and from the border of the sea. <a class="fnref" href="#n83-3" id="rn83-3">3</a></p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>And Ham, his father, and Cush and Mizraim, his brothers, said unto him: "Thou hast settled in a land which. is not thine, and which did not fall to us by lot: do not do so; for if thou dost do so, thou and thy sons will fall in the land and (be) accursed through sedition; for by sedition ye have settled, and by sedition will thy children fall, and thou shalt be rooted out for ever.</p><p class="v" id="v31"><a class="vn" href="#v31" data-anchor="v31">31</a>Dwell not in the dwelling of Shem; for to Shem and to his sons did it come by their lot.</p><p class="v" id="v32"><a class="vn" href="#v32" data-anchor="v32">32</a>Cursed art thou, and cursed shalt thou be beyond all the sons of Noah, by the curse <a class="fnref" href="#n83-4" id="rn83-4">4</a> by which we bound ourselves by an oath in the presence of the holy judge, <a class="fnref" href="#n83-5" id="rn83-5">5</a> and in the presence of Noah our father."</p><p class="v" id="v33"><a class="vn" href="#v33" data-anchor="v33">33</a>But he did not hearken unto them, and dwelt in the land of Lebanon from Hamath <a class="fnref" href="#n83-6" id="rn83-6">6</a> to the entering of Egypt, <a class="fnref" href="#n83-7" id="rn83-7">7</a> he and his sons until this day.</p><p class="v" id="v34"><a class="vn" href="#v34" data-anchor="v34">34</a>And for this reason that land is named Canaan.</p><p class="v" id="v35"><a class="vn" href="#v35" data-anchor="v35">35</a>And Japheth and his sons went towards the sea and dwelt in the land of their portion, and Madai saw the land of the sea and it did not please him, and he begged a (portion) from Elam and Asshur and Arpachshad, his wife's brother, and he dwelt in the land of Media, near to his wife's brother until this day.</p><p class="v" id="v36"><a class="vn" href="#v36" data-anchor="v36">36</a>And he called his dwelling-place, and the dwelling-place of his sons, Media, after the name of their father Madai.</p></div><div class="margin"><aside class="note source" id="n79-1"><a class="back" href="#rn79-1">↩</a>Here we have (in x. 1-15) another fragment of the lost Apocalypse of Noah (as in vii. 20-39). The Hebrew original of 1-2 and 9-14 of this section is extant.</aside>
+<aside class="note source" id="n79-2"><a class="back" href="#rn79-2">↩</a>i. e. the spirits which issued from the children of the angels and the daughters of men.</aside>
+<aside class="note source" id="n79-3"><a class="back" href="#rn79-3">↩</a>Omit the children of.</aside>
+<aside class="note source" id="n79-4"><a class="back" href="#rn79-4">↩</a>Cf. Num. xvi. 22, xxvii. 16.</aside>
+<aside class="note source" id="n79-5"><a class="back" href="#rn79-5">↩</a>Cf. 2 Thess. ii. 3.</aside>
+<aside class="note source" id="n80-1"><a class="back" href="#rn80-1">↩</a>Cf. 1 Enoch x. 4, 12.</aside>
+<aside class="note source" id="n80-2"><a class="back" href="#rn80-2">↩</a>The word apparently = ma(cid:31)tîm (Hif. part of (cid:31)â(cid:31)am), "to be adverse," "inimical"; the Heb. noun ma(cid:31)(cid:31)ēmâ = "animosity," in Hos. ix. 7, 8. Thus the word = Satan ("adversary"). As a proper name it is practically confined to the Jubilees-literature. The evil spirits under the guidance of Mastêmâ tempt, accuse and destroy men.</aside>
+<aside class="note source" id="n80-3"><a class="back" href="#rn80-3">↩</a>Only one-tenth are permitted to act freely against mankind till the Day of judgment; but in 1 Enoch xv.-xvi. all the demons are allowed to do this.</aside>
+<aside class="note source" id="n80-4"><a class="back" href="#rn80-4">↩</a>The angel Raphael is referred to, as is shown by the Hebrew Book of Noah. For Raphael in this connection cf. Tobit iii. 17, xii. 14, 15.</aside>
+<aside class="note source" id="n80-5"><a class="back" href="#rn80-5">↩</a>Thus Satan and Mastêmâ are identical. Next: The Tower of Babel and the Confusion of Tongues (x. 18-27)</aside>
+<aside class="note source" id="n81-1"><a class="back" href="#rn81-1">↩</a>Cf. iv. 24.</aside>
+<aside class="note source" id="n81-2"><a class="back" href="#rn81-2">↩</a>Cf. Gen. xi. 18.</aside>
+<aside class="note source" id="n81-3"><a class="back" href="#rn81-3">↩</a>There is a play on the name Reu in Hebrew here (re‘û . . . rā‘û).</aside>
+<aside class="note source" id="n81-4"><a class="back" href="#rn81-4">↩</a>Cf. Gen. xi. 4.</aside>
+<aside class="note source" id="n81-5"><a class="back" href="#rn81-5">↩</a>Cf. Gen. xi. 3.</aside>
+<aside class="note source" id="n82-1"><a class="back" href="#rn82-1">↩</a>Cf. Gen. xi. 6 f.</aside>
+<aside class="note source" id="n82-2"><a class="back" href="#rn82-2">↩</a>Cf. Gen. xi. 9.</aside>
+<aside class="note source" id="n82-3"><a class="back" href="#rn82-3">↩</a>According to Jewish tradition seventy nations (under seventy patron angels) were thus created.</aside>
+<aside class="note source" id="n82-4"><a class="back" href="#rn82-4">↩</a>An old tradition; cf. Sibyll. Oracles iii. 98-103; Josephus, Ant. i. 4, 3.</aside>
+<aside class="note source" id="n82-5"><a class="back" href="#rn82-5">↩</a>A play on the preceding verb (" overthrew "). But its real name was Babel. Next: The Children of Noah enter their Districts Canaan seizes Palestine wrongfully; Madai receives Media (x. 28-36)</aside>
+<aside class="note source" id="n83-1"><a class="back" href="#rn83-1">↩</a>"South" should be "north" here: N. Africa is meant.</aside>
+<aside class="note source" id="n83-2"><a class="back" href="#rn83-2">↩</a>i. e. N.-W. Africa (his true inheritance).</aside>
+<aside class="note source" id="n83-3"><a class="back" href="#rn83-3">↩</a>Canaan wrongfully seized Palestine, which belonged by right to Arpachshad.</aside>
+<aside class="note source" id="n83-4"><a class="back" href="#rn83-4">↩</a>Cf. ix, 14, 15.</aside>
+<aside class="note source" id="n83-5"><a class="back" href="#rn83-5">↩</a>i. e. the angel who was present at the lot (viii. 10).</aside>
+<aside class="note source" id="n83-6"><a class="back" href="#rn83-6">↩</a>Hamath marked the northern boundary of Israel.</aside>
+<aside class="note source" id="n83-7"><a class="back" href="#rn83-7">↩</a>The extreme south.</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch09.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch11.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

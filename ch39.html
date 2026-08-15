@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XXXIX · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html" class="active"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XXXIX</h1>
+    
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Joseph's Service with Potiphar; his Purity and Imprisonment (xxxix. 1-13; cf. Gen. xxxix.).<span class="cf">cf. Gen. xxxix.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And Jacob dwelt in the land of his father's sojournings in the land of Canaan.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>These are the generations of Jacob. And Joseph was seventeen years old <a class="fnref" href="#n184-15" id="rn184-15">15</a> when they took him down into the land of Egypt, and Potiphar, an eunuch of Pharaoh, the chief cook <a class="fnref" href="#n185-1" id="rn185-1">1</a> bought him.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And he set Joseph over all his house, and the blessing of the Lord came upon the house of the Egyptian on account of Joseph, and the Lord prospered him in all that he did.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And the Egyptian committed everything into the hands of Joseph; for he saw that the Lord was with him, and that the Lord prospered him in all that he did.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And Joseph's appearance was comely and very beautiful was his appearance, and his master's wife lifted up her eyes and saw Joseph, and she loved him, and besought him to lie with her.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>But he did not surrender his soul, and he remembered the Lord and the words which Jacob, his father, used to read from amongst the words of Abraham, <a class="fnref" href="#n185-2" id="rn185-2">2</a> that no man should commit fornication with a woman who hath a husband; that for him the punishment of death hath been ordained in the heavens before the Most High God, and the sin will be recorded against him in the eternal books continually before the Lord.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And Joseph remembered these words and refused to lie with her.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And she besought him for a year, but he refused and would not listen.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>But she embraced him and held him fast in the house in order to force him to lie with her, and closed the doors of the house and held him fast; but he left his garment in her hands and broke through the door and fled without from her presence.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And the woman saw that he would not lie with her, and she calumniated him in the presence of his lord, saying: "Thy Hebrew servant, whom thou lovest, sought to force me so that he might lie with me; and it came to pass when I lifted up my voice that he fled and left his garment in my hands when I held him, and he brake through the door."</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And the Egyptian saw the garment of Joseph and the broken door, and heard the words of his wife, and cast Joseph into prison into the place where the prisoners were kept whom the king imprisoned.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And he was there in the prison; and the Lord gave Joseph favour in the sight of the chief of the prison guards and compassion before him, for he saw that the Lord was with him, and that the Lord made all that he did to prosper.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And he committed all things into his hands, and the chief of -the prison guards knew of nothing that was with him, <a class="fnref" href="#n186-1" id="rn186-1">1</a> for Joseph did everything, and the Lord perfected it.</p><h2 class="sect">Joseph interprets the Dreams of the Chief Butler and the Chief Baker (xxxix. 14- 18; cf. Gen. xl.).,<span class="cf">cf. Gen. xl.</span></h2><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And he remained there two years. <a class="fnref" href="#n186-2" id="rn186-2">2</a> And in those days Pharaoh, king of Egypt, was wroth against his two eunuchs, against the chief butler and against the chief baker, and he put them in ward in the house of the chief cook, <a class="fnref" href="#n186-3" id="rn186-3">3</a> in the prison where Joseph was kept.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And the chief of the prison guards appointed Joseph to serve them; and he served before them.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And they both dreamed a dream, the chief butler and the chief baker, and they told it to Joseph.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And as he interpreted to them so it befell them, and Pharaoh restored the chief butler to his office, and the (chief) baker he slew, as Joseph had interpreted to them.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>But the chief butler forgot Joseph in the prison, although he had informed him what would befall him, and did not remember to inform Pharaoh how Joseph had told him for he forgot.</p></div><div class="margin"><aside class="note source" id="n184-15"><a class="back" href="#rn184-15">↩</a>Cf. Gen. xxxvii. 2.</aside>
+<aside class="note source" id="n185-1"><a class="back" href="#rn185-1">↩</a>Cf. xxxiv. ii (note).</aside>
+<aside class="note source" id="n185-2"><a class="back" href="#rn185-2">↩</a>Cf. xx. 4, xxv. 7.</aside>
+<aside class="note source" id="n186-1"><a class="back" href="#rn186-1">↩</a>Cf. Gen. xxxix. 8. Next: Joseph interprets the Dreams of the Chief Butler and the Chief Baker (xxxix. 14-18</aside>
+<aside class="note source" id="n186-2"><a class="back" href="#rn186-2">↩</a>Cf. Gen. xli. 1.</aside>
+<aside class="note source" id="n186-3"><a class="back" href="#rn186-3">↩</a>Cf. xxxiv. 11 (note). Next: Pharaoh's Dreams and their Interpretation. Joseph's Elevation and Marriage (xl. 1-13)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch38.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch40.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

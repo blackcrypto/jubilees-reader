@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XV · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html" class="active"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XV</h1>
+    
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">The Feast of First-fruits Circumcision instituted. The Promise of Isaac's Birth. Circumcision ordained for all Israel (xv. 1-34; cf. Gen. xvii.).<span class="cf">cf. Gen. xvii.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the fifth year of the †fourth† <a class="fnref" href="#n98-1" id="rn98-1">1</a> week of this jubilee, in the third month, in the middle of the month, <a class="fnref" href="#n98-2" id="rn98-2">2</a> Abram celebrated the feast of the first-fruits <a class="fnref" href="#n98-3" id="rn98-3">3</a> of the grain harvest.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And he offered new offerings on the altar, the first-fruits of the produce, unto the Lord, an heifer and a goat and a sheep on the altar as a burnt sacrifice unto the Lord; their fruit-offerings and their drink-offerings he offered upon the altar with frankincense. <a class="fnref" href="#n98-4" id="rn98-4">4</a></p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And the Lord appeared to Abram, and said unto him: "I am God Almighty; approve thyself before Me and be thou perfect.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And I will make My covenant between Me and thee, and I will multiply thee exceedingly." <a class="fnref" href="#n99-1" id="rn99-1">1</a></p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a><a class="fnref" href="#n99-2" id="rn99-2">2</a> And Abram fell on his face, and God talked with him, and said:</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>"Behold My ordinance is with thee, And thou wilt be the father of many nations.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>Neither will thy name any more be called Abram, But thy name from henceforth, even for ever, shall be Abraham. For the father of many nations have I made thee.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And I shall make thee very great, And I shall make thee into nations, And kings will come forth from thee.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And I shall establish My covenant between Me and thee, and thy seed after thee, throughout their generations, for an eternal covenant, so that I may be a God unto thee, and to thy seed after thee.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>(And I shall give to thee and to thy seed after thee) <a class="fnref" href="#n99-3" id="rn99-3">3</a> the land where thou hast been a sojourner, the land of Canaan, that thou mayst possess it for ever, and I shall be their God."</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a><a class="fnref" href="#n99-4" id="rn99-4">4</a> And the Lord said unto Abraham: "And as for thee, do thou keep My Covenant, thou and thy seed after thee, and circumcise ye every male among you, and circumcise your foreskins, and it will be a token of an eternal covenant between Me and you.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And the child on the eighth day <a class="fnref" href="#n99-5" id="rn99-5">5</a> ye will circumcise, every male throughout your generations, him that is born in the house, or whom ye have bought with money from any stranger, whom ye have acquired who is not of thy seed.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>He that is born in thy house will surely be circumcised, and those whom thou hast bought with money will be circumcised, and My covenant will be in your flesh for an eternal ordinance.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a><a class="fnref" href="#n100-1" id="rn100-1">1</a> And the uncircumcised male who is not circumcised in the flesh of his foreskin on the eighth day, <a class="fnref" href="#n100-2" id="rn100-2">2</a> that soul will be cut off from his people, for he hath broken My covenant."</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a><a class="fnref" href="#n100-3" id="rn100-3">3</a> And God said unto Abraham: "As for Sarai thy wife, her name will no more be called Sarai, but Sarah will be her name.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And I shall bless her, and give thee a son by her, and I shall bless him, <a class="fnref" href="#n100-4" id="rn100-4">4</a> and he will become a nation, and kings of nations will proceed from him."</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And Abraham fell on his face, and rejoiced, and said in his heart: "Shall a son be born to him that is a hundred years old, and shall Sarah, who is ninety years old, bring forth?"</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And Abraham said unto God: "O that Ishmael might live before thee!"</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And God said: "Yea, and Sarah also will bear thee a son, and thou wilt call his name Isaac, and I shall establish My covenant with him, an everlasting covenant, and for his seed after him.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And as for Ishmael also have I heard thee, and behold I shall bless him, and make him great, and multiply him exceedingly, and he will beget twelve princes, and I shall make him a great nation.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>But My covenant shall I establish with Isaac, whom Sarah will bear to thee, in these days, in the next year."</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And He left off speaking with him, and God went up from Abraham.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a><a class="fnref" href="#n100-5" id="rn100-5">5</a> And Abraham did according as God had said unto him, and he took Ishmael his son, and all that were born in his house, and whom he had bought with his money, every male in his house, and circumcised the flesh of their foreskin.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And on the selfsame day <a class="fnref" href="#n101-1" id="rn101-1">1</a> was Abraham circumcised, and all the men of his house, (and those born in the house), and all those, whom he had bought with money from the children of the stranger, were circumcised with him.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>This law is for all the generations for ever, and there is no circumcision of the days, <a class="fnref" href="#n101-2" id="rn101-2">2</a> and no omission of one day out of the eight days; <a class="fnref" href="#n101-3" id="rn101-3">3</a> for it is an eternal ordinance, ordained and written on the heavenly tables.</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And every one that is born, the flesh of whose foreskin is not circumcised on <a class="fnref" href="#n101-4" id="rn101-4">4</a> the eighth day, belongeth not to the children of the covenant which the Lord made with Abraham, but to the children of destruction; nor is there, moreover, any sign on him that he is the Lord's, but (he is destined) to be destroyed and slain from the earth, and to be rooted out of the earth, for he hath broken the covenant of the Lord our God.</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>For all the angels of the presence and all the angels of sanctification <a class="fnref" href="#n101-5" id="rn101-5">5</a> have been so created <a class="fnref" href="#n101-6" id="rn101-6">6</a> from the day of their creation, and before the angels of the presence and the angels of sanctification He hath sanctified Israel, that they should be with Him and with His holy angels.</p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And do thou command the children of Israel and let them observe the sign of this covenant for their generations as an eternal ordinance, and they will not be rooted out of the land.</p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>For the command is ordained for a covenant, that they should observe it for ever among all the children of Israel.</p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>For Ishmael and his sons and his brothers and Esau, the Lord did not cause to approach Him, and he chose them not because they are the children of Abraham, because He knew them, but He chose Israel to be His people.</p><p class="v" id="v31"><a class="vn" href="#v31" data-anchor="v31">31</a>And He sanctified it, and gathered it from amongst all the children of men <a class="fnref" href="#n102-1" id="rn102-1">1</a> ; for there are many nations and many peoples, and all are His, and over all hath He placed spirits in authority to lead them astray <a class="fnref" href="#n102-2" id="rn102-2">2</a> from Him.</p><p class="v" id="v32"><a class="vn" href="#v32" data-anchor="v32">32</a>But over Israel He did not appoint any angel or spirit, for He alone is their ruler, and He will preserve them and require them at the hand of His angels and His spirits, and at the hand of all His powers in order that He may preserve them and bless them, and that they may be His and He may be theirs from henceforth for ever.</p><p class="v" id="v33"><a class="vn" href="#v33" data-anchor="v33">33</a>And now I announce unto thee that the children of Israel will not keep true to this ordinance, and they will not circumcise their sons according to all this law; for in the flesh of their circumcision they will omit this circumcision of their sons, and all of them, sons of Beliar, <a class="fnref" href="#n102-3" id="rn102-3">3</a> will leave their sons uncircumcised as they were born. <a class="fnref" href="#n102-4" id="rn102-4">4</a></p><p class="v" id="v34"><a class="vn" href="#v34" data-anchor="v34">34</a>And there will be great wrath from the Lord against the children of Israel, because they have forsaken His covenant and turned aside from His word, and provoked and blasphemed, inasmuch as they do not observe the ordinance of this law; for they have treated their members like the Gentiles, so that they may be removed and rooted out of the land. And there will no more be pardon or forgiveness unto them [so that there should be forgiveness and pardon] for all the sin of this eternal error.</p></div><div class="margin"><aside class="note source" id="n98-1"><a class="back" href="#rn98-1">↩</a>Read "third."</aside>
+<aside class="note source" id="n98-2"><a class="back" href="#rn98-2">↩</a>i. e. the 15th of Sivan.</aside>
+<aside class="note source" id="n98-3"><a class="back" href="#rn98-3">↩</a>i. e. the Feast of Weeks. The Pharisees celebrated this feast not on Sivan 15th, but on Sivan 6th. See further Introduction.</aside>
+<aside class="note source" id="n98-4"><a class="back" href="#rn98-4">↩</a>Cf. xiv. 9. The offerings prescribed for this festival in Lev. xxiii. 118-20 are different.</aside>
+<aside class="note source" id="n99-1"><a class="back" href="#rn99-1">↩</a>For 3-4 cf. Gen. xvii. 1 f.</aside>
+<aside class="note source" id="n99-2"><a class="back" href="#rn99-2">↩</a>For 5-10 cf. Gen. xvii. 3-8.</aside>
+<aside class="note source" id="n99-3"><a class="back" href="#rn99-3">↩</a>The bracketed words (lost through homoioteleuton) are restored from Gen. xvii. 8.</aside>
+<aside class="note source" id="n99-4"><a class="back" href="#rn99-4">↩</a>For 11-13 cf. Gen. xvii. 9-13.</aside>
+<aside class="note source" id="n99-5"><a class="back" href="#rn99-5">↩</a>MT has "and the child of eight days." Our text here may be a deliberate alteration.</aside>
+<aside class="note source" id="n100-1"><a class="back" href="#rn100-1">↩</a>For 14 cf. Gen. xvii. 14.</aside>
+<aside class="note source" id="n100-2"><a class="back" href="#rn100-2">↩</a>The words on the eighth day are absent from the text of Gen. xvii. 14, in MT, Syr. and Vulg., but are attested by the LXX and Sam. The strict rule about the eighth day was later relaxed among the Jews, but is still practised by the Samaritans.</aside>
+<aside class="note source" id="n100-3"><a class="back" href="#rn100-3">↩</a>For 15-22 cf. Gen. xvii. 15-22.</aside>
+<aside class="note source" id="n100-4"><a class="back" href="#rn100-4">↩</a>So LXX, Sam., Syr. and Vulg. of Gen. xvii. 22. But MT makes the text refer to Sarah ("yea, I will bless her, [and she shall be a mother of nations: kings of peoples shall be of her]," R.V.).</aside>
+<aside class="note source" id="n100-5"><a class="back" href="#rn100-5">↩</a>For 23-24 cf. Gen. xvii. 23-27.</aside>
+<aside class="note source" id="n101-1"><a class="back" href="#rn101-1">↩</a>i. e. the 15th of Sivan.</aside>
+<aside class="note source" id="n101-2"><a class="back" href="#rn101-2">↩</a>i. e.? of the days preceding the eighth day.</aside>
+<aside class="note source" id="n101-3"><a class="back" href="#rn101-3">↩</a>Only on the eighth day is the rite to be performed.</aside>
+<aside class="note source" id="n101-4"><a class="back" href="#rn101-4">↩</a>Ethiop. MSS. and Lat. have "till."</aside>
+<aside class="note source" id="n101-5"><a class="back" href="#rn101-5">↩</a>The two highest orders of angels, who share with Israel the privilege of observing the Sabbath (cf. ii. 18-21), and of being circumcised.</aside>
+<aside class="note source" id="n101-6"><a class="back" href="#rn101-6">↩</a>i. e. have been created circumcised.</aside>
+<aside class="note source" id="n102-1"><a class="back" href="#rn102-1">↩</a>Israel is God's portion; cf. Deut. xxxii. 8-9 in the LXX form of which "angels" is read instead of "children of Israel"; cf. also Ecclus. xvii. 17. The "seventy nations of the earth were placed under the dominion of seventy angels"; but in Dan. x. 13, 20, 21, xii. 1, Michael is referred to as Israel's angel-prince.</aside>
+<aside class="note source" id="n102-2"><a class="back" href="#rn102-2">↩</a>This describes the result, not the original purpose of their appointment.</aside>
+<aside class="note source" id="n102-3"><a class="back" href="#rn102-3">↩</a>In i. 20 (see note). Beliar is clearly a Satanic being. This meaning may possibly be present in the use of the expression here. "Sons of Belial" is common in the O.T. (cf. e.g. 1 Sam. ii. 12).</aside>
+<aside class="note source" id="n102-4"><a class="back" href="#rn102-4">↩</a>Apparently such apostasy was widely spread when our author wrote. Next: Angelic Visitation of Abraham in Hebron; Promise of Isaac's Birth repeated. The Destruction of Sodom and Lot's Deliverance (xvi. 1-9)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch14.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch16.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

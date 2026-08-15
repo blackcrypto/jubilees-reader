@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XXX · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html" class="active"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XXX</h1>
+    
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Dinah ravished. Slaughter of the Shechemites. Laws against Intermarriage between Israel and the Heathen. The Choice of Levi (xxx. 1-26; cf. Gen. xxxiv.).<span class="cf">cf. Gen. xxxiv.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the first year of the sixth week he went up to Salem, to the east of Shechem, in peace, <a class="fnref" href="#n153-2" id="rn153-2">2</a> in the fourth month.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And there they carried off Dinah, the daughter of Jacob, into the house of Shechem, the son of Hamor, the Hivite, the prince of the land, and he lay with her and defiled her, and she was a little girl, a child of twelve years.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And he besought his father and her brothers that she might be given to him to wife. And Jacob and his sons were wroth because of the men of Shechem; <a class="fnref" href="#n153-3" id="rn153-3">3</a> for they had defiled Dinah, their sister, and they spake to them with evil intent and dealt deceitfully with them and beguiled them.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And Simeon and Levi came unexpectedly to Shechem and executed judgment on all the men of Shechem, and slew all the men whom they found in it, and left not a single one remaining in it: they slew all in torments because they had dishonoured their sister Dinah.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And thus let it not again be done from henceforth that a daughter of Israel be defiled; for judgment is ordained in heaven against them that they should destroy with the sword all the men of the Shechemites because they had wrought shame in Israel.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And the Lord delivered them into the hands of the sons of Jacob that they might exterminate them with the sword and execute judgment upon them, and that it might not thus again be done in Israel that a virgin of Israel should be defiled.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And if there is any man who wisheth in Israel to give his daughter or his sister to any man who is of the seed of the Gentiles he shall surely die, and they shall stone him with stones; for he hath wrought shame in Israel; and they shall burn the woman with fire, because she hath dishonoured the name of the house of her father, and she shall be rooted out of Israel. <a class="fnref" href="#n154-1" id="rn154-1">1</a></p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And let not an adulteress and no uncleanness be found in Israel throughout all the days of the generations of the earth; for Israel is holy unto the Lord, and every man who hath defiled (it) shall surely die: they shall stone him with stones.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>For thus hath it been ordained and written in the heavenly tables regarding all the seed of Israel: he who defileth (it) shall surely die, and he shall be stoned with stones.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And to this law there is no limit of days, and no remission, nor any atonement: but the man who hath defiled his daughter shall be rooted out in the midst of all Israel, because he hath given of his seed to Moloch, <a class="fnref" href="#n155-1" id="rn155-1">1</a> and wrought impiously so as to defile it.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And do thou, Moses, command the children of Israel and exhort them not to give their daughters to the Gentiles, and not to take for their sons any of the daughters of the Gentiles, for this is abominable before the Lord.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>For this reason I have written for thee in the words of the Law all the deeds of the Shechemites, which they wrought against Dinah, and how the sons of Jacob spake, saying: "We shall not give our daughter to a man who is uncircumcised; for that were a reproach unto us."</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And it is a reproach to Israel, to those who give, and to those who take the daughters of the Gentiles; for this is unclean and abominable to Israel.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a><a class="fnref" href="#n155-2" id="rn155-2">2</a> And Israel will not be free from this uncleanness if it hath a wife of the daughters of the Gentiles, or hath given any of its daughters to a man who is of any of the Gentiles.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>For there will be plague upon plague, and curse upon curse, and every judgment and plague and curse will come (upon him): if he do this thing, or hide his eyes from <a class="fnref" href="#n155-3" id="rn155-3">3</a> those who commit uncleanness, or those who defile the sanctuary of the Lord, or those who profane His holy name, <a class="fnref" href="#n155-4" id="rn155-4">4</a> (then) will the whole nation <a class="fnref" href="#n155-5" id="rn155-5">5</a> together be judged for all the uncleanness and profanation of this (man).</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And there will be no respect of persons [and no consideration of persons], <a class="fnref" href="#n155-6" id="rn155-6">6</a> and no receiving at his hands of fruits and offerings and burnt-offerings and fat, nor the fragrance of sweet savour, so as to accept it: and so fare every man or woman in Israel who defileth the sanctuary.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>For this reason I have commanded thee, saying: "Testify this testimony to Israel: see how the Shechemites fared and their sons: how they were delivered into the hands of two sons of Jacob, and they slew them under tortures, and it was (reckoned) unto them for righteousness, and it is written down to them for righteousness.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And the seed of Levi was chosen for the priesthood, and to be Levites, that they might minister before the Lord, as we, continually, and that Levi and his sons may be blessed for ever; for he was zealous to execute righteousness and judgment and vengeance on all those who arose against Israel. <a class="fnref" href="#n156-1" id="rn156-1">1</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And so they inscribe as a testimony in his favour on the heavenly tables blessing and righteousness before the God of all:</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And we remember the righteousness which the man fulfilled during his life, at all periods of the year; until a thousand generations they will record it, and it will come to him and to his descendants after him, and he hath been recorded on the heavenly tables as a friend <a class="fnref" href="#n156-2" id="rn156-2">2</a> and a righteous man.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>All this account I have written for thee, and have commanded thee to say to the children of Israel, that they should not commit sin nor transgress the ordinances nor break the covenant which hath been ordained for them, (but) that they should fulfil it and be recorded as friends. <a class="fnref" href="#n156-2" id="rn156-2">2</a></p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>But if they transgress and work uncleanness in every way, they will be recorded on the heavenly tables as adversaries, and they will be destroyed out of the book of life, <a class="fnref" href="#n156-3" id="rn156-3">3</a> and they will be recorded in the book of those who will be destroyed and with those who will be rooted out of the earth.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And on the day when the sons of Jacob slew Shechem a writing was recorded in their favour in heaven that they had executed righteousness and uprightness and vengeance on the sinners, and it was written for a blessing.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And they brought Dinah, their sister, out of the house of Shechem, and they took captive everything that was in Shechem, their sheep and their oxen and their asses, and all their wealth, and all their flocks, and brought them all to Jacob their father.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And he reproached them because they had put the city to the sword; <a class="fnref" href="#n157-1" id="rn157-1">1</a> for he feared those who dwelt in the land, the Canaanites and the Perizzites.</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And the dread of the Lord was upon all the cities which are around about Shechem, and they did not rise to pursue after the sons of Jacob; for terror had fallen upon them. <a class="fnref" href="#n157-2" id="rn157-2">2</a></p></div><div class="margin"><aside class="note source" id="n153-2"><a class="back" href="#rn153-2">↩</a>Based upon xxxiii. 18 (cf. R.V. marg.). Our text combines two readings ("Shalem," the name of a city, and shālōm, "peace").</aside>
+<aside class="note source" id="n153-3"><a class="back" href="#rn153-3">↩</a>Our author omits all reference to the circumcision of the Shechemites, because he approves of the conduct of Simeon and Levi, and extols it. On the other hand, their conduct in the matter is severely reprobated in Gen. xlix. 5-7. Our author's view seems to reflect a bitter feeling against the people of Shechem. which prevailed in his time.</aside>
+<aside class="note source" id="n154-1"><a class="back" href="#rn154-1">↩</a>Notice the passionate denunciation of mixed marriages. The burning of the woman with fire, according to the Mosaic Law (Lev. xxi. 9), was reserved for the priest's daughter who played the harlot.</aside>
+<aside class="note source" id="n155-1"><a class="back" href="#rn155-1">↩</a>Cf. Lev. xviii. 21: here the prohibition in Lev. against making "any of thy seed pass through the fire to Molech" is interpreted as = to give one's child in marriage to a Gentile; so, also, Targ. Ps.-Jonathan on this verse. In later times the rule has not always been strictly enjoined.</aside>
+<aside class="note source" id="n155-2"><a class="back" href="#rn155-2">↩</a>14-15 are based upon Lev. xx. 2-4.</aside>
+<aside class="note source" id="n155-3"><a class="back" href="#rn155-3">↩</a>i. e. "ignore"; cf. Lev. xx. 4.</aside>
+<aside class="note source" id="n155-4"><a class="back" href="#rn155-4">↩</a>Cf. Lev. xx. 3.</aside>
+<aside class="note source" id="n155-5"><a class="back" href="#rn155-5">↩</a>In Lev. xx. 5, only the guilty man's family is involved.</aside>
+<aside class="note source" id="n155-6"><a class="back" href="#rn155-6">↩</a>Bracketed as a dittograph.</aside>
+<aside class="note source" id="n156-1"><a class="back" href="#rn156-1">↩</a>A different reason for Levi's choice for the priesthood is given in xxxii. 3; cf. also Test. Levi iv. 2.</aside>
+<aside class="note source" id="n156-2"><a class="back" href="#rn156-2">↩</a>sc. of God.</aside>
+<aside class="note source" id="n156-3"><a class="back" href="#rn156-3">↩</a>This expression, derived from the O.T. (cf. Ps. lxix. 28; Exod. xxxii. 32) had reference originally to the temporal blessings of the theocracy, and this may be its meaning here; but later the meaning was extended to eternal life. It occurs frequently in the N.T. (cf. Rev. iii. 5, xiii. 8, etc.); cf. also 1 Enoch xlvii. 3.</aside>
+<aside class="note source" id="n157-1"><a class="back" href="#rn157-1">↩</a>Cf. Test. Levi vi.</aside>
+<aside class="note source" id="n157-2"><a class="back" href="#rn157-2">↩</a>Cf. Gen. xxxv. 5. Next: Jacob's Journey to Bethel and Hebron. Isaac blesses Levi and Judah (xxxi. 1-25</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch29.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch31.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

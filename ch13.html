@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XIII · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html" class="active"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XIII</h1>
+    <p class="am">Anno Mundi 1956–1964</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Abram with Lot in Canaan and Egypt (cf. Gen. xii. 4-20). Abram separates from Lot (cf. Gen. xiii. 11-18) (xiii. 1-21).<span class="cf">cf. Gen. xii. 4-20</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And Abram journeyed from Haran, and he took Sarai, his wife, and Lot his brother Haran's son, to the land of Canaan, and he came into †Asshur†, <a class="fnref" href="#n92-1" id="rn92-1">1</a> and proceeded to Shechem, and dwelt near a lofty oak. <a class="fnref" href="#n92-2" id="rn92-2">2</a></p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2–3</a>And he saw, and, behold, the land was very pleasant from the entering of Hamath to the lofty oak. <a class="fnref" href="#n92-3" id="rn92-3">3</a> . And the Lord said to him: "To thee and to thy seed will I give this land."</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And he built an altar there, and he offered thereon a burnt sacrifice to the Lord, who had appeared to him.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And he removed from thence unto the mountain . . . 3 Bethel on the west and Ai on the east, and pitched his tent there. <a class="fnref" href="#n92-4" id="rn92-4">4</a></p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And he saw and behold, the land was very wide and good, and everything grew thereon--vines and figs and pomegranates, oaks and ilexes, and terebinths and oil trees, and cedars and cypresses and date trees, and all trees of the field, and there was water on the mountains.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And he blessed the Lord who had led him out of Ur of the Chaldees, and had brought him to this land.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And it came to pass in the first year, in the seventh week, on the new moon of the first month, that he built an altar on this mountain, and called on the name of the Lord: "Thou, the eternal God, art my God." <a class="fnref" href="#n92-5" id="rn92-5">5</a></p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And he offered on the altar a burnt sacrifice unto the Lord that He should be with him and not forsake him all the days of his life.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And he removed from thence and went towards the south, <a class="fnref" href="#n93-1" id="rn93-1">1</a> and he came to Hebron, and Hebron was built at, that time, and he dwelt there two years, and he went (thence) into the land of the south, to Bealoth <a class="fnref" href="#n93-2" id="rn93-2">2</a> and there was a famine in the land.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And Abram went into Egypt <a class="fnref" href="#n93-3" id="rn93-3">3</a> in the third year of the week, and he dwelt in Egypt five years before his wife was torn away from him.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12–13</a>NOW Tanais <a class="fnref" href="#n93-4" id="rn93-4">4</a> in Egypt was at that time built--seven years after Hebron. <a class="fnref" href="#n93-5" id="rn93-5">5</a> 11 And it came to pass when Pharaoh seized Sarai, the wife of Abram, that the Lord plagued Pharaoh and his house with great plagues because of Sarai, Abram's wife.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And Abram was very glorious by reason of possessions in sheep, and cattle, and asses, and horses, and camels, and menservants, and maidservants, and in silver and gold exceedingly. And Lot also, his brother's son, was wealthy.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And Pharaoh gave back Sarai, the wife of Abram, and he sent him out of the land of Egypt, <a class="fnref" href="#n93-6" id="rn93-6">6</a> and he journeyed to the place where he had pitched his tent at the beginning, to the place of the altar, with Ai on the east, and Bethel on the west, and he blessed the Lord his God who had brought him back in peace. <a class="fnref" href="#n93-7" id="rn93-7">7</a></p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And it came to pass in the forty-first jubilee, in the third year of the first week, that he returned to this place and offered thereon a burnt sacrifice, and called on the name of the Lord, and said: "Thou, the most high God, art my God for ever and ever." <a class="fnref" href="#n93-8" id="rn93-8">8</a></p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And in the fourth year of this week Lot parted from him, and Lot dwelt in Sodom, and the men of Sodom were sinners exceedingly. <a class="fnref" href="#n93-9" id="rn93-9">9</a></p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And it grieved him in his heart that his brother's son had parted from him; for he had no children.</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a><a class="fnref" href="#n94-1" id="rn94-1">1</a> In that year when Lot was taken captive, the Lord said unto Abram, after that Lot had parted from him, in the fourth year of this week: "Lift up thine eyes from the place where thou art dwelling, northward and southward, and westward and eastward.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>For all the land which thou seest I shall give to thee and to thy seed for ever, and I shall make thy seed as the sand of the sea: <a class="fnref" href="#n94-2" id="rn94-2">2</a> though a man may number the dust of the earth, yet thy seed shall not be numbered. <a class="fnref" href="#n94-3" id="rn94-3">3</a></p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>Arise, walk (through the land) in the length of it and the breadth of it, and see it all; for to thy seed shall I give it." And Abram went to Hebron, and dwelt there.</p><h2 class="sect">The Campaign of Chedorlaomer (xiii. 22-29; cf. Gen. xiv.).<span class="cf">cf. Gen. xiv.</span></h2><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And in this year came Chedorlaomer, king of Elam, and Amraphel, king of Shinar, and Arioch, king of Sêllâsar <a class="fnref" href="#n94-4" id="rn94-4">4</a> and Têrgâl, <a class="fnref" href="#n94-5" id="rn94-5">5</a> king of nations, and slew the king of Gomorrah, and the king of Sodom fled, and many fell through wounds in the vale of Siddim, by the Salt Sea.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And they took captive Sodom and Adam <a class="fnref" href="#n94-6" id="rn94-6">6</a> and Zeboim, and they took captive Lot also, the son of Abram's brother, and all his possessions, and they went to Dan. <a class="fnref" href="#n94-7" id="rn94-7">7</a></p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And one who had escaped came and told Abram that his brother's son had been taken captive and (Abram) armed <a class="fnref" href="#n94-8" id="rn94-8">8</a> his household servants.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>. . . . . . . . . . . . for Abram, and for his seed, a tenth of the first-fruits to the Lord, <a class="fnref" href="#n95-1" id="rn95-1">1</a> and the Lord ordained it as an ordinance for ever that they should give it to the priests who served before Him, that they should possess it for ever. <a class="fnref" href="#n95-2" id="rn95-2">2</a></p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And to this law there is no limit of days; for He hath ordained it for the generations for ever that they should give to the Lord the tenth of everything, of the seed and of the wine and of the oil and of the cattle and of the sheep.</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>And He gave (it) unto His priests to eat and to drink with joy before Him.</p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And the king of Sodom came to him and bowed himself before him, and said: "Our Lord Abram, give unto us the souls which thou hast rescued, but let the booty be thine."</p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>And Abram said unto him: "I lift up my hands to the Most High God, that from a thread to a shoe-latchet I shall not take aught that is thine, lest thou shouldst say I have made Abram rich; save only what the young men have eaten, and the portion of the men who went with me--Aner, Eschol, and Mamre. These will take their portion." <a class="fnref" href="#n95-3" id="rn95-3">3</a></p></div><div class="margin"><aside class="note source" id="n92-1"><a class="back" href="#rn92-1">↩</a>Corrupt. Read probably Canaan.</aside>
+<aside class="note source" id="n92-2"><a class="back" href="#rn92-2">↩</a>For 1 cf. Gen. xii. 5-6. For "lofty oak" (so LXX) NIT has "oak of Moreh."</aside>
+<aside class="note source" id="n92-3"><a class="back" href="#rn92-3">↩</a>Supply (?) "to the east of Bethel with" (Charles).</aside>
+<aside class="note source" id="n92-4"><a class="back" href="#rn92-4">↩</a>For 3-5 cf. Gen. xii. 7, 8.</aside>
+<aside class="note source" id="n92-5"><a class="back" href="#rn92-5">↩</a>Cf. Gen. xii. 8.</aside>
+<aside class="note source" id="n93-1"><a class="back" href="#rn93-1">↩</a>Cf. Gen. xii. 9.</aside>
+<aside class="note source" id="n93-2"><a class="back" href="#rn93-2">↩</a>A town in S. Judah (Josh. XV. 24)</aside>
+<aside class="note source" id="n93-3"><a class="back" href="#rn93-3">↩</a>Cf. Gen. xii. 10.</aside>
+<aside class="note source" id="n93-4"><a class="back" href="#rn93-4">↩</a>i. e. Zoan.</aside>
+<aside class="note source" id="n93-5"><a class="back" href="#rn93-5">↩</a>Cf. Num. xiii. 22.</aside>
+<aside class="note source" id="n93-6"><a class="back" href="#rn93-6">↩</a>For 13-15a cf. Gen. xii. 15-20 (note that Gen. xii. 18 is omitted).</aside>
+<aside class="note source" id="n93-7"><a class="back" href="#rn93-7">↩</a>Cf. Gen. xiii. 3-4.</aside>
+<aside class="note source" id="n93-8"><a class="back" href="#rn93-8">↩</a>Cf. 8 above.</aside>
+<aside class="note source" id="n93-9"><a class="back" href="#rn93-9">↩</a>Cf. Gen. xiii. 11, 13.</aside>
+<aside class="note source" id="n94-1"><a class="back" href="#rn94-1">↩</a>For 19-21 cf. Gen. xiii. 14-18.</aside>
+<aside class="note source" id="n94-2"><a class="back" href="#rn94-2">↩</a>Cf. Gen. xxii. 17 (Gen. xiii. 16 has as the dust of the earth").</aside>
+<aside class="note source" id="n94-3"><a class="back" href="#rn94-3">↩</a>"So that if a man can number then shall thy seed also be numbered" (Gen. xiii. 16). Next: The Campaign of Chedorlaomer (xiii. 22-29)</aside>
+<aside class="note source" id="n94-4"><a class="back" href="#rn94-4">↩</a>MT Ellasar.</aside>
+<aside class="note source" id="n94-5"><a class="back" href="#rn94-5">↩</a>MT Tidal (for form here cf. LXX Θαργάλ).</aside>
+<aside class="note source" id="n94-6"><a class="back" href="#rn94-6">↩</a>i. e. Admah.</aside>
+<aside class="note source" id="n94-7"><a class="back" href="#rn94-7">↩</a>Cf. Gen. xiv. 14.</aside>
+<aside class="note source" id="n94-8"><a class="back" href="#rn94-8">↩</a>R.V. "led forth"; the rendering "armed" has the support of the Targum Onkelos.</aside>
+<aside class="note source" id="n95-1"><a class="back" href="#rn95-1">↩</a>Charles suspects a lacuna at the beginning of 25. It no doubt contained an account of the pursuit of the kings and told of Melchizedek (cf. Gen. xiv. 15-20). That Abraham should have given tithes to Melchizedek (who was uncircumcised) was a difficulty to later Jews (cf. Justin, Trypho xix.). One way of overcoming it was to identify Melchizedek with Shem.</aside>
+<aside class="note source" id="n95-2"><a class="back" href="#rn95-2">↩</a>The law about tithes is made to apply for the Levitical priesthood; cf. xxxii. 15.</aside>
+<aside class="note source" id="n95-3"><a class="back" href="#rn95-3">↩</a>For 28-29 cf. Gen. xiv. 21-24.</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch12.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch14.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

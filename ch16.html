@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XVI · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html" class="active"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XVI</h1>
+    <p class="am">Anno Mundi 1982</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Angelic Visitation of Abraham in Hebron; Promise of Isaac's Birth repeated. The Destruction of Sodom and Lot's Deliverance (xvi. 1-9; cf. Gen. xviii.-xix.).<span class="cf">cf. Gen. xviii.-xix.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And on the new moon of the fourth month we <a class="fnref" href="#n103-1" id="rn103-1">1</a> appeared unto Abraham, at the oak of Mamre, and we talked with him, and we announced to him that a son would be given to him by Sarah his wife. <a class="fnref" href="#n103-2" id="rn103-2">2</a></p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And Sarah laughed, for she heard that we had spoken these words with Abraham, and we admonished her, and she became afraid, and denied that she had laughed on account of the words. <a class="fnref" href="#n103-3" id="rn103-3">3</a></p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And we told her the name of her son, as his name is ordained and written in the heavenly tables (i.e.) Isaac.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And (that) when we returned to her at a set time, she would have conceived a son.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And in this month the Lord executed his judgments on Sodom, and Gomorrah, and Zeboim, <a class="fnref" href="#n103-4" id="rn103-4">4</a> and all the region of the Jordan, and He burned them with fire and brimstone, and destroyed them until this day, even as [lo] I have declared unto thee all their works, that they are wicked and sinners exceedingly, and that they defile themselves and commit fornication in their flesh, and work uncleanness on the earth. <a class="fnref" href="#n103-5" id="rn103-5">5</a></p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And, in like manner, God will execute judgment on the places where they have done according to the uncleanness of the Sodomites, like unto the judgment of Sodom.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>But Lot we saved; for God remembered Abraham, and sent him out from the midst of the overthrow.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And he and his daughters committed sin upon the earth, such as had not been on the earth since the days of Adam till his time; for the man lay with his daughters. <a class="fnref" href="#n103-6" id="rn103-6">6</a></p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And, behold, it was commanded and engraven concerning all his seed, on the heavenly tables, to remove them and root them out, and to execute judgment upon them like the judgment of Sodom, and to leave no seed of the man on earth on the day of condemnation.</p><h2 class="sect">Abraham at Beersheba. Birth and Circumcision of Isaac (cf. Gen. xxi. 1-4). Institution of the Feast of Tabernacles (xvi. 10-31).<span class="cf">cf. Gen. xxi. 1-4</span></h2><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And in this month Abraham moved from Hebron, and departed and dwelt between Kadesh and Shur in the mountains <a class="fnref" href="#n104-1" id="rn104-1">1</a> of Gerar.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And in the middle of the fifth month he moved from thence, and dwelt at the Well of the Oath. <a class="fnref" href="#n104-2" id="rn104-2">2</a></p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a><a class="fnref" href="#n104-3" id="rn104-3">3</a> And in the middle of the sixth month the Lord visited Sarah and did unto her as He had spoken, and she conceived.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And she bare a son in the third month, and in the middle of the month, <a class="fnref" href="#n104-4" id="rn104-4">4</a> at the time of which the Lord had spoken to Abraham, on the festival of the first-fruits of the harvest, <a class="fnref" href="#n104-5" id="rn104-5">5</a> Isaac was born.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And Abraham circumcised his son on the eighth day: he was the first that was circumcised according to the covenant which is ordained for ever.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And in the sixth year of the †fourth† <a class="fnref" href="#n104-6" id="rn104-6">6</a> week we came to Abraham, to the Well of the Oath, and we appeared unto him [as we had told Sarah that we should return to her, and she would have conceived a son.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And we returned in the seventh month, and found Sarah with child before us] <a class="fnref" href="#n104-7" id="rn104-7">7</a> and we blessed him, and we announced to him all the things which had been decreed concerning him, that he should not die till he should beget six sons more, <a class="fnref" href="#n104-8" id="rn104-8">8</a> and should see (them) before he died; but (that) in Isaac should his name and seed be called: <a class="fnref" href="#n104-9" id="rn104-9">9</a></p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And (that) all the seed of his sons should be Gentiles, and be reckoned with the Gentiles; but from the sons of Isaac one should become a holy seed, and should not be reckoned among the Gentiles. <a class="fnref" href="#n105-1" id="rn105-1">1</a></p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>For he should become the portion of the Most High, <a class="fnref" href="#n105-2" id="rn105-2">2</a> and all his seed had fallen into the possession of God, that it should be unto the Lord a people for (His) possession <a class="fnref" href="#n105-3" id="rn105-3">3</a> above all nations and that it should become a kingdom and priests and a holy nation. <a class="fnref" href="#n105-4" id="rn105-4">4</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And we went our way, and we announced to Sarah all that we had told him, and they both rejoiced with exceeding great joy.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And he built there an altar to the Lord who had delivered him, and who was making him rejoice in the land of his sojourning, and he celebrated a festival of joy in this month seven days, <a class="fnref" href="#n105-5" id="rn105-5">5</a> near the altar which he had built at the Well of the Oath.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And he built booths for himself and for his servants on this festival, and he was the first to celebrate the feast of tabernacles on the earth.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And during these seven days he brought each day to the altar a burnt-offering to the Lord, two oxen, <a class="fnref" href="#n105-6" id="rn105-6">6</a> two rams, seven sheep, <a class="fnref" href="#n105-7" id="rn105-7">7</a> one he-goat, for a sin-offering, that he might atone thereby for himself and for his seed.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And, as a thank-offering, seven rams, seven kids, seven sheep, and seven he-goats, and their fruit-offerings and their drink-offerings; <a class="fnref" href="#n105-8" id="rn105-8">8</a> and he burnt all the fat thereof on the altar, a chosen offering unto the Lord for a sweet smelling savour.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And morning and evening he burnt fragrant substances, <a class="fnref" href="#n105-9" id="rn105-9">9</a> frankincense and galbanum, and stacte, and nard, and myrrh, and spice, and costum; all these seven he offered, crushed, mixed together in equal parts (and) pure.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And he celebrated this feast during seven days, rejoicing with all his heart and with all his soul, he and all those who were in his house; and there was no stranger with him, nor any that was uncircumcised.</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And he blessed his Creator who had created him in his generation, for He had created him according to His good pleasure; for He knew and perceived that from him would arise the plant of righteousness <a class="fnref" href="#n106-1" id="rn106-1">1</a> for the eternal generations, and from him a holy seed, so that it should become like Him who had made all things.</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>And he blessed and rejoiced, and he called the name of this festival the festival of the Lord, a joy acceptable to the Most High God.</p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And we blessed him for ever, and all his seed after him throughout all the generations of the earth, because he celebrated this festival in its season, according to the testimony of the heavenly tables.</p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>For this reason it is ordained on the heavenly tables concerning Israel, that they shall celebrate the feast of tabernacles seven days with joy, in the seventh month, acceptable before the Lord--a statute for ever throughout their generations every year. <a class="fnref" href="#n106-2" id="rn106-2">2</a></p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>And to this there is no limit of days; for it is ordained for ever regarding Israel that they should celebrate it and dwell in booths, and set wreaths upon their heads, <a class="fnref" href="#n106-3" id="rn106-3">3</a> and take leafy boughs, and willows from the brook. <a class="fnref" href="#n106-4" id="rn106-4">4</a></p><p class="v" id="v31"><a class="vn" href="#v31" data-anchor="v31">31</a>And Abraham took branches of palm trees, and the fruit of goodly trees, and every day going round the altar with the branches seven times <a class="fnref" href="#n106-5" id="rn106-5">5</a> [a day] in the morning, he praised and gave thanks to his God for all things in joy.</p></div><div class="margin"><aside class="note source" id="n103-1"><a class="back" href="#rn103-1">↩</a>i. e. the angels.</aside>
+<aside class="note source" id="n103-2"><a class="back" href="#rn103-2">↩</a>For 1 cf. Gen. xviii. i, 10 (vers. 2-9 omitted).</aside>
+<aside class="note source" id="n103-3"><a class="back" href="#rn103-3">↩</a>Cf. Gen. xviii. 10, 12, 15.</aside>
+<aside class="note source" id="n103-4"><a class="back" href="#rn103-4">↩</a>Cf. Gen. xiv. 2, 8.</aside>
+<aside class="note source" id="n103-5"><a class="back" href="#rn103-5">↩</a>For 5 cf. Gen. xix. 24.</aside>
+<aside class="note source" id="n103-6"><a class="back" href="#rn103-6">↩</a>For 7-8 cf. Gen. xix. 29, 311 ff. Next: Abraham at Beersheba. Birth and Circumcision of Isaac. Institution of the Feast of Tabernacles (xvi. 10-31)</aside>
+<aside class="note source" id="n104-1"><a class="back" href="#rn104-1">↩</a>Or "territories."</aside>
+<aside class="note source" id="n104-2"><a class="back" href="#rn104-2">↩</a>i. e. Beersheba; cf. Gen. xxi. 31.</aside>
+<aside class="note source" id="n104-3"><a class="back" href="#rn104-3">↩</a>For 12-14 cf. Gen. xxi. 1-4.</aside>
+<aside class="note source" id="n104-4"><a class="back" href="#rn104-4">↩</a>i. e. the 15th of Sivan.</aside>
+<aside class="note source" id="n104-5"><a class="back" href="#rn104-5">↩</a>i. e. Pentecost.</aside>
+<aside class="note source" id="n104-6"><a class="back" href="#rn104-6">↩</a>Read "third" as in xv. 1 (Charles).</aside>
+<aside class="note source" id="n104-7"><a class="back" href="#rn104-7">↩</a>The bracketed words are an incorrect gloss, according to Charles, and should be omitted.</aside>
+<aside class="note source" id="n104-8"><a class="back" href="#rn104-8">↩</a>Six sons by Keturah (Gen. xxv. 2).</aside>
+<aside class="note source" id="n104-9"><a class="back" href="#rn104-9">↩</a>Cf. Gen. xxi. 12.</aside>
+<aside class="note source" id="n105-1"><a class="back" href="#rn105-1">↩</a>All Abraham's descendants, except Jacob and his seed, were to be reckoned among the Gentiles.</aside>
+<aside class="note source" id="n105-2"><a class="back" href="#rn105-2">↩</a>Cf. xv. 31 f.</aside>
+<aside class="note source" id="n105-3"><a class="back" href="#rn105-3">↩</a>Cf. Deut. vii. 6; Exod. xix. 5.</aside>
+<aside class="note source" id="n105-4"><a class="back" href="#rn105-4">↩</a>Cf. Exod. xix. 6 (MT has "a kingdom of priests"); cf. Rev. v. 10, i. 6, which agree with our text substantially, and this may be the original sense. See Introduction, p. xxxii.</aside>
+<aside class="note source" id="n105-5"><a class="back" href="#rn105-5">↩</a>In 20-31 we have an account of the Feast of Tabernacles which is marked by peculiar features.</aside>
+<aside class="note source" id="n105-6"><a class="back" href="#rn105-6">↩</a>According to Num. xxix. 13-33 thirteen bullocks were sacrificed the first day, and this number was diminished by one each day following.</aside>
+<aside class="note source" id="n105-7"><a class="back" href="#rn105-7">↩</a>In Num. xxix. 13 fourteen he-lambs.</aside>
+<aside class="note source" id="n105-8"><a class="back" href="#rn105-8">↩</a>Cf. 2 Chron. xxix. .21.</aside>
+<aside class="note source" id="n105-9"><a class="back" href="#rn105-9">↩</a>Cf. Exod. xxx. 34; Ecclus. xxiv. 15.</aside>
+<aside class="note source" id="n106-1"><a class="back" href="#rn106-1">↩</a>Cf. xxi. 24; 1 Enoch x. 16, xciii. 5, 10.</aside>
+<aside class="note source" id="n106-2"><a class="back" href="#rn106-2">↩</a>Cf. Lev. xxiii. 41.</aside>
+<aside class="note source" id="n106-3"><a class="back" href="#rn106-3">↩</a>This custom in connection with Tabernacles seems to be unknown to tradition; cf., however, Wisdom ii. 7 f.; Josephus, Ant. xix. 9, 1. Bridegrooms wore wreaths, but the custom was later abolished. See further Introduction, p. xx f.</aside>
+<aside class="note source" id="n106-4"><a class="back" href="#rn106-4">↩</a>Cf. Lev. xxiii. 40.</aside>
+<aside class="note source" id="n106-5"><a class="back" href="#rn106-5">↩</a>According to later Jewish tradition it was only on the seventh day that the worshippers went round the altar seven times. Next: The Expulsion of Hagar and Ishmael (xvii. 1-14)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch15.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch17.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

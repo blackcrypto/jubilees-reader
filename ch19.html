@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XIX · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html" class="active"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XIX</h1>
+    <p class="am">Anno Mundi 2020–2052</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">The Death and Burial of Sarah (xix. 1-9; cf. Gen. xxiii.).<span class="cf">cf. Gen. xxiii.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the first year of the first week in the forty-second jubilee, Abraham returned and dwelt opposite Hebron, that is Kirjath Arba, two weeks of years.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And in the first year of the †third† <a class="fnref" href="#n112-1" id="rn112-1">1</a> week of this jubilee the days of the life of Sarah were accomplished, and she died in Hebron.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And Abraham went to mourn over her and bury her, and we tried him [to see] if his spirit were patient and he were not indignant in the words of his mouth; and he was found patient in this, and was not disturbed. <a class="fnref" href="#n112-2" id="rn112-2">2</a></p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>For in patience of spirit he conversed with the children of Heth, to the intent that they should give him a place in which to bury his dead.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And the Lord gave him grace before all who saw him, and he besought in gentleness the sons of Heth, and they gave him the land of the double cave <a class="fnref" href="#n112-3" id="rn112-3">3</a> over against Mamre, that is Hebron, for four hundred pieces of silver.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And they besought him, saying, "We shall give it to thee for nothing"; but he would not take it from their hands for nothing, for he gave the price of the place, the money in full, and he bowed down before them twice; and after this he buried his dead in the double cave.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And all the days of the life of Sarah were one hundred and twenty-seven years, that is, two jubilees and four weeks and one year: these are the days of the years of the life of Sarah.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>This is the tenth <a class="fnref" href="#n112-2" id="rn112-2">2</a> trial wherewith Abraham was tried, and he was found faithful, patient in spirit.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And he said not a single word regarding the rumour in the land how that God had said that He would give it to him and to his seed after him, and he begged a place there to bury his dead; for he was found faithful, and was recorded on the heavenly tables as the friend of God. <a class="fnref" href="#n113-1" id="rn113-1">1</a></p><h2 class="sect">Marriage of Isaac and second Marriage of Abraham (cf. Gen. xxiv. 15, xxv. 1-4); the Birth of Esau and Jacob (cf. Gen. xxv. 19 ff.) (xix. 10-14).<span class="cf">cf. Gen. xxiv. 15, xxv. 1-4</span></h2><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And in the fourth year thereof he took a wife for his son Isaac and her name was Rebecca [the daughter of Bethuel, the son of Nahor, the brother of Abraham] <a class="fnref" href="#n113-2" id="rn113-2">2</a> the sister of Laban and daughter of Bethuel; and Bethuel was the son of Mêlcâ, who was the wife of Nahor, the brother of Abraham.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And Abraham took to himself a third wife, and her name was Keturah, from among the daughters of his household servants, for Hagar had died before Sarah. <a class="fnref" href="#n113-3" id="rn113-3">3</a></p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And she bare him six sons, Zimram, and Jokshan, and Medan, and Midian, and Ishbak, and Shuah, in the two weeks of years.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And in the sixth week, in the second year thereof, Rebecca bare to Isaac two sons, Jacob and Esau, and Jacob was a smooth and upright <a class="fnref" href="#n113-4" id="rn113-4">4</a> man, and Esau was fierce, a man of the field, and hairy, and Jacob dwelt in tents.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And the youths grew, and Jacob learned to write; <a class="fnref" href="#n113-5" id="rn113-5">5</a> but Esau did not learn, for he was a man of the field and a hunter, and he learnt war, and all his deeds were fierce.</p><h2 class="sect">Abraham loves Jacob and blesses him (xix. 15-31).</h2><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And Abraham loved Jacob, but Isaac loved Esau.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And Abraham saw the deeds of Esau, and he knew that in Jacob <a class="fnref" href="#n114-1" id="rn114-1">1</a> should his name and seed be called; and he called Rebecca and gave commandment regarding Jacob, for he knew that she (too) loved Jacob much more than Esau.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And he said unto her: "My daughter, watch over my son Jacob, For he shall be in my stead on the earth, And for a blessing in the midst of the children of men, And for the glory of the whole seed of Shem.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>For I know that the Lord will choose him to be a people for possession unto Himself, above all peoples that are upon the face of the earth. <a class="fnref" href="#n114-2" id="rn114-2">2</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And behold, Isaac my son loveth Esau more than Jacob, but I see that thou truly lovest Jacob.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>Add still further to thy kindness to him, And let thine eyes be upon him in love; For he will be a blessing unto us on the earth from henceforth unto all generations of the earth.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>Let thy hands be strong And let thy heart rejoice in thy son Jacob; For I have loved him far beyond all my sons. He will be blessed for ever, And his seed will fill the whole earth.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>If a man can number the sand of the earth, His seed also will be numbered. <a class="fnref" href="#n114-3" id="rn114-3">3</a></p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And all the blessings wherewith the Lord hath blessed me and my seed shall belong to Jacob and his seed alway.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And in his seed shall my name be blessed, and the name of my fathers, Shem, and Noah, and Enoch, and Mahalalel, and Enos, and Seth, and Adam. <a class="fnref" href="#n115-1" id="rn115-1">1</a></p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And these shall serve To lay the foundations of the heaven, And to strengthen the earth, And to renew all the luminaries which are in the firmament."</p><p class="v" id="v26"><a class="vn" href="#v26" data-anchor="v26">26</a>And he called Jacob before the eyes of Rebecca his mother, and kissed him, and blessed him, and said:</p><p class="v" id="v27"><a class="vn" href="#v27" data-anchor="v27">27</a>"Jacob, my beloved son, whom my soul loveth, may God bless thee from above the firmament, and may He give thee all the blessings wherewith He blessed Adam, and Enoch, and Noah, and Shem; and all the things of which He told me, and all the things which He promised to give me, may He cause to cleave to thee and to thy seed for ever, according to the days of heaven above the earth. <a class="fnref" href="#n115-2" id="rn115-2">2</a></p><p class="v" id="v28"><a class="vn" href="#v28" data-anchor="v28">28</a>And the spirits of Mastêmâ shall not rule over thee or over thy seed <a class="fnref" href="#n115-3" id="rn115-3">3</a> to turn thee from the Lord, who is thy God from henceforth for ever.</p><p class="v" id="v29"><a class="vn" href="#v29" data-anchor="v29">29</a>And may the Lord God be a father to thee and thou the first-born son, and to the people alway. Go in peace, my son."</p><p class="v" id="v30"><a class="vn" href="#v30" data-anchor="v30">30</a>And they both went forth together from Abraham.</p><p class="v" id="v31"><a class="vn" href="#v31" data-anchor="v31">31</a>And Rebecca loved Jacob, with all her heart and with all her soul, very much more than Esau; but Isaac loved Esau much more than Jacob.</p></div><div class="margin"><aside class="note source" id="n112-1"><a class="back" href="#rn112-1">↩</a>Read "second" (Charles).</aside>
+<aside class="note source" id="n112-2"><a class="back" href="#rn112-2">↩</a>This is the tenth trial of Abraham; cf. xvii. 17 note.</aside>
+<aside class="note source" id="n112-3"><a class="back" href="#rn112-3">↩</a>i. e. the cave of Machpelah (LXX, τ(cid:31) σπ(cid:31)λαιον τ(cid:31) διπλο(cid:31)ν). Next: Marriage of Isaac and second Marriage of Abraham; the Birth of Esau and Jacob (xix. 10-14).</aside>
+<aside class="note source" id="n113-1"><a class="back" href="#rn113-1">↩</a>A traditional title of Abraham. It goes back to Isa. xli. 8; cf. Jas. ii. 23, T.B. Men. 53b.</aside>
+<aside class="note source" id="n113-2"><a class="back" href="#rn113-2">↩</a>The bracketed words a dittograph.</aside>
+<aside class="note source" id="n113-3"><a class="back" href="#rn113-3">↩</a>This explains why Abraham did not take Hagar back. The later tradition (cf. e. g. Pir(cid:31)e de R. Eliezer xxx.) identifies Hagar with Keturah.</aside>
+<aside class="note source" id="n113-4"><a class="back" href="#rn113-4">↩</a>Cf. Gen. xxv. 27 (where "plain" = lit. "upright"), and Gen. xxvii. 11 (combined here).</aside>
+<aside class="note source" id="n113-5"><a class="back" href="#rn113-5">↩</a>According to the Targums the "tents" were academies. Jacob is represented as a lifelong student of the Torah (cf. Ber. rabba lxiii; Pir(cid:31)e de R. Eliezer xxxii.). Next: Abraham loves Jacob and blesses him (xix. 15-31)</aside>
+<aside class="note source" id="n114-1"><a class="back" href="#rn114-1">↩</a>Jacob was to be the founder of the chosen nation; cf. ii. 20.</aside>
+<aside class="note source" id="n114-2"><a class="back" href="#rn114-2">↩</a>Cf. Deut. vii. 6.</aside>
+<aside class="note source" id="n114-3"><a class="back" href="#rn114-3">↩</a>Cf. Gen. xiii. 16 (cf. also xiii. 20 of our Book).</aside>
+<aside class="note source" id="n115-1"><a class="back" href="#rn115-1">↩</a>Notice that Methuselah is omitted, and Adam is reckoned among the saints (with Noah and Enoch).</aside>
+<aside class="note source" id="n115-2"><a class="back" href="#rn115-2">↩</a>Cf. xxii. 13.</aside>
+<aside class="note source" id="n115-3"><a class="back" href="#rn115-3">↩</a>As over the Gentiles. Next: Abraham's Last Words to his Children and Grandchildren (xx. i-ii)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch18.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch20.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XLII · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html" class="active"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XLII</h1>
+    <p class="am">Anno Mundi 2171–2172</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">The Two Journeys of the Sons of Jacob to Egypt (xlii. 1-25; cf. Gen. xlii., xliii.).<span class="cf">cf. Gen. xlii., xliii.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And in the first year of the third week of the forty-fifth jubilee the famine began to come into the land, and the rain refused to be given to the earth, for none whatever fell.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And the earth grew barren, but in the land of Egypt there was food, for Joseph had gathered the seed of the land in the seven years of plenty and had preserved it. <a class="fnref" href="#n191-4" id="rn191-4">4</a></p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And the Egyptians came to Joseph that he might give them food, and he opened the storehouses where was the grain of the first year, and he sold it to the people of the land for gold. <a class="fnref" href="#n191-5" id="rn191-5">5</a></p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>(Now the famine was very sore in the land of Canaan), and Jacob heard that there was food in Egypt, and he sent his ten sons that they should procure food for him in Egypt; but Benjamin he did not send, and (the ten sons of Jacob) arrived (in Egypt) among those that went (there.)</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And Joseph recognized them, but they did not recognize him, and he spake unto them and questioned them, and he said unto them: "Are ye not spies, and have ye not come to explore the approaches of the land?" And he put them in ward.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And after that he set them free again, and detained Simeon alone and sent off his nine brothers.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And he filled their sacks with corn, and he put their gold in their sacks, and they did not know.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And he commanded them to bring their younger brother, for they had told him their father was living and their younger brother.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And they went up from the land of Egypt and they came to the land of Canaan; and they told their father all that had befallen them, and how the lord of the country had spoken roughly to them, and had seized Simeon till they should bring Benjamin.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And Jacob said: "Me have ye bereaved of my children! Joseph is not and Simeon also is not, and ye will take Benjamin away. On me hath your wickedness come." <a class="fnref" href="#n192-1" id="rn192-1">1</a></p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And he said: "My son will not go down with you lest perchance he fall sick; for their mother gave birth to two sons, and one hath perished, and this one also ye will take from me. If perchance he took a fever on the road, <a class="fnref" href="#n192-2" id="rn192-2">2</a> ye would bring down my old age with sorrow unto death."</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>For he saw that their money had been returned to every man in his sack, and for this reason he feared to send him.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And the famine increased and became sore in the land of Canaan, and in all lands save in the land of Egypt, for many of the children of the Egyptians had stored up their seed for food from the time when they saw Joseph gathering seed together and putting it in storehouses and preserving it for the years of famine.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And the people of Egypt fed themselves thereon during the first year of their famine.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>But when Israel saw that the famine was very sore in the land, and there was no deliverance, he said unto his sons: "Go again, and procure food for us that we die not."</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And they said: "We shall not go; unless our youngest brother go with us, we shall not go."</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And Israel saw that if he did not send him with them, they should all perish by reason of the famine.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And Reuben said: "Give him into my hand, and if I do not bring him back to thee, slay my two sons instead of his soul." And he said unto him He will not go with thee."</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And Judah came near and said: "Send him with me, and if I do not bring him back to thee, let me bear the blame before thee all the days of my life."</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And he sent him with them in the second year of this week on the first day of the month, and they came to the land of Egypt with all those who went, and (they had) presents in their hands, stacte and almonds and terebinth nuts and pure honey.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And they went and stood before Joseph, and he saw Benjamin his brother, and he knew him, and said unto them: "Is this your youngest brother?" And they said unto him: "It is he." And he said: "The Lord be gracious to thee, my son!"</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And he sent him into his house and he brought forth Simeon unto them and he made a feast for them, and they presented to him the gift which they had brought in their hands.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And they ate before him and he gave them all a portion, but the portion of Benjamin was seven times larger than that of any of theirs.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And they ate and drank and arose and remained with their asses.</p><p class="v" id="v25"><a class="vn" href="#v25" data-anchor="v25">25</a>And Joseph devised a plan whereby he might learn their thoughts as to whether thoughts of peace prevailed amongst them, and he said to the steward who was over his house: "Fill all their sacks with food, and return their money unto them into their vessels, and my cup, the silver cup out of which I drink, put it in the sack of the youngest, and send them away." <a class="fnref" href="#n194-1" id="rn194-1">1</a></p></div><div class="margin"><aside class="note source" id="n191-4"><a class="back" href="#rn191-4">↩</a>Cf. Gen. xli. 54.</aside>
+<aside class="note source" id="n191-5"><a class="back" href="#rn191-5">↩</a>Cf. Gen. xli. 56.</aside>
+<aside class="note source" id="n192-1"><a class="back" href="#rn192-1">↩</a>? An interpretation of Gen. xlii. 36 (" All these things are against me ").</aside>
+<aside class="note source" id="n192-2"><a class="back" href="#rn192-2">↩</a>"If mischief befall him by the way in the which ye go" (Gen. xlii. 38).</aside>
+<aside class="note source" id="n194-1"><a class="back" href="#rn194-1">↩</a>Cf. Gen. xliv. 1, 2. Next: Joseph finally tests his Brethren, and then makes himself known to them (xliii. 1-24</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch41.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch43.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

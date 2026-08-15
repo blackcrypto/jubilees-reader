@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XLV · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html" class="active"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XLV</h1>
+    <p class="am">Anno Mundi 2172–2242</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Joseph receives Jacob. The Land of Egypt is acquired for Pharaoh. Jacob's Death and Burial (xlv. 1-16; cf. Gen. xlvi. 28 ff., xlvii. 11 ff.).<span class="cf">cf. Gen. xlvi. 28 ff., xlvii. 11 ff.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And Israel went into the country of Egypt, into the land of Goshen, on the new moon of the fourth month, in the second year of the third week of the forty-fifth jubilee.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And Joseph went to meet his father Jacob, to the land of Goshen, and he fell on his father's neck and wept.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And Israel said unto Joseph: "Now let me die since I have seen thee, and now may the Lord God of Israel be blessed, the God of Abraham and the God of Isaac who hath not withheld His mercy and His grace from His servant Jacob.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>It is enough for me that I have seen thy face whilst †I am† <a class="fnref" href="#n199-3" id="rn199-3">3</a> yet alive; yea, true is the vision which I saw at Bethel. Blessed be the Lord my God for ever and ever, and blessed be His name."</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And Joseph and his brothers ate bread before their father and drank wine, and Jacob rejoiced with exceeding great joy because he saw Joseph eating with his brothers and drinking before him, and he blessed the Creator of all things who had preserved him, and had preserved for him his twelve sons.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a><a class="fnref" href="#n200-1" id="rn200-1">1</a> And Joseph had given to his father and to his brothers as a gift the right of dwelling in the land of Goshen and in Rameses and all the region round about, which he ruled over before Pharaoh. And Israel and his sons dwelt in the land of Goshen, the best part of the land of Egypt; and Israel was one hundred and thirty years old when he came into Egypt,</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And Joseph nourished his father and his brethren and also their possessions with bread as much as sufficed them <a class="fnref" href="#n200-2" id="rn200-2">2</a> for the seven years of the famine.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And the land of Egypt suffered by reason of the famine, and Joseph acquired all the land of Egypt for Pharaoh in return for food, and he got possession of the people and their cattle and everything for Pharaoh.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And the years of the famine were accomplished, and Joseph gave to the people in the land seed and food that they might sow (the land) in the eighth year, for the river had overflowed all the land of Egypt.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>For in the seven years of the famine it had not overflowed and had irrigated only a few places on the banks of the river, but now it overflowed and the Egyptians sowed the land, and it bore much corn that year.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And this was the first year of the fourth week of the forty-fifth jubilee.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And Joseph took of the corn of the harvest the fifth part for the king and left four parts for them for food and for seed, and Joseph made it an ordinance for the land of Egypt until this day.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And Israel lived in the land of Egypt seventeen years, and all the days which he lived were three jubilees, one hundred and forty- seven years, and he died in the fourth year of the fifth week of the forty-fifth jubilee.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And Israel blessed his sons before he died and told them everything <a class="fnref" href="#n201-1" id="rn201-1">1</a> that would befall them in the land of Egypt; and he made known to them what would come upon them in the last days, and blessed them and gave to Joseph two portions <a class="fnref" href="#n201-2" id="rn201-2">2</a> in the land.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And he slept with his fathers, and he was buried in the double cave in the land of Canaan, near Abraham his father in the grave which he dug for himself in the double cave in the land of Hebron. <a class="fnref" href="#n201-3" id="rn201-3">3</a></p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And he gave all his books and the books of his fathers to Levi his son that he might preserve them and renew them for his children until this day. <a class="fnref" href="#n201-4" id="rn201-4">4</a></p></div><div class="margin"><aside class="note source" id="n199-3"><a class="back" href="#rn199-3">↩</a>MT (Gen. xlvi. 30) "that thou art."</aside>
+<aside class="note source" id="n200-1"><a class="back" href="#rn200-1">↩</a>Cf. Gen. xlvii. 11.</aside>
+<aside class="note source" id="n200-2"><a class="back" href="#rn200-2">↩</a>MT (Gen. xlvii. 12) "`according to their families." Next: The Death of Joseph. The Bones of Jacob's Sons (except Joseph) interred at Hebron. The Oppression of Israel by Egypt (xlvi. 1-16)</aside>
+<aside class="note source" id="n201-1"><a class="back" href="#rn201-1">↩</a>Cf. Gen. xlix. i ff.</aside>
+<aside class="note source" id="n201-2"><a class="back" href="#rn201-2">↩</a>Cf. Gen. xlvii. 22.</aside>
+<aside class="note source" id="n201-3"><a class="back" href="#rn201-3">↩</a>Cf. Gen. l. 13.</aside>
+<aside class="note source" id="n201-4"><a class="back" href="#rn201-4">↩</a>Note that the tribal traditions are represented by our author as in the keeping of the priests (Levi and his descendants).</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch44.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch46.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

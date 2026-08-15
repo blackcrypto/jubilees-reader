@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XXXIII · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html" class="active"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XXXIII</h1>
+    <p class="am">Anno Mundi 2148</p>
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Reuben's Sin with Bilhah. Laws regarding Incest. Jacob's Children (xxxiii. 1-23; Cf. Gen. xxxv. 21-27).</h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And Jacob went and dwelt to the south of Magdalâdrâ’êf. <a class="fnref" href="#n166-4" id="rn166-4">4</a> And he went to his father Isaac, he and Leah his wife, on the new moon of the tenth month.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And Reuben saw Bilhah, Rachel's maid, the concubine of his father, bathing in water in a secret place, and he loved her.</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And he hid himself at night, and he entered the house of Bilhah [at night], and he found her sleeping alone on a bed in her house.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And he lay with her, and she awoke and saw, and behold Reuben was lying with her in the bed, and she uncovered the border of her covering and seized him, and cried out, and discovered that it was Reuben.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>And she was ashamed because of him, and released her hand from him, and he fled.</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And she lamented because of this thing exceedingly, and did not tell it to any one.</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And when Jacob returned and sought her, she said unto him: "I am not clean for thee, for I have been defiled as regards thee; for Reuben hath defiled me, and hath lain with me in the night, and I was asleep, and did not discover until he uncovered my skirt and slept with me."</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And Jacob was exceedingly wroth with Reuben because he had lain with Bilhah, because he had uncovered his father's skirt. <a class="fnref" href="#n167-1" id="rn167-1">1</a></p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And Jacob did not approach her again because Reuben had defiled her. And as for any man who uncovereth his father's skirt his deed is wicked exceedingly, for he is abominable before the Lord.</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>For this reason it is written and ordained on the heavenly tables that a man should not lie with his father's wife, and should not uncover his father's skirt, for this is unclean: they shall surely die together, <a class="fnref" href="#n167-2" id="rn167-2">2</a> the man who lieth with his father's wife and the woman also, for they have wrought uncleanness on the earth.</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And there shall be nothing unclean before our God in the nation which He hath chosen for Himself as a possession.</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And again, it is written a second time: "Cursed he be who lieth with the wife of his father, for he hath uncovered his father's shame"; and all the holy ones of the Lord said "So be it; so be it." <a class="fnref" href="#n167-3" id="rn167-3">3</a></p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>And do thou, Moses, command the children of Israel that they observe this word; for it (entaileth) a punishment of death; and it is unclean, and there is no atonement for ever to atone for the man who hath committed this, but he is to be put to death and slain, and stoned with stones, and rooted out from the midst of the people of our God.</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>For to no man who doeth so in Israel is it permitted to remain alive a single day on the earth, for he is abominable and unclean.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And let them not say: to Reuben was granted life and forgiveness after he had lain with his father's concubine, and to her also though she had a husband, and her husband Jacob, his father, was still alive.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>For until that time there had not been revealed the ordinance and judgment and law in its completeness for all, but in thy days (it hath been revealed) as a law of seasons and of days, and an everlasting law for the everlasting generations. <a class="fnref" href="#n168-1" id="rn168-1">1</a></p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>And for this law there is no consummation of days, and no atonement for it, but they must both be rooted out in the midst of the nation: on the day whereon they committed it they shall slay them.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>And do thou, Moses, write (it) down for Israel that they may observe it, and do according to these words, and not commit a sin unto death; <a class="fnref" href="#n168-2" id="rn168-2">2</a> for the Lord our God is judge, who respecteth not persons and accepteth not gifts. <a class="fnref" href="#n168-3" id="rn168-3">3</a></p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And tell them these words of the covenant, that they may hear and observe, and be on their guard with respect to them, and not be destroyed and rooted out of the land; for an uncleanness, and an abomination, and a contamination, and a pollution are all they who commit it on the earth before our God.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And there is no greater sin than the fornication which they commit on earth; for Israel is a holy nation unto the Lord its God, and a nation of inheritance, and a priestly and royal nation and for (His own) possession; <a class="fnref" href="#n168-4" id="rn168-4">4</a> and there shall no such uncleanness appear in the midst of the holy nation.</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And in the third year of this sixth week Jacob and all his sons went and dwelt in the house of Abraham, near Isaac his father and Rebecca his mother.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a><a class="fnref" href="#n169-1" id="rn169-1">1</a> And these were the names of the sons of Jacob: the first-born Reuben, Simeon, Levi, Judah, Issachar, Zebulon, the sons of Leah; and the sons of Rachel, Joseph and Benjamin; and the sons of Bilhah, Dan and Naphtali, and the sons of Zilpah, Gad and Asher; and Dinah, the daughter of Leah, the only daughter of Jacob.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And they came and bowed themselves to Isaac and Rebecca, and when they saw them they blessed Jacob and all his sons, and Isaac rejoiced exceedingly, for he saw the sons of Jacob, his younger son, and he blessed them.</p></div><div class="margin"><aside class="note source" id="n166-4"><a class="back" href="#rn166-4">↩</a>A compound of migdal ‘eder ’ephrāth ("the tower of Eder of Ephrath"); cf. Gen. xxxv. 21, also Test. Reuben iii. 9--15, where the same incident is narrated. In later Jewish tradition an explanation is given which exculpates Reuben (cf. Targ. Ps.-Jon. on Gen. xxxv. 22).</aside>
+<aside class="note source" id="n167-1"><a class="back" href="#rn167-1">↩</a>Cf. Deut. xxii. 30.</aside>
+<aside class="note source" id="n167-2"><a class="back" href="#rn167-2">↩</a>Cf. Lev. xx. 11.</aside>
+<aside class="note source" id="n167-3"><a class="back" href="#rn167-3">↩</a>Cf. Deut. xxvii. 20.</aside>
+<aside class="note source" id="n168-1"><a class="back" href="#rn168-1">↩</a>"Where there is no law there is no transgression" (Rom. iv. 15).</aside>
+<aside class="note source" id="n168-2"><a class="back" href="#rn168-2">↩</a>Cf. xxi. 22.</aside>
+<aside class="note source" id="n168-3"><a class="back" href="#rn168-3">↩</a>Cf. v. 16, xl. 8.</aside>
+<aside class="note source" id="n168-4"><a class="back" href="#rn168-4">↩</a>Cf. xvi. 18 (note).</aside>
+<aside class="note source" id="n169-1"><a class="back" href="#rn169-1">↩</a>For 22 cf. Gen. xxxv. 23-27. Next: War of the Amorite Kings against Jacob and his Sons. Joseph sold into Egypt. The Death of Bilhah and Dinah (xxxiv. 1-19)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch32.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch34.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>

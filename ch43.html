@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter XLIII · Jubilees reader</title>
+<meta name="description" content="A reader edition of the Book of Jubilees in R. H. Charles's translation (SPCK, 1917), with the edition's own notes as margin sidenotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="chrome">
+  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="darkBtn" aria-label="Dark mode">◐</button>
+  <button id="noteBtn" aria-label="Notes" class="on">†</button>
+  <button id="focusBtn" aria-label="Focus mode">◎</button>
+  <button id="einkBtn" aria-label="E-ink mode">▣</button>
+</div>
+<nav id="toc" aria-label="Contents"><p class="toc-h">The Book of Jubilees</p>
+<a href="index.html">Contents &amp; colophon</a>
+<a href="intro.html">Charles’s introduction</a>
+<p class="toc-h">Text</p>
+<a href="ch01.html"><span class="toc-n">I</span></a>
+<a href="ch02.html"><span class="toc-n">II</span></a>
+<a href="ch03.html"><span class="toc-n">III</span> <span class="toc-am">130</span></a>
+<a href="ch04.html"><span class="toc-n">IV</span> <span class="toc-am">130–930</span></a>
+<a href="ch05.html"><span class="toc-n">V</span> <span class="toc-am">652–1659</span></a>
+<a href="ch06.html"><span class="toc-n">VI</span></a>
+<a href="ch07.html"><span class="toc-n">VII</span> <span class="toc-am">1373–1375</span></a>
+<a href="ch08.html"><span class="toc-n">VIII</span> <span class="toc-am">1373–1569</span></a>
+<a href="ch09.html"><span class="toc-n">IX</span></a>
+<a href="ch10.html"><span class="toc-n">X</span> <span class="toc-am">1659–1688</span></a>
+<a href="ch11.html"><span class="toc-n">XI</span> <span class="toc-am">1744–1904</span></a>
+<a href="ch12.html"><span class="toc-n">XII</span> <span class="toc-am">1891–1953</span></a>
+<a href="ch13.html"><span class="toc-n">XIII</span> <span class="toc-am">1956–1964</span></a>
+<a href="ch14.html"><span class="toc-n">XIV</span></a>
+<a href="ch15.html"><span class="toc-n">XV</span></a>
+<a href="ch16.html"><span class="toc-n">XVI</span> <span class="toc-am">1982</span></a>
+<a href="ch17.html"><span class="toc-n">XVII</span> <span class="toc-am">1982</span></a>
+<a href="ch18.html"><span class="toc-n">XVIII</span></a>
+<a href="ch19.html"><span class="toc-n">XIX</span> <span class="toc-am">2020–2052</span></a>
+<a href="ch20.html"><span class="toc-n">XX</span> <span class="toc-am">2052</span></a>
+<a href="ch21.html"><span class="toc-n">XXI</span></a>
+<a href="ch22.html"><span class="toc-n">XXII</span></a>
+<a href="ch23.html"><span class="toc-n">XXIII</span> <span class="toc-am">2073–2080</span></a>
+<a href="ch24.html"><span class="toc-n">XXIV</span> <span class="toc-am">2073–2109</span></a>
+<a href="ch25.html"><span class="toc-n">XXV</span> <span class="toc-am">2109</span></a>
+<a href="ch26.html"><span class="toc-n">XXVI</span></a>
+<a href="ch27.html"><span class="toc-n">XXVII</span> <span class="toc-am">2115–2122</span></a>
+<a href="ch28.html"><span class="toc-n">XXVIII</span> <span class="toc-am">2122–2134</span></a>
+<a href="ch29.html"><span class="toc-n">XXIX</span> <span class="toc-am">2127–2135</span></a>
+<a href="ch30.html"><span class="toc-n">XXX</span></a>
+<a href="ch31.html"><span class="toc-n">XXXI</span></a>
+<a href="ch32.html"><span class="toc-n">XXXII</span></a>
+<a href="ch33.html"><span class="toc-n">XXXIII</span> <span class="toc-am">2148</span></a>
+<a href="ch34.html"><span class="toc-n">XXXIV</span> <span class="toc-am">2148</span></a>
+<a href="ch35.html"><span class="toc-n">XXXV</span></a>
+<a href="ch36.html"><span class="toc-n">XXXVI</span> <span class="toc-am">2162</span></a>
+<a href="ch37.html"><span class="toc-n">XXXVII</span> <span class="toc-am">2162</span></a>
+<a href="ch38.html"><span class="toc-n">XXXVIII</span></a>
+<a href="ch39.html"><span class="toc-n">XXXIX</span></a>
+<a href="ch40.html"><span class="toc-n">XL</span></a>
+<a href="ch41.html"><span class="toc-n">XLI</span> <span class="toc-am">2168–2171</span></a>
+<a href="ch42.html"><span class="toc-n">XLII</span> <span class="toc-am">2171–2172</span></a>
+<a href="ch43.html" class="active"><span class="toc-n">XLIII</span></a>
+<a href="ch44.html"><span class="toc-n">XLIV</span> <span class="toc-am">2172</span></a>
+<a href="ch45.html"><span class="toc-n">XLV</span> <span class="toc-am">2172–2242</span></a>
+<a href="ch46.html"><span class="toc-n">XLVI</span> <span class="toc-am">2188–2330</span></a>
+<a href="ch47.html"><span class="toc-n">XLVII</span> <span class="toc-am">2303–2410</span></a>
+<a href="ch48.html"><span class="toc-n">XLVIII</span> <span class="toc-am">2372–2410</span></a>
+<a href="ch49.html"><span class="toc-n">XLIX</span> <span class="toc-am">2410–2450</span></a>
+<a href="ch50.html"><span class="toc-n">L</span> <span class="toc-am">2410–2450</span></a></nav>
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">The Book of Jubilees · <i>Liber Jubilaeorum</i> · הספר היובלים</p>
+    <h1>Chapter XLIII</h1>
+    
+  </header>
+  <div class="cols"><div class="text"><h2 class="sect">Joseph finally tests his Brethren, and then makes himself known to them (xliii. 1- 24; cf. Gen. xliv., xlv.).<span class="cf">cf. Gen. xliv., xlv.</span></h2><p class="v" id="v1"><a class="vn" href="#v1" data-anchor="v1">1</a>And he did as Joseph had told him, and filled all their sacks for them with food and put their money in their sacks, and put the cup in Benjamin's sack.</p><p class="v" id="v2"><a class="vn" href="#v2" data-anchor="v2">2</a>And early in the morning they departed, and it came to pass that, when they had gone from thence, Joseph said unto the steward of his house: "Pursue them, run and seize them, saying, 'For good ye have requited me with evil; you have stolen from me the silver cup out of which my lord drinks.' And bring back to me their youngest brother, and fetch (him) quickly before I go forth to my seat of judgment."</p><p class="v" id="v3"><a class="vn" href="#v3" data-anchor="v3">3</a>And he ran after them and said unto them according to these words.</p><p class="v" id="v4"><a class="vn" href="#v4" data-anchor="v4">4</a>And they said unto him: "God forbid that thy servants should do this thing, and steal from the house of thy lord any utensil, and the money also which we found in our sacks the first time, we thy servants brought back from the land of Canaan.</p><p class="v" id="v5"><a class="vn" href="#v5" data-anchor="v5">5</a>How then should we steal any utensil? Behold here are we and our sacks; search, and wherever thou findest the cup in the sack of any man amongst us, let him be slain, and we and our asses will serve thy lord."</p><p class="v" id="v6"><a class="vn" href="#v6" data-anchor="v6">6</a>And he said unto them: "Not so, the man with whom I find, him only shall I take as a servant, and ye will return in peace unto your house."</p><p class="v" id="v7"><a class="vn" href="#v7" data-anchor="v7">7</a>And as he was searching in their vessels, beginning with the eldest and ending with the youngest, it was found in Benjamin's sack.</p><p class="v" id="v8"><a class="vn" href="#v8" data-anchor="v8">8</a>And they rent their garments, and laded their asses, and returned to the city and came to the house of Joseph, and they all bowed themselves on their faces to the ground before him.</p><p class="v" id="v9"><a class="vn" href="#v9" data-anchor="v9">9</a>And Joseph said unto them: "Ye have done evil." And they said: "What shall we say and how shall we defend ourselves? Our lord hath discovered the transgression of his servants; behold we are the servants of our lord, and our asses also."</p><p class="v" id="v10"><a class="vn" href="#v10" data-anchor="v10">10</a>And Joseph said unto them: "I too fear the Lord; as for you, go ye to your homes and let your brother be my servant, for ye have done evil.. Know ye not that a man delighteth in his cup as I with this cup? <a class="fnref" href="#n195-1" id="rn195-1">1</a> And yet ye have stolen it from me."</p><p class="v" id="v11"><a class="vn" href="#v11" data-anchor="v11">11</a>And Judah said: "O my lord, let thy servant, I pray thee, speak a word in my lord's ear; two brothers did thy servant's mother bear to our father; one went away and was lost, and hath not been found, and he alone is left of his mother, and thy servant our father loveth him, and his life also is bound up with the life of this (lad).</p><p class="v" id="v12"><a class="vn" href="#v12" data-anchor="v12">12</a>And it will come to pass, when we go to thy servant our father, and the lad is not with us, that he will die, and we shall bring down our father with sorrow unto death.</p><p class="v" id="v13"><a class="vn" href="#v13" data-anchor="v13">13</a>Now rather let me, thy servant, abide instead of the boy as a bondsman unto my lord, and let the lad go with his brethren, for I became surety for him at the hand of thy servant our father, and if I do not bring him back, thy servant will bear the blame to our father for ever."</p><p class="v" id="v14"><a class="vn" href="#v14" data-anchor="v14">14</a>And Joseph saw that they were all accordant in goodness one with another, and he could not refrain himself, and he told them that he was Joseph.</p><p class="v" id="v15"><a class="vn" href="#v15" data-anchor="v15">15</a>And he conversed with them in the Hebrew tongue <a class="fnref" href="#n195-2" id="rn195-2">2</a> and fell on their neck and wept. But they knew him not and they began to weep.</p><p class="v" id="v16"><a class="vn" href="#v16" data-anchor="v16">16</a>And he said unto them: "Weep not over me, but hasten and bring my father to me; and ye see that it is my mouth that speaketh and the eyes of my brother Benjamin see.</p><p class="v" id="v17"><a class="vn" href="#v17" data-anchor="v17">17</a>For behold this is the second year of the famine, and there are still five years without harvest or fruit of trees or ploughing.</p><p class="v" id="v18"><a class="vn" href="#v18" data-anchor="v18">18</a>Come down quickly ye and your households, so that ye perish not through the famine, and do not be grieved for your possessions, for the Lord sent me before you to set things in order that many people might live.</p><p class="v" id="v19"><a class="vn" href="#v19" data-anchor="v19">19</a>And tell my father that I am still alive, and ye, behold, ye see that the Lord hath made me as a father to Pharaoh, and ruler over his house and over all the land of Egypt.</p><p class="v" id="v20"><a class="vn" href="#v20" data-anchor="v20">20</a>And tell my father of all my glory, and all the riches and glory that the Lord hath given Me."</p><p class="v" id="v21"><a class="vn" href="#v21" data-anchor="v21">21</a>And by the command of the mouth of Pharaoh he gave them chariots and provisions for the way, and he gave them all many-coloured raiment and silver.</p><p class="v" id="v22"><a class="vn" href="#v22" data-anchor="v22">22</a>And to their father he sent raiment and silver and ten asses which carried com, and he sent them away.</p><p class="v" id="v23"><a class="vn" href="#v23" data-anchor="v23">23</a>And they went up and told their father that Joseph was alive, and was measuring out corn to all the nations of the earth, and that he was ruler over all the land of Egypt.</p><p class="v" id="v24"><a class="vn" href="#v24" data-anchor="v24">24</a>And their father did not believe it, for he was beside himself in his mind; but when he saw the wagons which Joseph had sent, the life of his spirit revived, and he said: "It is enough for me if Joseph liveth; I will go down and see him before I die."</p></div><div class="margin"><aside class="note source" id="n195-1"><a class="back" href="#rn195-1">↩</a>Gen. xliv. 15 ("Know ye not that such a man as I can indeed divine?"). The change in our text may be deliberate.</aside>
+<aside class="note source" id="n195-2"><a class="back" href="#rn195-2">↩</a>A Midrashic touch; so Bereshith rabba xciii. Next: Jacob, celebrates the Feast of First-fruits and journeys to Egypt. List of his Descendants. (xliv. 1-34)</aside></div></div>
+</main>
+<footer class="pager">
+  <a href="ch42.html">← Previous</a>
+  <a href="index.html">Contents</a>
+  <a href="ch44.html">Next →</a>
+</footer>
+<div id="veil"></div>
+<script src="app.js"></script>
+</body></html>
