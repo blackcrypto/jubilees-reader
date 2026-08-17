@@ -137,53 +137,53 @@ aside.note.editorial::before{
 /* ============================= e-ink mode ============================= */
 /* Pure contrast, no motion, no scroll-repainting chrome, note layers
    distinguished by border + label rather than colour.                    */
-[data-mode="eink"]{
+[data-mode="paper"],[data-mode="eink"]{
   --paper:#fff; --ink:#000; --faint:#000; --rule:#000;
   --rust:#000; --gold:#000; --sel:#ddd;
 }
-[data-mode="eink"] html,[data-mode="eink"] body{scroll-behavior:auto}
+[data-mode="eink"] html,[data-mode="paper"] body,[data-mode="eink"] body{scroll-behavior:auto}
 [data-mode="eink"] *{transition:none!important;animation:none!important;box-shadow:none!important;text-shadow:none!important}
-[data-mode="eink"] body{font-weight:500;-webkit-font-smoothing:auto;line-height:1.7}
+[data-mode="paper"] body,[data-mode="eink"] body{font-weight:500;-webkit-font-smoothing:auto;line-height:1.7}
 [data-mode="eink"] .rail{display:none}
 [data-mode="eink"] .chrome{position:absolute}          /* scrolls away: no repaint */
-[data-mode="eink"] .chrome button{border:1.5px solid #000;color:#000;width:40px;height:40px;font-size:16px}
+[data-mode="paper"] .chrome button,[data-mode="eink"] .chrome button{border:1.5px solid #000;color:#000;width:40px;height:40px;font-size:16px}
 [data-mode="eink"] #toc{position:absolute;border-right:1.5px solid #000}
-[data-mode="eink"] #toc a,[data-mode="eink"] .toc-am{color:#000}
-[data-mode="eink"] .toc-h{color:#000;border-bottom:1px solid #000;padding-bottom:2px}
-[data-mode="eink"] .eyebrow,[data-mode="eink"] .am{color:#000}
-[data-mode="eink"] h2.sect{border-bottom:1.5px solid #000}
-[data-mode="eink"] h2.sect .cf{color:#000}
-[data-mode="eink"] a.vn{color:#000;font-weight:500}
-[data-mode="eink"] a.fnref{color:#000;font-weight:700;text-decoration:underline}
-[data-mode="eink"] .fnref.missing{color:#000;opacity:.45}
-[data-mode="eink"] .corr{border-bottom:1.5px dashed #000}
-[data-mode="eink"] .margin{color:#000}
+[data-mode="paper"] #toc a,[data-mode="paper"] .toc-am,[data-mode="eink"] #toc a,[data-mode="eink"] .toc-am{color:#000}
+[data-mode="paper"] .toc-h,[data-mode="eink"] .toc-h{color:#000;border-bottom:1px solid #000;padding-bottom:2px}
+[data-mode="paper"] .eyebrow,[data-mode="paper"] .am,[data-mode="eink"] .eyebrow,[data-mode="eink"] .am{color:#000}
+[data-mode="paper"] h2.sect,[data-mode="eink"] h2.sect{border-bottom:1.5px solid #000}
+[data-mode="paper"] h2.sect .cf,[data-mode="eink"] h2.sect .cf{color:#000}
+[data-mode="paper"] a.vn,[data-mode="eink"] a.vn{color:#000;font-weight:500}
+[data-mode="paper"] a.fnref,[data-mode="eink"] a.fnref{color:#000;font-weight:700;text-decoration:underline}
+[data-mode="paper"] .fnref.missing,[data-mode="eink"] .fnref.missing{color:#000;opacity:.45}
+[data-mode="paper"] .corr,[data-mode="eink"] .corr{border-bottom:1.5px dashed #000}
+[data-mode="paper"] .margin,[data-mode="eink"] .margin{color:#000}
 /* three note layers, monochrome-legible */
-[data-mode="eink"] aside.note{border-left:1.5px solid #000;padding-left:.8rem}
-[data-mode="eink"] aside.note::before{
+[data-mode="paper"] aside.note,[data-mode="eink"] aside.note{border-left:1.5px solid #000;padding-left:.8rem}
+[data-mode="paper"] aside.note::before,[data-mode="eink"] aside.note::before{
   content:"Charles";display:block;font-size:10px;letter-spacing:.13em;
   text-transform:uppercase;margin-bottom:.25rem}
-[data-mode="eink"] aside.note.editorial{border-left:4px double #000}
-[data-mode="eink"] aside.note.editorial::before{content:"Editorial";color:#000}
-[data-mode="eink"] aside.note.correction{border-left:1.5px dashed #000;color:#000}
-[data-mode="eink"] aside.note.correction::before{
+[data-mode="paper"] aside.note.editorial,[data-mode="eink"] aside.note.editorial{border-left:4px double #000}
+[data-mode="paper"] aside.note.editorial::before,[data-mode="eink"] aside.note.editorial::before{content:"Editorial";color:#000}
+[data-mode="paper"] aside.note.correction,[data-mode="eink"] aside.note.correction{border-left:1.5px dashed #000;color:#000}
+[data-mode="paper"] aside.note.correction::before,[data-mode="eink"] aside.note.correction::before{
   content:"Correction";display:block;font-size:10px;letter-spacing:.13em;
   text-transform:uppercase;margin-bottom:.25rem}
-[data-mode="eink"] aside.note:target{outline:2px solid #000;outline-offset:3px}
-[data-mode="eink"] aside.note .back{color:#000}
+[data-mode="paper"] aside.note:target,[data-mode="eink"] aside.note:target{outline:2px solid #000;outline-offset:3px}
+[data-mode="paper"] aside.note .back,[data-mode="eink"] aside.note .back{color:#000}
 /* focus mode is a hover effect: meaningless and harmful on e-ink */
 [data-mode="eink"] #focusBtn{display:none}
 [data-mode="eink"] body.focus p.v{opacity:1}
-[data-mode="eink"] .pager{border-top:1.5px solid #000}
-[data-mode="eink"] .pager a{color:#000;border:1.5px solid #000;padding:.5rem .9rem}
-[data-mode="eink"] .grid50 a{border:1.5px solid #000;color:#000}
-[data-mode="eink"] .grid50 a span{color:#000}
+[data-mode="paper"] .pager,[data-mode="eink"] .pager{border-top:1.5px solid #000}
+[data-mode="paper"] .pager a,[data-mode="eink"] .pager a{color:#000;border:1.5px solid #000;padding:.5rem .9rem}
+[data-mode="paper"] .grid50 a,[data-mode="eink"] .grid50 a{border:1.5px solid #000;color:#000}
+[data-mode="paper"] .grid50 a span,[data-mode="eink"] .grid50 a span{color:#000}
 [data-mode="eink"] #toast{display:none}
 /* Palma-width: tighten measure, enlarge tap targets */
 @media(max-width:560px){
   [data-mode="eink"] main{padding:70px 16px 20px}
   [data-mode="eink"] :root{--body:21px;--lh:1.58}
-  [data-mode="eink"] a.fnref{padding:0 .3em}
+  [data-mode="paper"] a.fnref,[data-mode="eink"] a.fnref{padding:0 .3em}
 }
 
 /* monochrome browsers get the e-ink treatment automatically; Boox/Daylight
@@ -196,3 +196,10 @@ aside.note.editorial::before{
   .chrome,#toc{position:absolute}
   #focusBtn{display:none}
 }
+
+/* ---------- paper mode (Daylight DC-1): monochrome contrast, motion retained ---------- */
+/* Shares the e-ink palette and note grammar above; keeps smooth scroll, transitions,
+   the fixed chrome/TOC, the chronology rail, and focus mode — the DC-1's 60fps
+   reflective LCD pays no refresh penalty for any of them. */
+[data-mode="paper"] .rail{opacity:1}
+[data-mode="paper"] .rail-fill{background:#000}

@@ -4,10 +4,15 @@
 
   /* ---- persisted preferences ---- */
   try {
-    var qEink = /[?&]eink/.test(location.search);
-    if (qEink) localStorage.setItem("jub-eink", "on");
-    if (qEink || localStorage.getItem("jub-eink") === "on")
-      document.documentElement.setAttribute("data-mode", "eink");
+    var mode = null;
+    if (/[?&]eink/.test(location.search)) mode = "eink";
+    else if (/[?&]paper/.test(location.search)) mode = "paper";
+    else mode = localStorage.getItem("jub-mode") ||
+                (localStorage.getItem("jub-eink") === "on" ? "eink" : null);
+    if (mode === "eink" || mode === "paper") {
+      document.documentElement.setAttribute("data-mode", mode);
+      localStorage.setItem("jub-mode", mode);
+    }
   } catch (e) {}
   try {
     if (localStorage.getItem("jub-theme") === "dark")
@@ -48,20 +53,25 @@
     this.classList.toggle("on");
   });
 
-  /* ---- e-ink mode ---- */
-  var eb = $("#einkBtn");
-  function syncEink() {
-    var on = document.documentElement.getAttribute("data-mode") === "eink";
-    if (eb) eb.classList.toggle("on", on);
+  /* ---- display modes: eink (Boox) / paper (Daylight) ---- */
+  var eb = $("#einkBtn"), pb = $("#paperBtn");
+  function syncModes() {
+    var m = document.documentElement.getAttribute("data-mode");
+    if (eb) eb.classList.toggle("on", m === "eink");
+    if (pb) pb.classList.toggle("on", m === "paper");
   }
-  syncEink();
-  if (eb) eb.addEventListener("click", function () {
-    var on = document.documentElement.getAttribute("data-mode") === "eink";
-    if (on) document.documentElement.removeAttribute("data-mode");
-    else document.documentElement.setAttribute("data-mode", "eink");
-    save("jub-eink", on ? "off" : "on");
-    syncEink();
-  });
+  function setMode(m) {
+    var cur = document.documentElement.getAttribute("data-mode");
+    var next = (cur === m) ? null : m;
+    if (next) document.documentElement.setAttribute("data-mode", next);
+    else document.documentElement.removeAttribute("data-mode");
+    save("jub-mode", next || "off");
+    save("jub-eink", next === "eink" ? "on" : "off");
+    syncModes();
+  }
+  syncModes();
+  if (eb) eb.addEventListener("click", function () { setMode("eink"); });
+  if (pb) pb.addEventListener("click", function () { setMode("paper"); });
 
   /* ---- chronology rail ---- */
   var fill = $("#railFill");
