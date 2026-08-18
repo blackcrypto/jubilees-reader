@@ -203,3 +203,8 @@ aside.note.editorial::before{
    reflective LCD pays no refresh penalty for any of them. */
 [data-mode="paper"] .rail{opacity:1}
 [data-mode="paper"] .rail-fill{background:#000}
+
+/* marginal A.M. date that the source PDF flowed inline (Jub 12:22) */
+.am-inline{font-family:var(--sans);font-size:11.5px;letter-spacing:.1em;color:var(--gold);
+  text-transform:uppercase;vertical-align:.15em;padding:0 .3em}
+[data-mode="eink"] .am-inline,[data-mode="paper"] .am-inline{color:#000;font-weight:600}
